@@ -71,15 +71,31 @@ String[] aproximaciones = {
 //};
 
 // diapo11
-//String[] bla = {
-//};
+String[] verdadMemoria = {
+  "¿CÓMO SE PRODUCE LA MEMORIA?",
+  "¿Qué hace la verdad en la Memoria?",
+  "La Memoria es un relato. El negacionismo se funda en un hecho mínimo al que se le confiere la representación del todo",
+  "HIPER OBJETOS",
+  "sesgos cognitivos y por tanto sesgos respecto a la lectura ideológica de la realidad",
+  "¿CÓMO NOS RE-CONOCEMOS EN UNA MEMORIA COMÚN?",
+  "Mirar de manera oblicua trans trans trans",
+  "JAQUEAR EL RELATO OFICIAL / JAQUEAR LA MEMORIA",
+  "Jaquear un dato: concatenación causal",
+  "Mi Lucha de Hitler es el libro que más se imprime en Chile"
+};
 
 // diapo12
-//String[] bla = {
-//};
+String[] silencioEnsordecedor = {
+  "El silencio no eixste - el sonido queda en estado perpetuo y se va amortiguando",
+  "TOQUE DE QUEDA",
+  "SILENCIO",
+  "SILENCIO ENSORDECEDOR",
+  "PACTOS DE SILENCIO",
+  "Ruido blanco: es muy difícil hablar de algo que está en todas partes"
+};
 
 // diapo13
-String[] silencio = {
+String[] silencioEco = {
   "SILENCIO",
   "DESCIFRAR LA MORFOLOGÍA DE LOS MENSAJES EN TRÁNSITO DENTRO/ENTRE LOS CUERPOS",
   "ECO",
@@ -94,7 +110,7 @@ String[] silencio = {
 };
 
 // diapo14
-String[] trueno = {
+String[] tiempoUnix = {
   "TRUENO como otra forma de organizar el conocimiento",
   "DESCIFRAR LA MORFOLOGÍA DE LOS MENSAJES EN TRÁNSITO DENTRO/ENTRE LOS CUERPOS",
   "FENOMENOLOGÍA DEL TRUENO",
