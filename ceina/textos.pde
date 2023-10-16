@@ -52,23 +52,72 @@ String[] aproximaciones = {
 //};
 
 // diapo07
-//String[] bla = {
-//};
+String[] diaJuliano = {
+  "CHAKANA",
+  "WENUMAPU",
+  "SILENCIO DE LA MIRADA",
+  "TESTIMONIO",
+  "(testigo sin mirada)",
+  "MIGUEL LAWNER",
+  "DÍA JULIANO",
+  "TRUENO",
+  "MAPA DE ESTRELLAS 50 AÑOS-LUZ ALREDEDOR DE LA TIERRA",
+  "y de los bordes confines de la luz"
+};
 
 
 // diapo08
-//String[] bla = {
-//};
+String[] calendarioAndino = {
+  "CHAKANA",
+  "(calendario andino)",
+  "COORDENADAS TEMPORALES",
+  "DÍA JULIANO",
+  "La fecha juliana, día juliano o DJ es el número de días y fracción transcurridos desde el mediodía del uno de enero del año 4713 a.C.",
+  "TIEMPO UNIX",
+  "Tiempo Unix o tiempo POSIX es un sistema para la descripción de instantes de tiempo: se define como la cantidad de segundos transcurridos desde la medianoche UTC del 1 de enero de 1970",
+  "TIEMPO ASTRONÓMICO",
+  "TIEMPO COMPUTACIONAL"
+};
 
 
 // diapo09
-//String[] bla = {
-//};
+String[] neuroCiencia = {
+  "NEUROCIENCIA",
+  "COSMOGONÍA",
+  "Interfaz - BCI",
+  "Brain Computer Intelligence",
+  "Trabajo con enfermos terminales",
+  "DUELO ANTICIPADO",
+  "MÚSICA creada a partir de ondas cerebrales en su lecho de muerte",
+  "COSMOGONÍA",
+  "RITUALES MORTUORIOS",
+  "DANZA DE LOS ESPÍRITUS",
+  "RELACIÓN INTEGRADA CON LA MUERTE",
+  "Modos de lidiar con el duelo y la Memoria de nuestros muertos",
+  "¿CÓMO SE PRODUCE LA MEMORIA?",
+  "¿CÓMO NOS RECONOCEMOS EN UAN MEMORIA COMÚN?",
+  "¿CÓMO CONSTRUIMOS UNA MEMORIA COLECTIVA?"
+};
 
 
 // diapo10
-//String[] bla = {
-//};
+String[] memoriaCorporal = {
+  "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?",
+  "MEMORIA CORPORAL",
+  "EL ARCHIVO COMO PIEL QUE PERMITE UN PORVENIR",
+  "(la vida puede tener muchas vidas más)",
+  "Porosidad de la piel / Porosidad de la memoria",
+  "Cuando uno se pone un velo puede contar otras historias",
+  "LA MEMORIA ES MALEABLE",
+  "lo maleable de la conmoción",
+  "RECONSTRUIR RECUERDOS",
+  "Memoria que se revisita",
+  "Cicatriz personal que revive una y otra vez en el acontecimiento",
+  "GRAFÍA - TRAUMA - HEERIDA",
+  "Lectura compleja del post Golpe",
+  "(privatización de la Memoria Política)",
+  "TRAUMA, MEMORIA Y OLVIDO"
+};
 
 // diapo11
 String[] verdadMemoria = {
