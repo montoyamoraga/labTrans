@@ -1,3 +1,15 @@
+
+String[] aproximaciones = {
+"imagenes",
+"arte",
+"saberes",
+"diseño",
+"literatura",
+"neurociencia",
+"experiencia sensible",
+"astronomía",
+"aproximaciones transdisciplinares"};
+
 String[] disciplinas = {
   "arte",
   "conocimiento",

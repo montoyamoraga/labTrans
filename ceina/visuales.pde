@@ -76,18 +76,18 @@ class Flechita {
       line(x0, y0, x1, y1);
     }
     //dibujar cabeza de flecha
-    else {
-      pushMatrix();
-      translate(posFinal.x, posFinal.y);
-      rotate(angulo);
-      line(0, 0, porcentaje * largo, 0);
-      if (porcentaje > 0.99) {
-        line(largo, 0, largo - 8, -8);
-        line(largo, 0, largo - 8, 8);
-      }
+    //else {
+    //  pushMatrix();
+    //  translate(posFinal.x, posFinal.y);
+    //  rotate(angulo);
+    //  line(0, 0, porcentaje * largo, 0);
+    //  if (porcentaje > 0.99) {
+    //    line(largo, 0, largo - 8, -8);
+    //    line(largo, 0, largo - 8, 8);
+    //  }
 
-      popMatrix();
-    }
+    //  popMatrix();
+    //}
 
     popStyle();
   }
