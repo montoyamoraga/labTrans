@@ -4,15 +4,15 @@ boolean prueba = false;
 
 int i = 0;
 
-Flechita[] flechitas = new Flechita[10];
+Linea[] lineas = new Linea[10];
 
 void setup() {
+  
   cargarImagenes();
+  
   size(1200, 600);
   //fullScreen();
   background(255);
-
-
 
 
   textAlign(CENTER);
@@ -25,9 +25,9 @@ void setup() {
 
   popMatrix();
 
-  //for (int i = 0; i < flechitas.length; i++) {
-  //  flechitas[i] = new Flechita();
-  //}
+  for (int i = 0; i < lineas.length; i++) {
+    lineas[i] = new Linea();
+  }
 
   frameRate(2);
 
@@ -50,9 +50,8 @@ void draw() {
   float posX = random(width);
   float posY = random(height);
 
-
   line(width/2, height/2, posX, posY);
-  
+
   text(aproximaciones[i], posX, posY);
 
   i = i + 1;
@@ -64,8 +63,8 @@ void draw() {
 
   //fill(0);
 
-  //for (int i = 0; i < flechitas.length; i++) {
-  //  flechitas[i].actualizarFlechita();
-  //  flechitas[i].dibujarFlechita();
-  //}
+  for (int i = 0; i < lineas.length; i++) {
+    lineas[i].actualizar();
+    lineas[i].dibujar();
+  }
 }

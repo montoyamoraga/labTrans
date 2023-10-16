@@ -10,6 +10,8 @@ String[] aproximaciones = {
 "astronomía",
 "aproximaciones transdisciplinares"};
 
+
+
 String[] disciplinas = {
   "arte",
   "conocimiento",
