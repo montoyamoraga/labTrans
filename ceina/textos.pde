@@ -48,8 +48,29 @@ String[] aproximaciones = {
 //};
 
 // diapo06
-//String[] bla = {
-//};
+String[] autoRecordarnos = {
+  "AUTO RECORDARNOS",
+  "¿SE PUEDE APRENDER A OLVIDAR?",
+  "¿CÓMO ATRAVESAMOS LAS IMÁGENES Y LOS IMAGINARIOS?",
+  "TRUENO",
+  "acontecimiento que cambia el curso de las cosas",
+  "¿ENCANDILA?",
+  "¿ES UNA IMAGEN?",
+  "ES UN QUIEBRE",
+  "¿ES UN PARÉNTESIS?",
+  "recordar emerge en el silencio que queda tras el trueno - el trueno es lo que nos recuerda lo vivo",
+  "LUZ EN EL CEREBRO",
+  "TRÁNSITO DE LA LUZ",
+  "IMAGEN COMO INSCRIPCIÓN MORFOLÓGICA DEL TIEMPO",
+  "Transitar los tiempos de las memorias",
+  "SILENCIO",
+  "El silencio es una condición del espacio (astronomía)",
+  "El proceso de reconstrucción de la memoria necesita del silencio (neurociencia)",
+  "No existe el silencio, solo el ruido imperceptible",
+  "Nuestros tiempos",
+  "Tiempos ancestrales",
+  "Tiempos astronómicos"
+};
 
 // diapo07
 String[] diaJuliano = {
