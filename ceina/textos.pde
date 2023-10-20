@@ -36,16 +36,19 @@ String[] aproximaciones = {
 
 
 // diapo03
-//String[] bla = {
-//};
+String[] bla03 = {
+  "bla03"
+};
 
 // diapo04
-//String[] bla = {
-//};
+String[] bla04 = {
+  "bla04"
+};
 
 // diapo05
-//String[] bla = {
-//};
+String[] bla05 = {
+  "bla05"
+};
 
 // diapo06
 String[] autoRecordarnos = {
@@ -204,4 +207,24 @@ String[] microEvento = {
 // diapo16
 String[] polvoCallado = {
   "polvo callado"
+};
+
+String[][] textos = {
+  equipo,
+  memoria,
+  aproximaciones,
+  bla03,
+  bla04,
+  bla05,
+  autoRecordarnos,
+  diaJuliano,
+  calendarioAndino,
+  neuroCiencia,
+  memoriaCorporal,
+  verdadMemoria,
+  silencioEnsordecedor,
+  silencioEco,
+  tiempoUnix,
+  microEvento,
+  polvoCallado,
 };

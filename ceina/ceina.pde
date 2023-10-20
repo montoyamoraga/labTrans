@@ -34,14 +34,17 @@ void setup() {
   fill(0);
   stroke(0);
 
-  for (int i = 0; i < aproximaciones.length; i++) {
-    text(aproximaciones[i], width, height);
+  //for (int i = 0; i < aproximaciones.length; i++) {
+  //  text(aproximaciones[i], width, height);
+  //}
+  
+  for (int i = 0; i < textos[escenaActual].length; i++) {
+    text(textos[escenaActual][i], width, height);
   }
+  
 }
 
 void draw() {
-
-
 
   //fill(255, 255/2);
   fill(0);
@@ -52,10 +55,12 @@ void draw() {
 
   line(width/2, height/2, posX, posY);
 
-  text(aproximaciones[i], posX, posY);
+  //text(aproximaciones[i], posX, posY);
+  textSize(random(16, 32));
+  text(textos[escenaActual][i], posX, posY);
 
   i = i + 1;
-  i = i % aproximaciones.length;
+  i = i % textos[escenaActual].length;
 
 
   //fill(255, 255/2);
