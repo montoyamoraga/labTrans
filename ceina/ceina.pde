@@ -1,5 +1,7 @@
 // consideraciones tecnicas
 
+
+
 boolean prueba = false;
 
 int i = 0;
