@@ -6,14 +6,17 @@ int i = 0;
 
 Linea[] lineas = new Linea[10];
 
+int diaposPantalla = 3;
+
 void setup() {
-  
+
   cargarImagenes();
-  
+
+  // para 3 diapos
+  // 400px cada una
   size(1200, 600);
   //fullScreen();
   background(255);
-
 
   textAlign(CENTER);
   textSize(32);
@@ -37,39 +40,41 @@ void setup() {
   //for (int i = 0; i < aproximaciones.length; i++) {
   //  text(aproximaciones[i], width, height);
   //}
-  
+
   for (int i = 0; i < textos[escenaActual].length; i++) {
     text(textos[escenaActual][i], width, height);
   }
-  
 }
 
 void draw() {
 
-  //fill(255, 255/2);
-  fill(0);
-  stroke(0);
 
-  float posX = random(width);
-  float posY = random(height);
+  for (int diapo = 0; i < diaposPantalla; i++) {
+    fill(0);
+    stroke(0);
 
-  line(width/2, height/2, posX, posY);
+    float posX = random((i)*width/diaposPantalla,
+      (i + 1)*width/diaposPantalla);
+    float posY = random((i)*width/diaposPantalla,
+      (i + 1)*height/diaposPantalla);
 
-  //text(aproximaciones[i], posX, posY);
-  textSize(random(16, 32));
-  text(textos[escenaActual][i], posX, posY);
+    line(width/2, height/2, posX, posY);
 
-  i = i + 1;
-  i = i % textos[escenaActual].length;
+    //text(aproximaciones[i], posX, posY);
+    textSize(random(16, 32));
+    text(textos[escenaActual][i], posX, posY);
 
+    i = i + 1;
+    i = i % textos[escenaActual].length;
 
-  //fill(255, 255/2);
-  //rect(0, 0, width, height);
+    fill(255, 255/5);
+    rect(0, 0, width, height);
 
-  //fill(0);
+    //fill(0);
 
-  for (int i = 0; i < lineas.length; i++) {
-    lineas[i].actualizar();
-    lineas[i].dibujar();
+    for (int i = 0; i < lineas.length; i++) {
+      lineas[i].actualizar();
+      lineas[i].dibujar();
+    }
   }
 }
