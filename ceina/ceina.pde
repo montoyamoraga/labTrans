@@ -1,7 +1,6 @@
 // consideraciones tecnicas
 
 
-
 boolean prueba = false;
 
 int i = 0;
@@ -11,6 +10,11 @@ Linea[] lineas = new Linea[10];
 int diaposPantalla = 3;
 
 void setup() {
+  
+  definirLocacionRemota();
+  abrirPuertoOSC();
+  
+  enviarMensajeOSC();
 
   cargarImagenes();
 
