@@ -1,16 +1,3 @@
-
-class Palabra {
-  
-  String texto;
-  String tipografia;
-  int tamano;
-  Palabra() {
-    texto = "";
-    tamano = int(random(16, 32));
-    tipografia = "Arial";
-  }
-}
-
 // linea
 class Linea {
 

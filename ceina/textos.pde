@@ -2,7 +2,7 @@
 
 String fecha = "jueves 09 noviembre 2023";
 
-String[] equipo = {
+String[] creditos = {
   "aarón montoya-moraga",
   "andrea jösch",
   "bernardita croxatto",
@@ -209,8 +209,110 @@ String[] polvoCallado = {
   "polvo callado"
 };
 
+// diapo17
+String[] bla17 = {
+  "bla17"
+};
+
+// diapo18
+String[] bla18 = {
+  "bla18"
+};
+
+// diapo19
+String[] bla19 = {
+  "bla19"
+};
+
+// diapo20
+String[] bla20 = {
+  "bla20"
+};
+
+// diapo21
+String[] bla21 = {
+  "bla21"
+};
+
+// diapo22
+String[] bla22 = {
+  "bla22"
+};
+
+// diapo23
+String[] bla23 = {
+  "bla23"
+};
+
+// diapo24
+String[] materiaFuera = {
+  "Materia fuera de lugar"
+};
+
+// diapo25
+String[] depositadoEn = {
+  "depositado en el el Río Sola y desde ahí al Río Vístula  (Polonia 1944/45)",
+  "depositado en el mar frente a San Antonio    (Chile 1973/74) "
+};
+
+// diapo26
+String[] bla26 = {
+  "bla26"
+};
+
+// diapo27
+String[] bla27 = {
+  "bla27"
+};
+
+// diapo28
+String[] observandoOrionis = {
+  "Observando a ORIONIS\n" +
+  "científicos han propuesto que\n" +
+  "como elemento el agua es más\n" +
+  "antigua incluso que el sol.",
+  "¿CUÁL ES EL TIEMPO DEL DOLOR?",
+  "V883 ORIONIS\n" +
+  "nube interestelar a 1300 años\n" +
+  "luz de la tierra. Contiene más\n" +
+  "agua que todos los océanos de\n" +
+  "nuestro planeta juntos.",
+};
+
+// diapo29
+String[] excluirAlgo = {
+  "Excluir algo de la\n" +
+  "memoria es erradicarlo\n" +
+  "del tiempo",
+  "El mar agitado fue escogido para esconder\n" +
+  "los cuerpos. Su vastedad, sus olas\n" +
+  "poderosas prometían mantener el silencio y\n" +
+  "excluir de la memoria colectiva a esos cuerpos.",
+  "¿CUÁL ES EL TIEMPO DEL DOLOR?"
+};
+
+// diapo30
+String[] cenizasArrojadas= {
+  "Las cenizas fueron arrojadas al agua que fluye por\n" +
+  "el río Sola, que a su vez desemboca al río Vístula y\n" +
+  "luego desemboca en el Golfo de Gdansk.\n1944 - 45",
+  "Las cenizas fueron arrojadas al Océano\n" +
+  "Pacífico, a las olas que golpean la costa de\n" +
+  "San Antonio y a la Pesquera Arauco.\n1973 - 74"
+};
+
+// diapo31
+String[] aguaElemento = {
+  "EL AGUA ES UN ELEMENTO MÁS ANTIGUO QUE EL SOL",
+  "¿CUÁL ES EL TIEMPO DEL DOLOR?",
+  "¿CUÁL ES EL TIEMPO DE LA MEMORIA?",
+  "(materia fuera de lugar)",
+  "(polvo callado)",
+  "(silencio)"
+};
+
 String[][] textos = {
-  equipo,
+  creditos,
   memoria,
   aproximaciones,
   bla03,
@@ -227,4 +329,19 @@ String[][] textos = {
   tiempoUnix,
   microEvento,
   polvoCallado,
+  bla17,
+  bla18,
+  bla19,
+  bla20,
+  bla21,
+  bla22,
+  bla23,
+  materiaFuera,
+  depositadoEn,
+  bla26,
+  bla27,
+  observandoOrionis,
+  excluirAlgo,
+  cenizasArrojadas,
+  aguaElemento
 };

@@ -1,3 +1,4 @@
+// importar bibliotecas
 import netP5.*;
 import oscP5.*;
 
@@ -40,8 +41,6 @@ void oscEvent(OscMessage oscNuevoMensaje) {
       } else if (oscNuevoMensaje.get(0).floatValue() == 1) {
         println("presionado " + str(i + 1));
       }
-      
     }
   }
-    
 }
