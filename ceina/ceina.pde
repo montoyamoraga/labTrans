@@ -1,7 +1,7 @@
 // consideraciones tecnicas
 
 boolean prueba = false;
-int i = 0;
+int proyector = 2;
 
 Linea[] lineas = new Linea[10];
 

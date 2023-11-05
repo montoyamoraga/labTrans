@@ -3,7 +3,6 @@ String escenaSiguiente = "";
 
 void keyPressed() {
   if (key == ' ') {
-    i = 0;
     escenaActual++;
     escenaActual = escenaActual % textos.length;
     background(255);
@@ -19,8 +18,7 @@ void keyPressed() {
     key == '8' ||
     key == '9') {
     escenaSiguiente = escenaSiguiente + key;
-  }
-  else if (key == RETURN || key == ENTER) {
+  } else if (key == RETURN || key == ENTER) {
     if (int(escenaSiguiente) < textos.length) {
       escenaActual = int(escenaSiguiente);
       diapos.get(escenaActual).inicializar();
