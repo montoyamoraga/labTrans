@@ -1,7 +1,8 @@
-// consideraciones tecnicas
+// proyector puede ser 0, 1, 2
+int proyector = 0;
 
 boolean prueba = false;
-int proyector = 2;
+
 
 Linea[] lineas = new Linea[10];
 
