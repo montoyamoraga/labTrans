@@ -23,31 +23,98 @@ String[] memoria = {
 
 // diapo02
 String[] aproximaciones = {
-  "aproximaciones transdisciplinares",
-  "arte",
-  "astronomía",
-  "diseño",
-  "experiencia sensible",
-  "imágenes",
-  "literatura",
-  "neurociencia",
-  "saberes"
+  "IMÁGENES",
+  "NEUROCIENCIA",
+  "EXPERIENCIA SENSIBLE",
+  "ASTRONOMÍA",  
+  "APROXIMACIONES TRANSDISCIPLINARES",
+  "LITERATURA",
+  "DISEÑO",
+  "SABERES",
+  "ARTE"
+  "arte"
 };
 
-
 // diapo03
-String[] bla03 = {
-  "bla03"
+String[] fisicaAstronomia = {
+  "FÍSICA - ASTRONOMÍA",
+  "tiempos humanos versus tiempos astronómicos",
+  "El tránsito de la luz y el sonido\n" +
+  "transmiten información en un\n" +
+  "desfase temporal",
+  "la memoria se (re)crea aquí y ahora",
+  "50 años\n" +
+  "versus\n" +
+  "50 años-luz\n" +
+  "sonido\n" +
+  "versus\n" +
+  "recepción de un\n" +
+  "mensaje de un planeta\n" +
+  "a otro.",
+  "NEUROCIENCIA",
+  "mecanismos neurobiológicos",
+  "SINFONÍA FISIOLÓGICA\n" +
+  "Estimulación física",
+  "cerebro sometido a aislamiento"
 };
 
 // diapo04
-String[] bla04 = {
-  "bla04"
+String[] cuerpoModifica = {
+  "MORFOLOGÍA(S) COMO ESCRITURA(S) DE LA(S) MEMORIA(S)",
+  "Un cuerpo modifica su forma a partir de los fenómenos\n" +
+  "que le acontecen = la forma del cuerpo da cuenta de su\n" +
+  "historia y recrea la memoria en el aquí/ahora.",
+  "ECOLOGÍA DE LA MEMORIA\n" +
+  "seres vivos en relación a\n" +
+  "su ambiente -",
+  "No hay memoria\n" +
+  "sin vida/ sin vivir",
+  "El cerebro reorganiza y facilita procesos y\n" +
+  "funciones de la memoria, pero la\n" +
+  "memoria es un fenómeno del organismo.",
+  "la memoria no se almacena",
+  "SOLO LOS ORGANISMOS\n" +
+  "VIVOS RECUERDAN Y\n" +
+  "PUEDEN HACER SENTIDO",
+  "Morfologías de la luz, el sonido, los cuerpos celestes, humanos, vegetales...",
+  "árboles genealógicos de las estrellas...\n" +
+  "Cómo rastrear químicamente sus orígenes/ancestros (Paula Jofré)",
+  "HEREDAR EL\n" +
+  "CONOCIMIENTO\n" +
+  "seres vivos son cyborgs naturales",
+  "tecnologái y memoria - nuevas perspectivas con las AI"
 };
 
 // diapo05
-String[] bla05 = {
-  "bla05"
+String[] transitoComo = {
+  "TRÁNSITO como\n" +
+  "otra forma de\n" +
+  "organizar el\n" +
+  "conocimiento",
+  "ESCRITURA DE LA MEMORIA",
+  "EPISTEMOLOGÍAS Sur",
+  "SABERES SITUADOS",
+  "Imaginación Radical",
+  "GENEALOGÍAS DE FORMAS DE MENSAJES CLANDESTINOS"
+  "TRÁNSITO DE LA LUZ\n" +
+  "(TEMPORALIDAD de los\n" +
+  "ASTROS) Mensajes\n" +
+  "que viajaron hace 50\n" +
+  "años y aún no llegan",
+  "Tránsito de mensajes",
+  "SEÑALES DE HUMO\n" +
+  "MENSAJES EN UNA\n" +
+  "BOTELLA\n" +
+  "PAPELITOS EN\n" +
+  "RINCONES OSCUROS\n" +
+  "MORSE\n" +
+  "LIBROS\n" +
+  "MEMORIZADOS\n" +
+  "TRENZAS\n" +
+  "HACKEAR SISTEMAS\n" +
+  "EMOTICONES\n" +
+  "CICATRICES\n" +
+ " ..."
 };
 
 // diapo06
@@ -119,7 +186,7 @@ String[] neuroCiencia = {
   "RELACIÓN INTEGRADA CON LA MUERTE",
   "Modos de lidiar con el duelo y la Memoria de nuestros muertos",
   "¿CÓMO SE PRODUCE LA MEMORIA?",
-  "¿CÓMO NOS RECONOCEMOS EN UAN MEMORIA COMÚN?",
+  "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?",
   "¿CÓMO CONSTRUIMOS UNA MEMORIA COLECTIVA?"
 };
 
@@ -147,14 +214,17 @@ String[] memoriaCorporal = {
 String[] verdadMemoria = {
   "¿CÓMO SE PRODUCE LA MEMORIA?",
   "¿Qué hace la verdad en la Memoria?",
-  "La Memoria es un relato. El negacionismo se funda en un hecho mínimo al que se le confiere la representación del todo",
+  "La Memoria es un relato. El negacionismo se funda en\n" +
+  "un hecho mínimo al que se le confiere la representación\n" +
+  "del todo",
   "HIPER OBJETOS",
-  "sesgos cognitivos y por tanto sesgos respecto a la lectura ideológica de la realidad",
-  "¿CÓMO NOS RE-CONOCEMOS EN UNA MEMORIA COMÚN?",
+  "sesgos cognitivos y por tanto sesgos respecto a la\n" +
+  "lectura ideológica de la realidad",
+  "¿CÓMO NOS RE-CONOCEMOS EN UNA\n" +
+  "MEMORIA COMÚN?",
   "Mirar de manera oblicua trans trans trans",
   "JAQUEAR EL RELATO OFICIAL / JAQUEAR LA MEMORIA",
   "Jaquear un dato: concatenación causal",
-  "Mi Lucha de Hitler es el libro que más se imprime en Chile"
 };
 
 // diapo12
@@ -170,27 +240,42 @@ String[] silencioEnsordecedor = {
 // diapo13
 String[] silencioEco = {
   "SILENCIO",
-  "DESCIFRAR LA MORFOLOGÍA DE LOS MENSAJES EN TRÁNSITO DENTRO/ENTRE LOS CUERPOS",
+  "DESCIFRAR LA MORFOLOGÍA\n" +
+  "DE LOS MENSAJES\n" +
+  "EN TRÁNSITO\n" +
+  "DENTRO/ENTRE LOS CUERPOS",
   "ECO",
   "ESCUCHAR de manera oblicua",
   "MEMORIA DIRECTA E INDIRECTA",
   "HERENCIAS",
-  "¿Cuándo terminar con las cadenas de herencias de lo vivido?",
+  "¿Cuándo terminar con las cadenas de\n" +
+  "herencias de lo vivido?",
   "ÁRBOLES FILOGENÉTICOS DE LOS PLANETAS",
-  "Las emisiones radiales con las noticias del gople el 11 de septiembre de 1973 aún están viajando",
+  "Las emisiones radiales con las noticias del golpe el\n" +
+  "11 de septiembre de 1973 aún están viajando",
   "El sonido es radioactivo",
-  "El sonido que comenzó hace x años-luz trambién opera en la herencia familiar"
+  "El sonido que comenzó hace x años-luz\n" +
+  "también opera en la herencia familiar"
 };
 
 // diapo14
 String[] tiempoUnix = {
-  "TRUENO como otra forma de organizar el conocimiento",
-  "DESCIFRAR LA MORFOLOGÍA DE LOS MENSAJES EN TRÁNSITO DENTRO/ENTRE LOS CUERPOS",
+  "TRUENO como\n" +
+  "otra forma de\n" +
+  "organizar el\n" +
+  "conocimiento",
+  "DESCIFRAR LA MORFOLOGÍA\n" +
+  "DE LOS MENSAJES\n" +
+  "EN TRÁNSITO\n" +
+  "DENTRO/ENTRE LOS CUERPOS",
   "FENOMENOLOGÍA DEL TRUENO",
-  "GENEALOGÍA DEL TRUENO PARA ENTRETEJER RELATOS HACIA RE-CONOCERNOS EN UNA MEMORIA COMÚN",
+  "GENEALOGÍA DEL TRUENO PARA ENTRETEJER RELATOS\n" +
+  "HACIA RE-CONOCERNOS EN UNA MEMORIA COMÚN",
   "TIEMPO UNIX",
   "Escalas Temporales",
-  "ANALOGÍAS ENTRE LA FISIOLOGÍA Y LA COGNICIÓN, EL MITO, LA POESÍA, LA ASTRONOMÍA Y LA COSMOVISIÓN",
+  "ANALOGÍAS ENTRE LA FISIOLOGÍA Y LA\n" +
+  "COGNICIÓN, EL MITO, LA POESÍA, LA ASTRONOMÍA\n" +
+  "Y LA COSMOVISIÓN",
   "Transitar los tiempos de las memorias",
   "Nuestros tiempos",
   "Tiempos ancestrales",
@@ -199,70 +284,145 @@ String[] tiempoUnix = {
 
 // diapo15
 String[] microEvento = {
-  "DEL MICRO EVENTO AL HIPER OBJETO",
-  "-idea y vuelta- entrelazados-",
+  "DEL\n" +
+  "MICRO EVENTO\n" +
+  "AL HIPER OBJETO\n" +
+  "-idea y vuelta - entrelazados-",
   "micropartículas: polvo en suspensión / polvo de estrellas"
 };
 
 // diapo16
 String[] polvoCallado = {
-  "polvo callado"
+  "POLVO CALLADO",
+  "(partículas en suspensión: materia fina)",
+  "Volé en POLVO FINO de la sepultura y fui espesando sobre tu campo, todo para mirarte",
+  "Gabriela Mistral",
+  "finas partículas atraviesan la atmósfera" 
 };
 
 // diapo17
-String[] bla17 = {
-  "bla17"
+String[] objetoCuantico = {
+  "El polvo es un objeto cuántico.\n" +
+  "Un día entra por la rotura de tu ventana,\n" +
+  "por la cerradura de la puerta,\n" +
+  "o por un tragaluz,\n" +
+  "al mismo tiempo que se escurre por una rendija\n" +
+  "o por una chimenea entre los árboles\n" +
+  "o por cualquier otro sitio del universo.\n" +
+  "Como un electrón\n" +
+  "o una pajarilla\n" +
+  "o una mariposa naranja en la catedral de la noche.\n" +
+  "siempre está viva y\n" +
+  "siempre está muerta.",
+  "Juan Pablo Riveros"
+  
 };
 
 // diapo18
-String[] bla18 = {
-  "bla18"
+String[] vientoLevanta = {
+  "el viento levanta la tierra\n" +
+  "que removimos con las uñas\n" +
+  "el polvo difumina todas las caras\n" +
+  "en la pampa cómo reconocerse\n" +
+  "si no hay pluma que aguatne un tirón\n" +
+  "la sangre brota tiñendo las manos",
+  "Mariana Camelio",
+  "¿dolor?",
+  "¿memoria?"
 };
 
 // diapo19
-String[] bla19 = {
-  "bla19"
+String[] elLenguaje = {
+  "El lenguaje hace más de lo que sabe",
+  "Paul de Man"
 };
 
 // diapo20
-String[] bla20 = {
-  "bla20"
+String[] tiempoDolor = {
+  "¿Cuál es el tiempo del dolor?",
+  "El quiebre del lenguaje\n" +
+  "El evento cero",
+  "El tiempo del dolor comienza\n" +
+  "con su propio vocabulario."
 };
 
 // diapo21
-String[] bla21 = {
-  "bla21"
+String[] lenguajeHace = {
+  "El lenguaje hace más de lo que sabe",
+  "Paul de Man"
 };
 
 // diapo22
-String[] bla22 = {
-  "bla22"
+String[] eventoCero = {
+  "EL EVENTO CERO\n" +
+  "ES EL QUIEBRE DEL LENGUAJE",
+  "EL TIEMPO DEL DOLOR COMIENZA\n" +
+  "CON SU PROPIO VOCABULARIO",
+  "Miro el sol ponerse contra este mapa roto,\n" +
+  "mientras abajo se fraguan espalda y lenguaje en los\n" +
+  "podridos escalones de historia. Estoy en marcha, dije,\n" +
+  "y atrás queda el gran espejismo de la Tierra.",
+  "Juan Wenuan Escalona"
 };
 
 // diapo23
-String[] bla23 = {
-  "bla23"
+String[] laAntropologa = {
+  "La antropóloga Mary Douglas\n" +
+  "define al polvo como\n" +
+  "matter our of place",
+  "MATERIA FUERA DE\n" +
+  "LUGAR",
+  "Los calderos a vapor de la pesquera, los que se usan para hacer\n" +
+  "harina de pescado, sirvieron para reducir a polvo a los cuerpos de\n" +
+  "los detenidos y ejecutados en los primeros años de la dictadura.",
+  "Quien fuera inventor de la cámara de gases móvil durante la\n" +
+  "Segunda Guerra Mundial, es designado en 1973 director de la\n" +
+  "Pesquera Arauco en San Antonio.",
+  "Se trata del comandante Walter Rauff"
 };
 
 // diapo24
 String[] materiaFuera = {
-  "Materia fuera de lugar"
+  "Materia fuera de lugar",
+  "Partículas finas",
+  "Tiempo del dolor",
+  "Cenizas al Río Sola",
+  "cenizas al Río Vistula",
+  "Polvo callado"
 };
 
 // diapo25
 String[] depositadoEn = {
-  "depositado en el el Río Sola y desde ahí al Río Vístula  (Polonia 1944/45)",
-  "depositado en el mar frente a San Antonio    (Chile 1973/74) "
+  "depositado en el el Río Sola y desde ahí al Río Vístula (Polonia 1944/45)",
+  "depositado en el mar frente a San Antonio (Chile 1973/74) "
 };
 
 // diapo26
-String[] bla26 = {
-  "bla26"
+String[] vivianaLlora = {
+  "Viviana llora. Viviana oyó torbellines de peces el aire\n" +
+  "disputándose bocados de una despedida trunca, de un rezo no oído,\n" +
+  "de un amor no dicho. Viviana está en la playa. Vivina es Chile",
+  "El mar carnívoro de Chile es el anverso de las\n" +
+  "aguas tranquilas donde llegan las cenizas de los\n" +
+  "cuerpos transformados en harina de pescado",
+  "Raúl Zurita"
 };
 
 // diapo27
-String[] bla27 = {
-  "bla27"
+String[] materiaSolida = {
+  "Materia sólida en partículas",
+  "La harina de pescado puede tener un\n" +
+  "tamaño que varía entre 2,5 y 5 mm.",
+  "Cuando caen micro meteoritos a la\n" +
+  "tierra pueden ser cuerpos con una\n" + 
+  "edad de miles de millones\n" + 
+  "de años y un diámetro de 2 mm.",
+  "POLVO CALLADO\n" +
+  "UN SILENCIO FUERA DE LUGAR",
+  "En la cremación los restos óseos\n" +
+  "se reducen a cenizas, pero en realidad no\n" +
+  "es ceniza, sino una arena gruesa y gris\n" +
+  "pálida."
 };
 
 // diapo28
@@ -315,9 +475,9 @@ String[][] textos = {
   creditos,
   memoria,
   aproximaciones,
-  bla03,
-  bla04,
-  bla05,
+  fisicaAstronomia,
+  cuerpoModifica,
+  transitoComo,
   autoRecordarnos,
   diaJuliano,
   calendarioAndino,
@@ -329,17 +489,17 @@ String[][] textos = {
   tiempoUnix,
   microEvento,
   polvoCallado,
-  bla17,
-  bla18,
-  bla19,
-  bla20,
-  bla21,
-  bla22,
-  bla23,
+  objetoCuantico,
+  vientoLevanta,
+  elLenguaje,
+  tiempoDolor,
+  lenguajeHace,
+  eventoCero,
+  laAntropologa,
   materiaFuera,
   depositadoEn,
-  bla26,
-  bla27,
+  vivianaLlora,
+  materiaSolida,
   observandoOrionis,
   excluirAlgo,
   cenizasArrojadas,
