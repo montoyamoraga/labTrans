@@ -2,6 +2,14 @@ class Diapo {
 
   int numero;
   
+  // hacer que el texto aparezca de a poquito
+  // caracter a caracter
+  // mover una, la mas significativa de la diapo
+  // o mover ninguna
+  // mejor respetar la logica x,y del diagrama
+  // hacer un rectangulo blanco abajo de cada palabra
+  // para esconder donde termina cada linea
+  
   ArrayList<Imagen> imagenes = new ArrayList<Imagen>();
   
   StringList texto = new StringList();
