@@ -13,41 +13,47 @@ class Diapo {
   ArrayList<Imagen> imagenes = new ArrayList<Imagen>();
 
   StringList texto = new StringList();
+  IntList textoCaracterActual = new IntList();
   IntList textoLineas = new IntList();
   FloatList textoX = new FloatList();
   FloatList textoY = new FloatList();
   IntList textoTamano = new IntList();
-  FloatList transparencia = new FloatList();
-  float deltaTransparencia;
+  //FloatList transparencia = new FloatList();
+  //float deltaTransparencia;
 
   int textoActual;
   long tiempoRefresco;
   long tiempoActualizacion;
+  // nuevos
+  long tiempoEntreCaracteres;
+  long tiempoCaracterAnterior;
 
   Diapo(int nuevoNumero) {
     numero = nuevoNumero;
     textoActual = 0;
-    tiempoRefresco = 3000;
+    tiempoRefresco = 1000;
     tiempoActualizacion = millis();
-    deltaTransparencia = 0.5;
+    tiempoEntreCaracteres = 50;
+    tiempoCaracterAnterior = millis();
+    //deltaTransparencia = 0.5;
   }
 
   void inicializar() {
     textoActual = 0;
-    tiempoRefresco = 3000;
     tiempoActualizacion = millis();
-    deltaTransparencia = 0.5;
-    for (int i = 0; i < transparencia.size(); i++) {
-      transparencia.set(i, 0);
-    }
+    //deltaTransparencia = 0.5;
+    //for (int i = 0; i < transparencia.size(); i++) {
+    //  transparencia.set(i, 0);
+    //}
   }
 
   void agregarTexto(String nuevoTexto) {
     texto.append(nuevoTexto);
     int contadorLineas = 1 + nuevoTexto.split("\n").length;
     textoLineas.append(contadorLineas);
-    transparencia.append(0);
+    //transparencia.append(0);
     int nuevoTamano = int(random(16, 32));
+    textoCaracterActual.append(0);
     textoTamano.append(nuevoTamano);
     textSize(nuevoTamano);
     textoX.append(
@@ -59,18 +65,38 @@ class Diapo {
   }
 
   void mostrarTextos() {
-
     for (int i = 0; i <= textoActual; i++) {
-      fill(0, transparencia.get(i));
+      fill(0);
       textSize(textoTamano.get(i));
-      text(texto.get(i),
+      //text(texto.get(i).substring(0, textoCaracterActual.get(i) + 1),
+      //text(texto.get(i),
+      text(texto.get(i).substring(0, textoCaracterActual.get(i)),
         textoX.get(i),
         textoY.get(i));
     }
   }
 
   void actualizar() {
-    if (millis() - tiempoActualizacion > 3000) {
+
+    if (millis() - tiempoCaracterAnterior > tiempoEntreCaracteres) {
+      for (int i = 0; i < texto.size(); i++) {
+        textoCaracterActual.increment(i);
+        textoCaracterActual.set(
+          i,
+          constrain(
+          textoCaracterActual.get(i),
+          0,
+          texto.get(i).length()
+          ));
+      }
+
+      //textoActual = constrain(textoActual, 0, texto.size() - 1);
+      tiempoCaracterAnterior = millis();
+    }
+
+
+
+    if (millis() - tiempoActualizacion > tiempoRefresco) {
       textoActual++;
       textoActual = constrain(textoActual, 0, texto.size() - 1);
       tiempoActualizacion = millis();
@@ -83,11 +109,11 @@ class Diapo {
       textoX.set(i, textoX.get(i));
       textoY.set(i, textoY.get(i));
 
-      transparencia.set(i, transparencia.get(i) + deltaTransparencia);
+      //transparencia.set(i, transparencia.get(i) + deltaTransparencia);
 
-      if (transparencia.get(i) > 255) {
-        transparencia.set(i, 255);
-      }
+      //if (transparencia.get(i) > 255) {
+      //  transparencia.set(i, 255);
+      //}
     }
   }
 
