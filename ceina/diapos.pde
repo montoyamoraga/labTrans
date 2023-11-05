@@ -9,10 +9,7 @@ void inicializarDiapos() {
     }
   }
 
-  // agregar imagenes a mano
-  //diapos.get(24).agregarImagen(dibujo24a);
-  //diapos.get(24).agregarImagen(dibujo24b);
-  //diapos.get(25).agregarImagen(dibujo25);
+  // agregar imagenes a cada diapo
 
   // agregar imagen correspondiente a ese proyector
   diapos.get(32).agregarImagen(estrellas.get(proyector * 2));

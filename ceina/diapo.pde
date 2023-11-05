@@ -14,6 +14,7 @@ class Diapo {
 
   StringList texto = new StringList();
   IntList textoCaracterActual = new IntList();
+  //int[][] textoCaracterActual;
   IntList textoLineas = new IntList();
   FloatList textoX = new FloatList();
   FloatList textoY = new FloatList();
@@ -31,7 +32,7 @@ class Diapo {
   Diapo(int nuevoNumero) {
     numero = nuevoNumero;
     textoActual = 0;
-    tiempoRefresco = 1000;
+    tiempoRefresco = 100;
     tiempoActualizacion = millis();
     tiempoEntreCaracteres = 50;
     tiempoCaracterAnterior = millis();
