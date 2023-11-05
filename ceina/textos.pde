@@ -469,6 +469,10 @@ String[] aguaElemento = {
   "(silencio)"
 };
 
+// diapo32
+String[] ultimaDiapo = {
+};
+
 String[][] textos = {
   creditos,
   memoria,
@@ -501,5 +505,6 @@ String[][] textos = {
   observandoOrionis,
   excluirAlgo,
   cenizasArrojadas,
-  aguaElemento
+  aguaElemento,
+  ultimaDiapo
 };
