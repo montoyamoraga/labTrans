@@ -1,7 +1,7 @@
 class Diapo {
 
   int numero;
-  
+
   // hacer que el texto aparezca de a poquito
   // caracter a caracter
   // mover una, la mas significativa de la diapo
@@ -9,17 +9,13 @@ class Diapo {
   // mejor respetar la logica x,y del diagrama
   // hacer un rectangulo blanco abajo de cada palabra
   // para esconder donde termina cada linea
-  
+
   ArrayList<Imagen> imagenes = new ArrayList<Imagen>();
-  
+
   StringList texto = new StringList();
   IntList textoLineas = new IntList();
   FloatList textoX = new FloatList();
   FloatList textoY = new FloatList();
-  IntList direccionX = new IntList();
-  IntList direccionY = new IntList();
-  float deltaX;
-  float deltaY;
   IntList textoTamano = new IntList();
   FloatList transparencia = new FloatList();
   float deltaTransparencia;
@@ -33,8 +29,6 @@ class Diapo {
     textoActual = 0;
     tiempoRefresco = 3000;
     tiempoActualizacion = millis();
-    deltaX = 0.5;
-    deltaY = 0.5;
     deltaTransparencia = 0.5;
   }
 
@@ -42,8 +36,6 @@ class Diapo {
     textoActual = 0;
     tiempoRefresco = 3000;
     tiempoActualizacion = millis();
-    deltaX = 0.5;
-    deltaY = 0.5;
     deltaTransparencia = 0.5;
     for (int i = 0; i < transparencia.size(); i++) {
       transparencia.set(i, 0);
@@ -64,8 +56,6 @@ class Diapo {
     textoY.append(
       random((textAscent() + textDescent())/2,
       height - (textAscent() + textDescent())/2));
-    direccionX.append(2 * int(random(0, 2)) - 1);
-    direccionY.append(2 * int(random(0, 2)) - 1);
   }
 
   void mostrarTextos() {
@@ -90,17 +80,8 @@ class Diapo {
 
       textSize(textoTamano.get(i));
 
-      if (textoX.get(i) < 0 ||
-        textoX.get(i) > (width - textWidth(texto.get(i)))) {
-        direccionX.set(i, - direccionX.get(i));
-      }
-      if (textoY.get(i) < textoLineas.get(i)*(textAscent() + textDescent())/2 ||
-        textoY.get(i) > (height - textoLineas.get(i)*(textAscent() + textDescent())/2)) {
-        direccionY.set(i, - direccionY.get(i));
-      }
-
-      textoX.set(i, textoX.get(i) + direccionX.get(i) * deltaX);
-      textoY.set(i, textoY.get(i) + direccionY.get(i) * deltaY);
+      textoX.set(i, textoX.get(i));
+      textoY.set(i, textoY.get(i));
 
       transparencia.set(i, transparencia.get(i) + deltaTransparencia);
 
