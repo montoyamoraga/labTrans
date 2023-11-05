@@ -471,6 +471,7 @@ String[] aguaElemento = {
 
 // diapo32
 String[] ultimaDiapo = {
+  ""
 };
 
 String[][] textos = {
