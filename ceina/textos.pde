@@ -26,13 +26,12 @@ String[] aproximaciones = {
   "IMÁGENES",
   "NEUROCIENCIA",
   "EXPERIENCIA SENSIBLE",
-  "ASTRONOMÍA",  
+  "ASTRONOMÍA",
   "APROXIMACIONES TRANSDISCIPLINARES",
   "LITERATURA",
   "DISEÑO",
   "SABERES",
   "ARTE"
-  "arte"
 };
 
 // diapo03
@@ -95,8 +94,7 @@ String[] transitoComo = {
   "EPISTEMOLOGÍAS Sur",
   "SABERES SITUADOS",
   "Imaginación Radical",
-  "GENEALOGÍAS DE FORMAS DE MENSAJES CLANDESTINOS"
-  "TRÁNSITO DE LA LUZ\n" +
+  "GENEALOGÍAS DE FORMAS DE MENSAJES CLANDESTINOS",
   "(TEMPORALIDAD de los\n" +
   "ASTROS) Mensajes\n" +
   "que viajaron hace 50\n" +
@@ -114,7 +112,7 @@ String[] transitoComo = {
   "HACKEAR SISTEMAS\n" +
   "EMOTICONES\n" +
   "CICATRICES\n" +
- " ..."
+  " ..."
 };
 
 // diapo06
@@ -297,7 +295,7 @@ String[] polvoCallado = {
   "(partículas en suspensión: materia fina)",
   "Volé en POLVO FINO de la sepultura y fui espesando sobre tu campo, todo para mirarte",
   "Gabriela Mistral",
-  "finas partículas atraviesan la atmósfera" 
+  "finas partículas atraviesan la atmósfera"
 };
 
 // diapo17
@@ -315,7 +313,7 @@ String[] objetoCuantico = {
   "siempre está viva y\n" +
   "siempre está muerta.",
   "Juan Pablo Riveros"
-  
+
 };
 
 // diapo18
@@ -414,8 +412,8 @@ String[] materiaSolida = {
   "La harina de pescado puede tener un\n" +
   "tamaño que varía entre 2,5 y 5 mm.",
   "Cuando caen micro meteoritos a la\n" +
-  "tierra pueden ser cuerpos con una\n" + 
-  "edad de miles de millones\n" + 
+  "tierra pueden ser cuerpos con una\n" +
+  "edad de miles de millones\n" +
   "de años y un diámetro de 2 mm.",
   "POLVO CALLADO\n" +
   "UN SILENCIO FUERA DE LUGAR",
