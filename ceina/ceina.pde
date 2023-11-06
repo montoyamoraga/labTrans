@@ -1,3 +1,5 @@
+boolean probando = true;
+
 // proyector puede ser 0, 1, 2
 int proyector = 2;
 
@@ -40,7 +42,8 @@ void setup() {
   size(1200, 600);
   //fullScreen();
   
-  imageMode(CORNER);
+  inicializarTiempos();
+
   inicializarImagenes();
 
   inicializarDiapos();
@@ -54,14 +57,17 @@ void draw() {
 
   background(255);
 
-  textSize(64);
-  fill(negro);
-  text(escenaActual, 90*width/100, 10*height/100);
+  if (probando) {
+    textSize(64);
+    fill(negro);
+    text(escenaActual, 90*width/100, 10*height/100);
+  }
+
+  actualizarEscenaActual();
 
   Diapo diapoActual = diapos.get(escenaActual);
 
   diapoActual.mostrarImagenes();
   diapoActual.actualizar();
   diapoActual.mostrarTextos();
-  
 }

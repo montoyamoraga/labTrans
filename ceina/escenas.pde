@@ -1,5 +1,21 @@
 int escenaActual = 0;
+long tiempoEntreDiapos;
+long tiempoAnterior;
 String escenaSiguiente = "";
+
+void inicializarTiempos() {
+  tiempoEntreDiapos =  1000 * 60 / 10;
+  tiempoAnterior = millis();
+}
+
+void actualizarEscenaActual() {
+
+  if (millis() - tiempoAnterior > tiempoEntreDiapos) {
+    escenaActual++;
+    escenaActual = escenaActual % textos.length;
+    tiempoAnterior = millis();
+  }
+}
 
 void keyPressed() {
   if (key == ' ') {
