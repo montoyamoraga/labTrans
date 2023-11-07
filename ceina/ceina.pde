@@ -39,7 +39,8 @@ void setup() {
   smooth();
 
   // 400px cada una
-  size(1200, 600);
+  //size(1920, 1080);
+  size(960, 540);
   //fullScreen();
 
   inicializarTiempos();

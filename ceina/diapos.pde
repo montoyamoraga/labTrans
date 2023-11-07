@@ -28,7 +28,7 @@ class Diapo {
     textoActual = 0;
     tiempoRefresco = 100;
     tiempoActualizacion = millis();
-    tiempoEntreCaracteres = 300;
+    tiempoEntreCaracteres = 100;
     tiempoCaracterAnterior = millis();
   }
 
@@ -77,22 +77,32 @@ class Diapo {
       // cajita blanca abajo del texto
       pushStyle();
       fill(255);
+      //stroke(0);
       noStroke();
       rectMode(CENTER);
       rect(
         temp.posX * width/100,
         temp.posY * height/100,
         textWidth(temp.texto),
-        textoNumeroLineas.get(i) * (textAscent() + textDescent())
+        0.7 * textoNumeroLineas.get(i) * (textAscent() + textDescent())
         );
       popStyle();
 
+      pushStyle();
+      pushMatrix();
       textSize(temp.tamano);
       fill(0);
-      text(temp.texto.substring(0, temp.caracterActual),
+      stroke(0);
+      translate(
         temp.posX * width/100,
-        temp.posY * height/100
+        temp.posY * height/100);
+      rotate(radians(temp.angulo));
+      text(temp.texto.substring(0, temp.caracterActual),
+        0,
+        0
         );
+      popMatrix();
+      popStyle();
     }
   }
 

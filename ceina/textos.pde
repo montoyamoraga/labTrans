@@ -813,14 +813,20 @@ String[] materiaSolida = {
 };
 
 float[][] materiaSolidaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 50, 30, 14},
+  {0, 15, 50, 14},
+  {0, 50, 50, 14},
+  {0, 50, 70, 14},
+  {0, 80, 50, 14}
 };
 
 int[][] materiaSolidaLineas = {
+  {0, 1},
+  {0, 2},
+  {0, 4},
+  {1, 3},
+  {2, 3},
+  {3, 4}
 };
 
 // diapo28
@@ -838,9 +844,9 @@ String[] observandoOrionis = {
 };
 
 float[][] observandoOrionisParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 15, 40, 14},
+  {0, 50, 50, 14},
+  {0, 85, 60, 14}
 };
 
 int[][] observandoOrionisLineas = {
@@ -859,9 +865,9 @@ String[] excluirAlgo = {
 };
 
 float[][] excluirAlgoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 15, 60, 14},
+  {0, 50, 60, 14},
+  {0, 80, 60, 14}
 };
 
 int[][] excluirAlgoLineas = {
@@ -878,8 +884,8 @@ String[] cenizasArrojadas = {
 };
 
 float[][] cenizasArrojadasParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 20, 35, 14},
+  {0, 80, 35, 14}
 };
 
 int[][] cenizasArrojadasLineas = {
@@ -890,21 +896,23 @@ String[] aguaElemento = {
   "EL AGUA ES UN ELEMENTO MÁS ANTIGUO QUE EL SOL",
   "¿CUÁL ES EL TIEMPO DEL DOLOR?",
   "¿CUÁL ES EL TIEMPO DE LA MEMORIA?",
-  "(materia fuera de lugar)",
-  "(polvo callado)",
+  "(materia fuera\nde lugar)",
+  "(polvo\ncallado)",
   "(silencio)"
 };
 
 float[][] aguaElementoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 50, 50, 16},
+  {0, 70, 25, 12},
+  {0, 80, 75, 12},
+  {60, 5, 15, 12},
+  {60, 15, 50, 12},
+  {60, 25, 85, 12}
 };
 
 int[][] aguaElementoLineas = {
+  {1, 2},
+  {3, 5}
 };
 
 // diapo32

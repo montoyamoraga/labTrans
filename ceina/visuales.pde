@@ -27,7 +27,7 @@ class Linea {
     largo = PVector.dist(posFinal, posFinal);
 
     porcentaje = 0.0;
-    paso = random(0.0001, 0.01);
+    paso = random(0.001, 0.005);
   }
 
   void actualizar() {

@@ -7,7 +7,7 @@
 // en el contexto de la bienal de artes mediales chile
 
 String[] creditos = {
-  "aarón montoya-moraga",
+  "aarón montoya",
   "andrea jösch",
   "bernardita croxatto",
   "erika labbé",
