@@ -12,13 +12,9 @@ class Diapo {
 
   ArrayList<Imagen> imagenes = new ArrayList<Imagen>();
   ArrayList<Texto> textos = new ArrayList<Texto>();
+  ArrayList<Linea> lineas = new ArrayList<Linea>();
 
-  //StringList texto = new StringList();
-  //int[][] textoCaracterActual;
   IntList textoLineas = new IntList();
-  //FloatList textoX = new FloatList();
-  //FloatList textoY = new FloatList();
-  //IntList textoTamano = new IntList();
 
   int textoActual;
   long tiempoRefresco;
@@ -32,7 +28,7 @@ class Diapo {
     textoActual = 0;
     tiempoRefresco = 100;
     tiempoActualizacion = millis();
-    tiempoEntreCaracteres = 50;
+    tiempoEntreCaracteres = 200;
     tiempoCaracterAnterior = millis();
   }
 
@@ -43,32 +39,14 @@ class Diapo {
 
   void agregarTexto(String nuevoTexto, float[] params) {
 
-    //texto.append(nuevoTexto);
     Texto temp = new Texto(nuevoTexto, params);
 
-    print(temp.texto);
+    //print(temp.texto);
     textos.add(temp);
 
     int contadorLineas = 1 + nuevoTexto.split("\n").length;
 
     textoLineas.append(contadorLineas);
-    //int nuevoTamano = int(random(16, 32));
-
-    //textoCaracterActual.append(0);
-
-
-    //textoTamano.append(nuevoTamano);
-
-
-    //textSize(nuevoTamano);
-
-
-    //textoX.append(
-    //  random(0,
-    //  width - textWidth(nuevoTexto)));
-    //textoY.append(
-    //  random((textAscent() + textDescent())/2,
-    //  height - (textAscent() + textDescent())/2));
   }
 
   void mostrarTextos() {

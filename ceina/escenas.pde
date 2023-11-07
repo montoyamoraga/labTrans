@@ -4,7 +4,7 @@ long tiempoAnterior;
 String escenaSiguiente = "";
 
 void inicializarTiempos() {
-  tiempoEntreDiapos =  1000 * 60 / 10;
+  tiempoEntreDiapos =  1* 1000 * 60;
   tiempoAnterior = millis();
 }
 

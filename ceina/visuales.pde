@@ -12,23 +12,17 @@ class Linea {
   float paso;
 
   // constructor
-  Linea() {
-    lineaStroke = color(0);
+  Linea(color nuevoColor, PVector comienzo, PVector fin) {
+    lineaStroke = nuevoColor;
 
-    posInicial = new PVector(
-      int(random(width)),
-      int(random(height))
-      );
+    posInicial = comienzo;
 
     posActual = new PVector(
       posInicial.x,
       posInicial.y
       );
 
-    posFinal = new PVector(
-      int(random(width)),
-      int(random(height))
-      );
+    posFinal = fin;
 
     largo = PVector.dist(posFinal, posFinal);
 
