@@ -768,8 +768,8 @@ String[] depositadoEn = {
 
 // diapo25
 float[][] depositadoEnParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {270, 30, 50, 16},
+  {0, 30, 80, 16}
 };
 
 int[][] depositadoEnLineas = {
