@@ -12,7 +12,7 @@ void actualizarEscenaActual() {
 
   if (millis() - tiempoAnterior > tiempoEntreDiapos) {
     escenaActual++;
-    escenaActual = escenaActual % textos.length;
+    escenaActual = escenaActual % textosTodos.length;
     tiempoAnterior = millis();
   }
 }
@@ -20,7 +20,7 @@ void actualizarEscenaActual() {
 void keyPressed() {
   if (key == ' ') {
     escenaActual++;
-    escenaActual = escenaActual % textos.length;
+    escenaActual = escenaActual % textosTodos.length;
     background(255);
   } else if (
     key == '0' ||
@@ -35,7 +35,7 @@ void keyPressed() {
     key == '9') {
     escenaSiguiente = escenaSiguiente + key;
   } else if (key == RETURN || key == ENTER) {
-    if (int(escenaSiguiente) < textos.length) {
+    if (int(escenaSiguiente) < textosTodos.length) {
       escenaActual = int(escenaSiguiente);
       diapos.get(escenaActual).inicializar();
     }

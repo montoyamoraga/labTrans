@@ -1,4 +1,38 @@
+class Texto {
 
+  String texto;
+  float posX;
+  float posY;
+  float tamano;
+  int caracterActual;
+
+  Texto(String nuevoTexto, float[] params) {
+    texto = nuevoTexto;
+    posX = params[0];
+    posY = params[1];
+    tamano = params[2];
+    caracterActual = 0;
+  }
+  
+  void aumentarCaracter() {
+    caracterActual++;
+    caracterActual = constrain(caracterActual, 0, texto.length());
+  }
+}
+
+// font inika de constanza artigas
+PFont fuente;
+
+void cargarFuente() {
+  fuente = loadFont("Inika-64.vlw");
+}
+
+void definirFuente() {
+  textFont(fuente);
+  textAlign(LEFT, CENTER);
+  textSize(64);
+  stroke(0);
+}
 
 String fecha = "jueves 09 noviembre 2023";
 
@@ -11,6 +45,15 @@ String[] creditos = {
   "rodrigo rojas"
 };
 
+float[][] creditosParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 
 //diapo01
 String[] memoria = {
@@ -20,6 +63,12 @@ String[] memoria = {
   "50 años-luz - Imaginación radical"
 };
 
+float[][] memoriaParams = {
+  {20, 30, 42},
+  {20, 50, 20},
+  {20, 80, 20},
+  {10, 90, 20}
+};
 
 // diapo02
 String[] aproximaciones = {
@@ -32,6 +81,19 @@ String[] aproximaciones = {
   "DISEÑO",
   "SABERES",
   "ARTE"
+};
+
+float[][] aproximacionesParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo03
@@ -55,6 +117,18 @@ String[] fisicaAstronomia = {
   "SINFONÍA FISIOLÓGICA\n" +
   "Estimulación física",
   "cerebro sometido a aislamiento"
+};
+
+float[][] fisicaAstronomiaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo04
@@ -82,6 +156,20 @@ String[] cuerpoModifica = {
   "CONOCIMIENTO\n" +
   "seres vivos son cyborgs naturales",
   "tecnologái y memoria - nuevas perspectivas con las AI"
+};
+
+float[][] cuerpoModificaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo05
@@ -115,6 +203,18 @@ String[] transitoComo = {
   " ..."
 };
 
+float[][] transitoComoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo06
 String[] autoRecordarnos = {
   "AUTO RECORDARNOS",
@@ -140,6 +240,30 @@ String[] autoRecordarnos = {
   "Tiempos astronómicos"
 };
 
+float[][] autoRecordarnosParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo07
 String[] diaJuliano = {
   "CHAKANA",
@@ -152,6 +276,19 @@ String[] diaJuliano = {
   "TRUENO",
   "MAPA DE ESTRELLAS 50 AÑOS-LUZ ALREDEDOR DE LA TIERRA",
   "y de los bordes confines de la luz"
+};
+
+float[][] diaJulianoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 
@@ -168,6 +305,17 @@ String[] calendarioAndino = {
   "TIEMPO COMPUTACIONAL"
 };
 
+float[][] calendarioAndinoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
 
 // diapo09
 String[] neuroCiencia = {
@@ -188,6 +336,23 @@ String[] neuroCiencia = {
   "¿CÓMO CONSTRUIMOS UNA MEMORIA COLECTIVA?"
 };
 
+float[][] neuroCienciaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
 
 // diapo10
 String[] memoriaCorporal = {
@@ -202,10 +367,28 @@ String[] memoriaCorporal = {
   "RECONSTRUIR RECUERDOS",
   "Memoria que se revisita",
   "Cicatriz personal que revive una y otra vez en el acontecimiento",
-  "GRAFÍA - TRAUMA - HEERIDA",
+  "GRAFÍA - TRAUMA - HERIDA",
   "Lectura compleja del post Golpe",
   "(privatización de la Memoria Política)",
   "TRAUMA, MEMORIA Y OLVIDO"
+};
+
+float[][] memoriaCorporalParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo11
@@ -225,6 +408,18 @@ String[] verdadMemoria = {
   "Jaquear un dato: concatenación causal",
 };
 
+float[][] verdadMemoriaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo12
 String[] silencioEnsordecedor = {
   "El silencio no eixste - el sonido queda en estado perpetuo y se va amortiguando",
@@ -233,6 +428,15 @@ String[] silencioEnsordecedor = {
   "SILENCIO ENSORDECEDOR",
   "PACTOS DE SILENCIO",
   "Ruido blanco: es muy difícil hablar de algo que está en todas partes"
+};
+
+float[][] silencioEnsordecedorParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo13
@@ -254,6 +458,21 @@ String[] silencioEco = {
   "El sonido es radioactivo",
   "El sonido que comenzó hace x años-luz\n" +
   "también opera en la herencia familiar"
+};
+
+// diapo13
+float[][] silencioEcoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo14
@@ -280,6 +499,20 @@ String[] tiempoUnix = {
   "Tiempos astronómicos"
 };
 
+float[][] tiempoUnixParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo15
 String[] microEvento = {
   "DEL\n" +
@@ -289,6 +522,11 @@ String[] microEvento = {
   "micropartículas: polvo en suspensión / polvo de estrellas"
 };
 
+float[][] microEventoParams = {
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo16
 String[] polvoCallado = {
   "POLVO CALLADO",
@@ -296,6 +534,14 @@ String[] polvoCallado = {
   "Volé en POLVO FINO de la sepultura y fui espesando sobre tu campo, todo para mirarte",
   "Gabriela Mistral",
   "finas partículas atraviesan la atmósfera"
+};
+
+float[][] polvoCalladoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo17
@@ -313,7 +559,11 @@ String[] objetoCuantico = {
   "siempre está viva y\n" +
   "siempre está muerta.",
   "Juan Pablo Riveros"
+};
 
+float[][] objetoCuanticoParams = {
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo18
@@ -329,10 +579,22 @@ String[] vientoLevanta = {
   "¿memoria?"
 };
 
+float[][] vientoLevantaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo19
 String[] elLenguaje = {
   "El lenguaje hace más de lo que sabe",
   "Paul de Man"
+};
+
+float[][] elLenguajeParams = {
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo20
@@ -344,10 +606,22 @@ String[] tiempoDolor = {
   "con su propio vocabulario."
 };
 
+float[][] tiempoDolorParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+};
+
 // diapo21
 String[] lenguajeHace = {
   "El lenguaje hace más de lo que sabe",
   "Paul de Man"
+};
+
+// diapo21
+float[][] lenguajeHaceParams = {
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo22
@@ -361,6 +635,13 @@ String[] eventoCero = {
   "podridos escalones de historia. Estoy en marcha, dije,\n" +
   "y atrás queda el gran espejismo de la Tierra.",
   "Juan Wenuan Escalona"
+};
+
+float[][] eventoCeroParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo23
@@ -379,6 +660,14 @@ String[] laAntropologa = {
   "Se trata del comandante Walter Rauff"
 };
 
+float[][] laAntropologaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo24
 String[] materiaFuera = {
   "Materia fuera de lugar",
@@ -389,10 +678,25 @@ String[] materiaFuera = {
   "Polvo callado"
 };
 
+float[][] materiaFueraParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo25
 String[] depositadoEn = {
   "depositado en el el Río Sola y desde ahí al Río Vístula (Polonia 1944/45)",
-  "depositado en el mar frente a San Antonio (Chile 1973/74) "
+  "depositado en el mar frente a San Antonio (Chile 1973/74)"
+};
+
+// diapo25
+float[][] depositadoEnParams = {
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo26
@@ -404,6 +708,12 @@ String[] vivianaLlora = {
   "aguas tranquilas donde llegan las cenizas de los\n" +
   "cuerpos transformados en harina de pescado",
   "Raúl Zurita"
+};
+
+float[][] vivianaLloraParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo27
@@ -423,6 +733,14 @@ String[] materiaSolida = {
   "pálida."
 };
 
+float[][] materiaSolidaParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo28
 String[] observandoOrionis = {
   "Observando a ORIONIS\n" +
@@ -437,6 +755,12 @@ String[] observandoOrionis = {
   "nuestro planeta juntos.",
 };
 
+float[][] observandoOrionisParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo29
 String[] excluirAlgo = {
   "Excluir algo de la\n" +
@@ -449,14 +773,25 @@ String[] excluirAlgo = {
   "¿CUÁL ES EL TIEMPO DEL DOLOR?"
 };
 
+float[][] excluirAlgoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
+};
+
 // diapo30
-String[] cenizasArrojadas= {
+String[] cenizasArrojadas = {
   "Las cenizas fueron arrojadas al agua que fluye por\n" +
   "el río Sola, que a su vez desemboca al río Vístula y\n" +
   "luego desemboca en el Golfo de Gdansk.\n1944 - 45",
   "Las cenizas fueron arrojadas al Océano\n" +
   "Pacífico, a las olas que golpean la costa de\n" +
   "San Antonio y a la Pesquera Arauco.\n1973 - 74"
+};
+
+float[][] cenizasArrojadasParams = {
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
 // diapo31
@@ -469,12 +804,25 @@ String[] aguaElemento = {
   "(silencio)"
 };
 
-// diapo32
-String[] ultimaDiapo = {
-  ""
+float[][] aguaElementoParams = {
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32},
+  {100, 20, 32}
 };
 
-String[][] textos = {
+// diapo32
+String[] ultimaDiapo = {
+  "x"
+};
+
+float[][] ultimaDiapoParams = {
+  {100, 20, 32}
+};
+
+String[][] textosTodos = {
   creditos,
   memoria,
   aproximaciones,
@@ -508,4 +856,54 @@ String[][] textos = {
   cenizasArrojadas,
   aguaElemento,
   ultimaDiapo
+};
+
+float[][][] textosParams = {
+  creditosParams,
+  memoriaParams,
+  aproximacionesParams,
+  fisicaAstronomiaParams,
+  cuerpoModificaParams,
+  transitoComoParams,
+  autoRecordarnosParams,
+  diaJulianoParams,
+  calendarioAndinoParams,
+  neuroCienciaParams,
+  memoriaCorporalParams,
+  verdadMemoriaParams,
+  silencioEnsordecedorParams,
+  silencioEcoParams,
+  tiempoUnixParams,
+  microEventoParams,
+  polvoCalladoParams,
+  objetoCuanticoParams,
+  vientoLevantaParams,
+  elLenguajeParams,
+  tiempoDolorParams,
+  lenguajeHaceParams,
+  eventoCeroParams,
+  laAntropologaParams,
+  materiaFueraParams,
+  depositadoEnParams,
+  vivianaLloraParams,
+  materiaSolidaParams,
+  observandoOrionisParams,
+  excluirAlgoParams,
+  cenizasArrojadasParams,
+  aguaElementoParams,
+  ultimaDiapoParams
+};
+
+String[] textosSplash = {
+  "SOLO LOS ORGANISMOS VIVOS RECUERDAN. SOLO LOS ORGANISMOS PUEDEN HACER SENTIDO",
+  "TEMPORALIDAD de los ASTROS Mensajes que viajan hace cincuenta años y se volvieron cien mil",
+  "Transitar los tiempos de las memorias",
+  "Recordar emerge en el silencio que queda tras el trueno",
+  "MEMORIA CORPORAL = La Piel como archivo",
+  "¿CÓMO SE PRODUCE LA MEMORIA ?",
+  "El silencio no existe - el sonido queda en estado perpetuo y se va amortiguando",
+  "Las emisiones radiales con las noticias del golpe del 11 de septiembre de 1973 aún están viajando",
+  "¿CUÁL ES EL TIEMPO DEL DOLOR?",
+  "EL EVENTO CERO ES EL QUIEBRE DEL LENGUAJE",
+  "Excluir algo de la memoria es erradicarlo del tiempo"
 };
