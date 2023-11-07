@@ -41,7 +41,7 @@ void setup() {
   // 400px cada una
   size(1200, 600);
   //fullScreen();
-  
+
   inicializarTiempos();
 
   inicializarImagenes();
@@ -69,5 +69,6 @@ void draw() {
 
   diapoActual.mostrarImagenes();
   diapoActual.actualizar();
+  diapoActual.mostrarLineas();
   diapoActual.mostrarTextos();
 }

@@ -55,10 +55,10 @@ class Diapo {
     for (int i = 0; i < nuevosTextosLineas.length; i++) {
 
       // nuevosTextosParams[texto][posX posY tamano]
-      float inicioX = nuevosTextosParams[0][0];
-      float inicioY = nuevosTextosParams[0][1];
-      float finX = nuevosTextosParams[1][0];
-      float finY = nuevosTextosParams[1][1];
+      float inicioX = nuevosTextosParams[0][0] * width/100;
+      float inicioY = nuevosTextosParams[0][1] * height/100;
+      float finX = nuevosTextosParams[1][0] * width/100;
+      float finY = nuevosTextosParams[1][1] * height/100;
 
       PVector inicio = new PVector(inicioX, inicioY);
       PVector fin = new PVector(finX, finY);
@@ -72,8 +72,23 @@ class Diapo {
   void mostrarTextos() {
     for (int i = 0; i < textos.size(); i++) {
       Texto temp = textos.get(i);
-      fill(0);
       textSize(temp.tamano);
+
+      // cajita blanca abajo del texto
+      pushStyle();
+      fill(255);
+      stroke(0);
+      rectMode(CENTER);
+      rect(
+        temp.posX * width/100,
+        temp.posY * height/100,
+        textWidth(temp.texto),
+        textoNumeroLineas.get(i) * (textAscent() + textDescent())
+        );
+      popStyle();
+
+      textSize(temp.tamano);
+      fill(0);
       text(temp.texto.substring(0, temp.caracterActual),
         temp.posX * width/100,
         temp.posY * height/100
