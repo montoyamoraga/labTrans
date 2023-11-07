@@ -28,7 +28,7 @@ class Diapo {
     textoActual = 0;
     tiempoRefresco = 100;
     tiempoActualizacion = millis();
-    tiempoEntreCaracteres = 200;
+    tiempoEntreCaracteres = 300;
     tiempoCaracterAnterior = millis();
   }
 
@@ -55,10 +55,10 @@ class Diapo {
     for (int i = 0; i < nuevosTextosLineas.length; i++) {
 
       // nuevosTextosParams[texto][posX posY tamano]
-      float inicioX = nuevosTextosParams[0][0] * width/100;
-      float inicioY = nuevosTextosParams[0][1] * height/100;
-      float finX = nuevosTextosParams[1][0] * width/100;
-      float finY = nuevosTextosParams[1][1] * height/100;
+      float inicioX = nuevosTextosParams[nuevosTextosLineas[i][0]][0] * width/100;
+      float inicioY = nuevosTextosParams[nuevosTextosLineas[i][0]][1] * height/100;
+      float finX = nuevosTextosParams[nuevosTextosLineas[i][1]][0] * width/100;
+      float finY = nuevosTextosParams[nuevosTextosLineas[i][1]][1] * height/100;
 
       PVector inicio = new PVector(inicioX, inicioY);
       PVector fin = new PVector(finX, finY);
@@ -77,7 +77,7 @@ class Diapo {
       // cajita blanca abajo del texto
       pushStyle();
       fill(255);
-      stroke(0);
+      //stroke(0);
       rectMode(CENTER);
       rect(
         temp.posX * width/100,
