@@ -13,7 +13,7 @@ class Texto {
     tamano = params[2];
     caracterActual = 0;
   }
-  
+
   void aumentarCaracter() {
     caracterActual++;
     caracterActual = constrain(caracterActual, 0, texto.length());
@@ -44,13 +44,7 @@ float[][] primeraDiapoParams = {
   {-10, -10, 32}
 };
 
-int[][] creditosLineas = {
-  {0, 0},
-  {0, 0},
-  {0, 0},
-  {0, 0},
-  {0, 0},
-  {0, 0}
+int[][] primeraDiapoLineas = {
 };
 
 //diapo01
@@ -66,6 +60,11 @@ float[][] memoriaParams = {
   {20, 50, 20},
   {20, 80, 20},
   {10, 90, 20}
+};
+
+int[][] memoriaLineas = {
+  {0, 1},
+  {1, 2}
 };
 
 // diapo02
@@ -91,6 +90,14 @@ float[][] aproximacionesParams = {
   {30, 50, 20},
   {20, 30, 40},
   {20, 15, 20},
+};
+
+int[][] aproximacionesLineas = {
+  {0, 4},
+  {1, 5},
+  {2, 6},
+  {3, 7},
+  {4, 8},
 };
 
 // diapo03
@@ -126,6 +133,9 @@ float[][] fisicaAstronomiaParams = {
   {80, 60, 32},
   {80, 80, 32},
   {80, 90, 12}
+};
+
+int[][] fisicaAstronomiaLineas = {
 };
 
 // diapo04
@@ -169,6 +179,9 @@ float[][] cuerpoModificaParams = {
   {0, 0, 32}
 };
 
+int[][] cuerpoModificaLineas = {
+};
+
 // diapo05
 String[] transitoComo = {
   "TRÁNSITO como\n" +
@@ -210,6 +223,9 @@ float[][] transitoComoParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] transitoComoLineas = {
 };
 
 // diapo06
@@ -261,6 +277,9 @@ float[][] autoRecordarnosParams = {
   {0, 0, 32}
 };
 
+int[][] autoRecordarnosLineas = {
+};
+
 // diapo07
 String[] diaJuliano = {
   "CHAKANA",
@@ -288,6 +307,8 @@ float[][] diaJulianoParams = {
   {0, 0, 32}
 };
 
+int[][] diaJulianoLineas = {
+};
 
 // diapo08
 String[] calendarioAndino = {
@@ -312,6 +333,9 @@ float[][] calendarioAndinoParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] calendarioAndinoLineas = {
 };
 
 // diapo09
@@ -351,6 +375,9 @@ float[][] neuroCienciaParams = {
   {0, 0, 32}
 };
 
+int[][] neuroCienciaLineas = {
+};
+
 // diapo10
 String[] memoriaCorporal = {
   "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?",
@@ -388,6 +415,9 @@ float[][] memoriaCorporalParams = {
   {0, 0, 32}
 };
 
+int[][] memoriaCorporalLineas = {
+};
+
 // diapo11
 String[] verdadMemoria = {
   "¿CÓMO SE PRODUCE LA MEMORIA?",
@@ -417,6 +447,9 @@ float[][] verdadMemoriaParams = {
   {0, 0, 32}
 };
 
+int[][] verdadMemoriaLineas = {
+};
+
 // diapo12
 String[] silencioEnsordecedor = {
   "El silencio no eixste - el sonido queda en estado perpetuo y se va amortiguando",
@@ -434,6 +467,9 @@ float[][] silencioEnsordecedorParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] silencioEnsordecedorLineas = {
 };
 
 // diapo13
@@ -470,6 +506,9 @@ float[][] silencioEcoParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] silencioEcoLineas = {
 };
 
 // diapo14
@@ -510,6 +549,9 @@ float[][] tiempoUnixParams = {
   {0, 0, 32}
 };
 
+int[][] tiempoUnixLineas = {
+};
+
 // diapo15
 String[] microEvento = {
   "DEL\n" +
@@ -522,6 +564,9 @@ String[] microEvento = {
 float[][] microEventoParams = {
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] microEventoLineas = {
 };
 
 // diapo16
@@ -539,6 +584,9 @@ float[][] polvoCalladoParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] polvoCalladoLineas = {
 };
 
 // diapo17
@@ -563,6 +611,9 @@ float[][] objetoCuanticoParams = {
   {0, 0, 32}
 };
 
+int[][] objetoCuanticoLineas = {
+};
+
 // diapo18
 String[] vientoLevanta = {
   "el viento levanta la tierra\n" +
@@ -583,6 +634,9 @@ float[][] vientoLevantaParams = {
   {0, 0, 32}
 };
 
+int[][] vientoLevantaLineas = {
+};
+
 // diapo19
 String[] elLenguaje = {
   "El lenguaje hace más de lo que sabe",
@@ -592,6 +646,9 @@ String[] elLenguaje = {
 float[][] elLenguajeParams = {
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] elLenguajeLineas = {
 };
 
 // diapo20
@@ -609,16 +666,22 @@ float[][] tiempoDolorParams = {
   {0, 0, 32},
 };
 
+
+int[][] tiempoDolorLineas = {
+};
+
 // diapo21
 String[] lenguajeHace = {
   "El lenguaje hace más de lo que sabe",
   "Paul de Man"
 };
 
-// diapo21
 float[][] lenguajeHaceParams = {
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] lenguajeHaceLineas = {
 };
 
 // diapo22
@@ -639,6 +702,9 @@ float[][] eventoCeroParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] eventoCeroLineas = {
 };
 
 // diapo23
@@ -665,6 +731,9 @@ float[][] laAntropologaParams = {
   {0, 0, 32}
 };
 
+int[][] laAntropologaLineas = {
+};
+
 // diapo24
 String[] materiaFuera = {
   "Materia fuera de lugar",
@@ -684,6 +753,9 @@ float[][] materiaFueraParams = {
   {0, 0, 32}
 };
 
+int[][] materiaFueraLineas = {
+};
+
 // diapo25
 String[] depositadoEn = {
   "depositado en el el Río Sola y desde ahí al Río Vístula (Polonia 1944/45)",
@@ -694,6 +766,9 @@ String[] depositadoEn = {
 float[][] depositadoEnParams = {
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] depositadoEnLineas = {
 };
 
 // diapo26
@@ -711,6 +786,9 @@ float[][] vivianaLloraParams = {
   {0, 0, 32},
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] vivianaLloraLineas = {
 };
 
 // diapo27
@@ -738,6 +816,9 @@ float[][] materiaSolidaParams = {
   {0, 0, 32}
 };
 
+int[][] materiaSolidaLineas = {
+};
+
 // diapo28
 String[] observandoOrionis = {
   "Observando a ORIONIS\n" +
@@ -758,6 +839,9 @@ float[][] observandoOrionisParams = {
   {0, 0, 32}
 };
 
+int[][] observandoOrionisLineas = {
+};
+
 // diapo29
 String[] excluirAlgo = {
   "Excluir algo de la\n" +
@@ -776,6 +860,9 @@ float[][] excluirAlgoParams = {
   {0, 0, 32}
 };
 
+int[][] excluirAlgoLineas = {
+};
+
 // diapo30
 String[] cenizasArrojadas = {
   "Las cenizas fueron arrojadas al agua que fluye por\n" +
@@ -789,6 +876,9 @@ String[] cenizasArrojadas = {
 float[][] cenizasArrojadasParams = {
   {0, 0, 32},
   {0, 0, 32}
+};
+
+int[][] cenizasArrojadasLineas = {
 };
 
 // diapo31
@@ -810,6 +900,9 @@ float[][] aguaElementoParams = {
   {0, 0, 32}
 };
 
+int[][] aguaElementoLineas = {
+};
+
 // diapo32
 String[] ultimaDiapo = {
   "x"
@@ -817,6 +910,9 @@ String[] ultimaDiapo = {
 
 float[][] ultimaDiapoParams = {
   {0, 0, 32}
+};
+
+int[][] ultimaDiapoLineas = {
 };
 
 String[][] textosTodos = {
@@ -889,6 +985,42 @@ float[][][] textosParams = {
   cenizasArrojadasParams,
   aguaElementoParams,
   ultimaDiapoParams
+};
+
+int[][][] textosLineas = {
+  primeraDiapoLineas,
+  memoriaLineas,
+  aproximacionesLineas,
+  fisicaAstronomiaLineas,
+  cuerpoModificaLineas,
+  transitoComoLineas,
+  autoRecordarnosLineas,
+  diaJulianoLineas,
+  calendarioAndinoLineas,
+  neuroCienciaLineas,
+  memoriaCorporalLineas,
+  verdadMemoriaLineas,
+  silencioEnsordecedorLineas,
+  silencioEcoLineas,
+  tiempoUnixLineas,
+  microEventoLineas,
+  polvoCalladoLineas,
+  objetoCuanticoLineas,
+  vientoLevantaLineas,
+  elLenguajeLineas,
+  tiempoDolorLineas,
+  lenguajeHaceLineas,
+  eventoCeroLineas,
+  laAntropologaLineas,
+  materiaFueraLineas,
+  depositadoEnLineas,
+  vivianaLloraLineas,
+  materiaSolidaLineas,
+  observandoOrionisLineas,
+  excluirAlgoLineas,
+  cenizasArrojadasLineas,
+  aguaElementoLineas,
+  ultimaDiapoLineas
 };
 
 String[] textosSplash = {

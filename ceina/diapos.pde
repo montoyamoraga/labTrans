@@ -14,7 +14,7 @@ class Diapo {
   ArrayList<Texto> textos = new ArrayList<Texto>();
   ArrayList<Linea> lineas = new ArrayList<Linea>();
 
-  IntList textoLineas = new IntList();
+  IntList textoNumeroLineas = new IntList();
 
   int textoActual;
   long tiempoRefresco;
@@ -46,7 +46,27 @@ class Diapo {
 
     int contadorLineas = 1 + nuevoTexto.split("\n").length;
 
-    textoLineas.append(contadorLineas);
+    textoNumeroLineas.append(contadorLineas);
+  }
+
+  void agregarLineas(
+    float[][] nuevosTextosParams,
+    int[][] nuevosTextosLineas) {
+    for (int i = 0; i < nuevosTextosLineas.length; i++) {
+
+      // nuevosTextosParams[texto][posX posY tamano]
+      float inicioX = nuevosTextosParams[0][0];
+      float inicioY = nuevosTextosParams[0][1];
+      float finX = nuevosTextosParams[1][0];
+      float finY = nuevosTextosParams[1][1];
+
+      PVector inicio = new PVector(inicioX, inicioY);
+      PVector fin = new PVector(finX, finY);
+
+      Linea temp = new Linea(color(0), inicio, fin);
+
+      lineas.add(temp);
+    }
   }
 
   void mostrarTextos() {
@@ -61,7 +81,20 @@ class Diapo {
     }
   }
 
+  void mostrarLineas() {
+    for (int i = 0; i < lineas.size(); i ++) {
+      Linea temp = lineas.get(i);
+      temp.dibujar();
+    }
+  }
+
   void actualizar() {
+
+    for (int i = 0; i < lineas.size(); i ++) {
+      Linea temp = lineas.get(i);
+      fill(0);
+      temp.actualizar();
+    }
 
     if (millis() - tiempoCaracterAnterior > tiempoEntreCaracteres) {
       for (int i = 0; i < textos.size(); i++) {
@@ -97,11 +130,12 @@ class Diapo {
 ArrayList<Diapo> diapos = new ArrayList<Diapo>();
 
 void inicializarDiapos() {
-  for (int i =0; i < textosTodos.length; i++ ) {
+  for (int i = 0; i < textosTodos.length; i++ ) {
     diapos.add(new Diapo(i));
     for (int texto = 0; texto < textosTodos[i].length; texto++) {
       Diapo temp = diapos.get(i);
       temp.agregarTexto(textosTodos[i][texto], textosParams[i][texto]);
+      temp.agregarLineas(textosParams[i], textosLineas[i]);
     }
   }
 
