@@ -778,41 +778,77 @@ int[][] silencioEnsordecedorLineas = {
 
 // diapo13
 String[] silencioEco = {
-  "SILENCIO",
-  "DESCIFRAR LA MORFOLOGÍA\n" +
-  "DE LOS MENSAJES\n" +
-  "EN TRÁNSITO\n" +
-  "DENTRO/ENTRE LOS CUERPOS",
+  // 0
+  "SILENCIO\n",
+  // 1
+  "  DESCIFRAR LA MORFOLOGÍA\n" +
+  "  DE LOS MENSAJES\n" +
+  "  EN TRÁNSITO\n" +
+  "  DENTRO/ENTRE LOS CUERPOS",
+  // 2
   "ECO",
-  "ESCUCHAR de manera oblicua",
-  "MEMORIA DIRECTA E INDIRECTA",
-  "HERENCIAS",
+  // 3
+  "ESCUCHAR de manera oblicua\n",
+  // 4
+  "MEMORIA DIRECTA E INDIRECTA\n",
+  // 5
+  "HERENCIAS\n",
+  // 6
   "¿Cuándo terminar con las cadenas de\n" +
   "herencias de lo vivido?",
-  "ÁRBOLES FILOGENÉTICOS DE LOS PLANETAS",
+  // 7
+  "ÁRBOLES FILOGENÉTICOS DE LOS PLANETAS\n",
+  // 8
   "Las emisiones radiales con las noticias del golpe el\n" +
   "11 de septiembre de 1973 aún están viajando",
-  "El sonido es radioactivo",
+  // 9
+  "El sonido es radioactivo\n",
+  // 10
   "El sonido que comenzó hace x años-luz\n" +
   "también opera en la herencia familiar"
 };
 
 // diapo13
 float[][] silencioEcoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 3, 02}
+  // 0
+  {0, 10, 10, 24, 1},
+  // 1
+  {0, 10, 50, 12, 0},
+  // 2
+  {0, 10, 90, 32, 2},
+  // 3
+  {0, 70, 7, 20, 1},
+  // 4
+  {0, 70, 15, 16, 1},
+  // 5
+  {0, 70, 30, 20, 1},
+  // 6
+  {0, 70, 40, 14, 1},
+  // 7
+  {0, 70, 55, 16, 1},
+  // 8
+  {0, 70, 65, 12, 1},
+  // 9
+  {0, 70, 80, 18, 1},
+  // 10
+  {0, 70, 90, 12, 1},
 };
 
 int[][] silencioEcoLineas = {
+  {0, 1},
+  {1, 2},
+  {2, 3},
+  //{2, 4},
+  {4, 2},
+  {2, 5},
+  //{2, 6},
+  {6, 2},
+  {2, 7},
+  //{2, 8},
+  {8, 2},
+  {2, 9},
+  //{2, 10}
+  {10, 2}
 };
 
 // diapo14
