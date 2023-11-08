@@ -853,25 +853,38 @@ int[][] silencioEcoLineas = {
 
 // diapo14
 String[] tiempoUnix = {
+  // 0
+  " ",
+  // 1
   "TRUENO como\n" +
   "otra forma de\n" +
   "organizar el\n" +
   "conocimiento",
+  // 2
   "DESCIFRAR LA MORFOLOGÍA\n" +
   "DE LOS MENSAJES\n" +
   "EN TRÁNSITO\n" +
   "DENTRO/ENTRE LOS CUERPOS",
+  // 3
   "FENOMENOLOGÍA DEL TRUENO",
+  // 4
   "GENEALOGÍA DEL TRUENO PARA ENTRETEJER RELATOS\n" +
   "HACIA RE-CONOCERNOS EN UNA MEMORIA COMÚN",
+  // 5
   "TIEMPO UNIX",
+  // 6
   "Escalas Temporales",
+  // 7
   "ANALOGÍAS ENTRE LA FISIOLOGÍA Y LA\n" +
   "COGNICIÓN, EL MITO, LA POESÍA, LA ASTRONOMÍA\n" +
   "Y LA COSMOVISIÓN",
+  // 8
   "Transitar los tiempos de las memorias",
+  // 9
   "Nuestros tiempos",
+  // 10
   "Tiempos ancestrales",
+  // 11
   "Tiempos astronómicos"
 };
 
