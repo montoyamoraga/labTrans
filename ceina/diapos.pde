@@ -1,6 +1,6 @@
 
 // factor para acortar lineas
-float factorLineas = 0.1;
+float factorLineas = 0.05;
 
 class Diapo {
 

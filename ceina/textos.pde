@@ -20,7 +20,7 @@ class Texto {
 
   void aumentarCaracter() {
     //if (Math.random() < 0.1) {
-    if (Math.random() < 0.9) {
+    if (Math.random() < 0.3) {
       caracterActual++;
       caracterActual = constrain(caracterActual, 0, texto.length());
     }
@@ -577,7 +577,7 @@ String[] neuroCiencia = {
 
 float[][] neuroCienciaParams = {
   // 0
-  {0, 15, 20, 20, 1},
+  {0, 15, 20, 22, 1},
   // 1
   {0, 45, 20, 20, 1},
   // 2
@@ -609,42 +609,76 @@ int[][] neuroCienciaLineas = {
 
 // diapo10
 String[] memoriaCorporal = {
-  "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?",
-  "MEMORIA CORPORAL",
+  // 0
+  "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?\n",
+  // 1
+  "MEMORIA CORPORAL\n",
+  // 2
   "EL ARCHIVO COMO PIEL QUE PERMITE UN PORVENIR",
+  // 3
   "(la vida puede tener muchas vidas más)",
-  "Porosidad de la piel / Porosidad de la memoria",
-  "Cuando uno se pone un velo puede contar otras historias",
-  "LA MEMORIA ES MALEABLE",
+  // 4
+  "Porosidad de la piel - Porosidad de la memoria",
+  // 5
+  "\nCuando uno se pone un velo puede contar otras historias\n",
+  // 6
+  "LA MEMORIA ES MALEABLE\n" +
   "lo maleable de la conmoción",
-  "RECONSTRUIR RECUERDOS",
-  "Memoria que se revisita",
-  "Cicatriz personal que revive una y otra vez en el acontecimiento",
+  // 7
+  "RECONSTRUIR RECUERDOS\n",
+  // 8
+  "Memoria que se revisita...\n" +
+  "Cicatriz personal que revive una y otra vez\n" +
+  "el acontecimiento...",
+  // 9
   "GRAFÍA - TRAUMA - HERIDA",
-  "Lectura compleja del post Golpe",
-  "(privatización de la Memoria Política)",
+  // 10
+  "\nLectura compleja del post Golpe",
+  // 11
+  "\n(privatización de la Memoria Política)",
+  // 12
   "TRAUMA, MEMORIA Y OLVIDO"
 };
 
 float[][] memoriaCorporalParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 30, 20, 16, 1},
+  // 1
+  {0, 30, 40, 18, 1},
+  // 2
+  {0, 30, 50, 16, 1},
+  // 3
+  {0, 30, 53, 12, 1},
+  // 4
+  {0, 30, 70, 14, 1},
+  // 5
+  {0, 30, 80, 10, 1},
+  // 6
+  {0, 80, 10, 16, 1},
+  // 7
+  {0, 80, 20, 16, 1},
+  // 8
+  {0, 60, 40, 14, 0},
+  // 9
+  {0, 60, 50, 18, 0},
+  // 10
+  {0, 80, 70, 12, 1},
+  // 11
+  {0, 60, 85, 14, 1},
+  // 12
+  {0, 60, 90, 18, 1},
+
 };
 
 int[][] memoriaCorporalLineas = {
+  {0, 1},
+  {0, 7},
+  {1, 2},
+  {1, 8},
+  {3, 4},
+  {4, 5},
+  {7, 10},
+  {9, 11}
 };
 
 // diapo11
