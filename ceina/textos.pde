@@ -490,30 +490,57 @@ int[][] diaJulianoLineas = {
 
 // diapo08
 String[] calendarioAndino = {
+  // 0
   "CHAKANA",
+  // 1
   "(calendario andino)",
+  // 2
   "COORDENADAS TEMPORALES",
+  // 3
   "DÍA JULIANO",
-  "La fecha juliana, día juliano o DJ es el número de días y fracción transcurridos desde el mediodía del uno de enero del año 4713 a.C.",
+  // 4
+  "La fecha juliana, día juliano o DJ es el número de días\n" +
+  "y fracción transcurridos desde el mediodía del uno de\n" + 
+  "enero del año 4713 a.C.",
+  // 5
   "TIEMPO UNIX",
-  "Tiempo Unix o tiempo POSIX es un sistema para la descripción de instantes de tiempo: se define como la cantidad de segundos transcurridos desde la medianoche UTC del 1 de enero de 1970",
-  "TIEMPO ASTRONÓMICO",
-  "TIEMPO COMPUTACIONAL"
+  // 6
+  "Tiempo Unix o tiempo POSIX es un sistema para la descripción\n" +
+  "de instantes de tiempo: se define como la cantidad de segundos\n" +
+  "transcurridos desde la medianoche UTC del 1 de enero de 1970",
+  // 7
+  "TIEMPO ASTRONÓMICO V/s TIEMPO COMPUTACIONAL"
 };
 
 float[][] calendarioAndinoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 15, 18, 16, 1},
+  // 1
+  {0, 15, 25, 18, 1},
+  // 2
+  {0, 25, 35, 14, 1},
+  // 3
+  {0, 25, 50, 18, 1},
+  // 4
+  {0, 20, 80, 14, 0},
+  // 5
+  {0, 80, 18, 24, 1},
+  // 6
+  {0, 80, 50, 12, 1},
+  // 7
+  {0, 80, 80, 12, 1},
 };
 
 int[][] calendarioAndinoLineas = {
+  {1, 2},
+  {2, 3},
+  {2, 5},
+  {2, 7},
+  {3, 4},
+  {4, 7},
+  {5, 6},
+  {6, 7}
+  
 };
 
 // diapo09
