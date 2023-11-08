@@ -743,24 +743,37 @@ int[][] verdadMemoriaLineas = {
 
 // diapo12
 String[] silencioEnsordecedor = {
-  "El silencio no eixste - el sonido queda en estado perpetuo y se va amortiguando",
-  "TOQUE DE QUEDA",
+  // 0
+  "El silencio no existe - el sonido queda en estado perpetuo y se va amortiguando",
+  // 1
   "SILENCIO",
+  // 2
+  "\nTOQUE DE QUEDA",
+  // 3
+  "PACTOS DE SILENCIO\n",
+  // 4
   "SILENCIO ENSORDECEDOR",
-  "PACTOS DE SILENCIO",
+  // 5
   "Ruido blanco: es muy difícil hablar de algo que está en todas partes"
 };
 
 float[][] silencioEnsordecedorParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 50, 40, 14, 1},
+  // 1
+  {0, 50, 45, 32, 1},
+  // 2
+  {0, 20, 50, 20, 1},
+  // 3
+  {0, 80, 50, 20, 1},
+  // 4
+  {0, 50, 55, 22, 1},
+  // 5
+  {0, 50, 62, 14, 1},
 };
 
 int[][] silencioEnsordecedorLineas = {
+  {2, 3}
 };
 
 // diapo13
