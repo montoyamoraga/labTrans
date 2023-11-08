@@ -38,7 +38,8 @@ String[][] listaDibujos = {
   {"3", "dibujos/diapo-03.png", "20", "65", "20"},
   {"5", "dibujos/diapo-05.png", "10", "20", "40"},
   {"7", "dibujos/diapo-07a.png", "30", "20", "40"},
-  {"7", "dibujos/diapo-07b.png", "30", "70", "40"}
+  {"7", "dibujos/diapo-07b.png", "30", "70", "40"},
+  {"9", "dibujos/diapo-09.png", "20", "30", "50"}
 };
 
 String[][] listaEstrellas = {

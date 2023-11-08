@@ -500,7 +500,7 @@ String[] calendarioAndino = {
   "DÍA JULIANO",
   // 4
   "La fecha juliana, día juliano o DJ es el número de días\n" +
-  "y fracción transcurridos desde el mediodía del uno de\n" + 
+  "y fracción transcurridos desde el mediodía del uno de\n" +
   "enero del año 4713 a.C.",
   // 5
   "TIEMPO UNIX",
@@ -540,47 +540,71 @@ int[][] calendarioAndinoLineas = {
   {4, 7},
   {5, 6},
   {6, 7}
-  
+
 };
 
 // diapo09
 String[] neuroCiencia = {
+  // 0
   "NEUROCIENCIA",
+  // 1
   "COSMOGONÍA",
+  // 2
   "Interfaz - BCI",
+  // 3
   "Brain Computer Intelligence",
-  "Trabajo con enfermos terminales",
-  "DUELO ANTICIPADO",
-  "MÚSICA creada a partir de ondas cerebrales en su lecho de muerte",
-  "COSMOGONÍA",
-  "RITUALES MORTUORIOS",
-  "DANZA DE LOS ESPÍRITUS",
-  "RELACIÓN INTEGRADA CON LA MUERTE",
-  "Modos de lidiar con el duelo y la Memoria de nuestros muertos",
+  // 4
+  "Trabajo con enfermos terminales\n" +
+  "DUELO ANTICIPADO\n" +
+  "MÚSICA creada a partir de ondas\n" +
+  "cerebrales en su lecho de muerte",
+  // 5
+  "RITUALES MORTUORIOS -\n" +
+  "DANZA DE LOS ESPÍRITUS\n" +
+  "RELACIÓN INTEGRADA CON LA\n" +
+  "MUERTE",
+  // 6
+  "Modos de lidiar con\nel duelo y la Memoria\nde nuestros muertos\n",
+  // 7
   "¿CÓMO SE PRODUCE LA MEMORIA?",
+  // 8
   "¿CÓMO NOS RECONOCEMOS EN UNA MEMORIA COMÚN?",
-  "¿CÓMO CONSTRUIMOS UNA MEMORIA COLECTIVA?"
+  // 9
+  "¿CÓMO CONSTRUIMOS UNA MEMORIA COLECTIVA?",
+  // 10
+  " "
 };
 
 float[][] neuroCienciaParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 15, 20, 20, 1},
+  // 1
+  {0, 45, 20, 20, 1},
+  // 2
+  {0, 15, 70, 18, 1},
+  // 3
+  {0, 15, 73, 16, 1},
+  // 4
+  {0, 15, 83, 14, 1},
+  // 5
+  {0, 45, 75, 14, 1},
+  // 6
+  {0, 65, 50, 16, 1},
+  // 7
+  {270, 80, 50, 16, 1},
+  // 8
+  {270, 85, 50, 16, 1},
+  // 9
+  {270, 90, 50, 16, 1},
+  // 10
+  {0, 30, 50, 32, 2},
 };
 
 int[][] neuroCienciaLineas = {
+  {0, 2},
+  {1, 5},
+  {6, 7},
+  {6, 10},
 };
 
 // diapo10
