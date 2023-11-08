@@ -178,7 +178,6 @@ class Diapo {
     }
 
     for (int i = 0; i <= textoActual; i++) {
-      println(i);
       Texto temp = textos.get(i);
       textSize(temp.tamano);
     }
