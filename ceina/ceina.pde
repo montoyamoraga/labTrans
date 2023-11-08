@@ -67,6 +67,7 @@ void draw() {
 
   if (probando) {
     textSize(64);
+    textFont(fuentes[64]);
     fill(negro);
     text(escenaActual, 90*width/100, 10*height/100);
   }

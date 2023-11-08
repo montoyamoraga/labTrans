@@ -73,8 +73,8 @@ class Diapo {
   void mostrarTextos() {
     for (int i = 0; i < textos.size(); i++) {
       Texto temp = textos.get(i);
+      textFont(fuentes[int(temp.tamano)]);
       textSize(temp.tamano);
-
       // cajita blanca abajo del texto
       pushStyle();
       fill(255);

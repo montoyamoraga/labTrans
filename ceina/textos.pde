@@ -23,16 +23,17 @@ class Texto {
 }
 
 // font inika de constanza artigas
-PFont fuente;
+PFont[] fuentes = new PFont[130];
 
 void cargarFuente() {
-  fuente = loadFont("Inika-64.vlw");
+  //fuente = loadFont("Inika-64.vlw");
+  for (int i = 0; i < fuentes.length; i++) {
+    fuentes[i] = loadFont("Inika-" + str(i) + ".vlw");
+  }
 }
 
 void definirFuente() {
-  textFont(fuente);
   textAlign(CENTER, CENTER);
-  textSize(64);
   stroke(0);
 }
 
