@@ -1,3 +1,10 @@
+// miercoles
+// hacer ejemplo de 3 proyectores
+// pero con un computador
+// en processing
+
+// AGREGAR ELEMENTOS GRAFICOS DE LAS PRIMERAS DIAPOS
+
 boolean probando = true;
 
 // proyector puede ser 0, 1, 2

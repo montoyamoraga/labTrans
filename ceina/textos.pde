@@ -1,6 +1,5 @@
 class Texto {
 
-
   String texto;
   float angulo;
   float posX;

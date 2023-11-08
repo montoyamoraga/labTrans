@@ -35,6 +35,7 @@ class Diapo {
   void inicializar() {
     textoActual = 0;
     tiempoActualizacion = millis();
+    inicializarDiapos();
   }
 
   void agregarTexto(String nuevoTexto, float[] params) {
