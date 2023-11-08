@@ -1,10 +1,12 @@
 class Imagen {
   PImage imagen;
+  int numero;
   float posX;
   float posY;
 
-  Imagen(String path) {
+  Imagen(int numeroDiapo, String path) {
     imagen = loadImage(path);
+    numero = numeroDiapo;
   }
 
   void escalar(int ancho) {
@@ -22,13 +24,44 @@ class Imagen {
 }
 
 ArrayList<Imagen> estrellas = new ArrayList<Imagen>();
+ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
+
+// parametros son
+// numeroDiapo
+// nombreArchivo
+// tamanoEscalaX en porcentaje de width
+// posX
+// posY
+String[][] listaDibujos = {
+  {"1", "dibujos/diapo-01.png", "25", "50", "50"}
+};
+
+String[][] listaEstrellas = {
+  {"32", "numeradas/0.jpg", "50", "25", "50"},
+  {"32", "numeradas/1.jpg", "50", "75", "50"},
+  {"32", "numeradas/2.jpg", "50", "25", "50"},
+  {"32", "numeradas/3.jpg", "50", "75", "50"},
+  {"32", "numeradas/4.jpg", "50", "25", "50"},
+  {"32", "numeradas/5.jpg", "50", "75", "50"}
+};
 
 void inicializarImagenes() {
-  imageMode(CORNER);
+  imageMode(CENTER);
+  for (int i = 0; i < listaEstrellas.length; i++) {
+    estrellas.add(new Imagen(int(listaEstrellas[i][0]), listaEstrellas[i][1] ));
+    estrellas.get(i).escalar(int(listaEstrellas[i][2]) * width/100);
+    estrellas.get(i).posicionar(
+      int(listaEstrellas[i][3]) * width/100,
+      int(listaEstrellas[i][4]) * height/100
+      );
+  }
 
-  for (int i = 0; i < 6; i++) {
-    estrellas.add(new Imagen("numeradas/" + str(i) + ".jpg"));
-    estrellas.get(i).escalar(width/2);
-    estrellas.get(i).posicionar((i%2)*width/2, 0);
+  for (int i = 0; i < listaDibujos.length; i++) {
+    dibujos.add(new Imagen(int(listaDibujos[i][0]), listaDibujos[i][1]));
+    dibujos.get(i).escalar(int(listaDibujos[i][2]) * width/100);
+    dibujos.get(i).posicionar(
+      int(listaDibujos[i][3]) * width/100,
+      int(listaDibujos[i][4]) * height/100
+      );
   }
 }

@@ -1,14 +1,10 @@
+
+// factor para acortar lineas
+float factorLineas = 0.1;
+
 class Diapo {
 
   int numero;
-
-  // hacer que el texto aparezca de a poquito
-  // caracter a caracter
-  // mover una, la mas significativa de la diapo
-  // o mover ninguna
-  // mejor respetar la logica x,y del diagrama
-  // hacer un rectangulo blanco abajo de cada palabra
-  // para esconder donde termina cada linea
 
   ArrayList<Imagen> imagenes = new ArrayList<Imagen>();
   ArrayList<Texto> textos = new ArrayList<Texto>();
@@ -35,18 +31,13 @@ class Diapo {
   void inicializar() {
     textoActual = 0;
     tiempoActualizacion = millis();
-    inicializarDiapos();
+    //inicializarDiapos();
   }
 
   void agregarTexto(String nuevoTexto, float[] params) {
-
     Texto temp = new Texto(nuevoTexto, params);
-
-    //print(temp.texto);
     textos.add(temp);
-
     int contadorLineas = 1 + nuevoTexto.split("\n").length;
-
     textoNumeroLineas.append(contadorLineas);
   }
 
@@ -61,8 +52,41 @@ class Diapo {
       float finX = nuevosTextosParams[nuevosTextosLineas[i][1]][1] * width/100;
       float finY = nuevosTextosParams[nuevosTextosLineas[i][1]][2] * height/100;
 
-      PVector inicio = new PVector(inicioX, inicioY);
-      PVector fin = new PVector(finX, finY);
+      PVector inicio;
+      PVector fin;
+
+      if (inicioX < finX && inicioY < finY) {
+        inicio = new PVector(
+          inicioX * (1 + factorLineas),
+          inicioY * (1 + factorLineas));
+        fin = new PVector(
+          finX * (1 - factorLineas),
+          finY * (1 - factorLineas));
+      } else if (inicioX < finX && inicioY > finY) {
+        inicio = new PVector(
+          inicioX * (1 + factorLineas),
+          inicioY * (1 - factorLineas));
+        fin = new PVector(
+          finX * (1 - factorLineas),
+          finY * (1 + factorLineas));
+      } else if (inicioX > finX && inicioY < finY) {
+        inicio = new PVector(
+          inicioX * (1 - factorLineas),
+          inicioY * (1 + factorLineas));
+        fin = new PVector(
+          finX * (1 + factorLineas),
+          finY * (1 - factorLineas));
+      } else if (inicioX > finX && inicioY > finY) {
+        inicio = new PVector(
+          inicioX * (1 - factorLineas),
+          inicioY * (1 - factorLineas));
+        fin = new PVector(
+          finX * (1 + factorLineas),
+          finY * (1 + factorLineas));
+      }
+
+      inicio = new PVector(inicioX, inicioY);
+      fin = new PVector(finX, finY);
 
       Linea temp = new Linea(color(0), inicio, fin);
 
@@ -72,28 +96,39 @@ class Diapo {
 
   void mostrarTextos() {
     for (int i = 0; i < textos.size(); i++) {
+
+      pushStyle();
+
       Texto temp = textos.get(i);
       textFont(fuentes[int(temp.tamano)]);
       textSize(temp.tamano);
-      // cajita blanca abajo del texto
-      pushStyle();
-      fill(255);
-      //stroke(0);
-      noStroke();
-      rectMode(CENTER);
-      rect(
-        temp.posX * width/100,
-        temp.posY * height/100,
-        textWidth(temp.texto),
-        0.7 * textoNumeroLineas.get(i) * (textAscent() + textDescent())
-        );
-      popStyle();
-
-      pushStyle();
-      pushMatrix();
-      textSize(temp.tamano);
+      
+      if (temp.alineacion == 0) {
+        textAlign(LEFT, CENTER);
+      } else if (temp.alineacion == 1) {
+        textAlign(CENTER, CENTER);
+      } else if (temp.alineacion == 2) {
+        textAlign(RIGHT, CENTER);
+      }
       fill(0);
       stroke(0);
+      
+      // cajita blanca abajo del texto
+      //pushStyle();
+      //fill(255);
+      //stroke(0);
+      //noStroke();
+      //rectMode(CENTER);
+      //rect(
+      //  temp.posX * width/100,
+      //  temp.posY * height/100,
+      //  textWidth(temp.texto),
+      //  0.7 * textoNumeroLineas.get(i) * (textAscent() + textDescent())
+      //  );
+      //popStyle();
+
+      pushMatrix();
+
       translate(
         temp.posX * width/100,
         temp.posY * height/100);
@@ -103,23 +138,29 @@ class Diapo {
         0
         );
       popMatrix();
+      
       popStyle();
     }
   }
 
   void mostrarLineas() {
+    pushStyle();
+    stroke(0);
     for (int i = 0; i < lineas.size(); i ++) {
       Linea temp = lineas.get(i);
       temp.dibujar();
     }
+    popStyle();
   }
 
   void actualizar() {
 
     for (int i = 0; i < lineas.size(); i ++) {
+      pushStyle();
       Linea temp = lineas.get(i);
       fill(0);
       temp.actualizar();
+      popStyle();
     }
 
     if (millis() - tiempoCaracterAnterior > tiempoEntreCaracteres) {
@@ -163,9 +204,27 @@ void inicializarDiapos() {
       temp.agregarTexto(textosTodos[i][texto], textosParams[i][texto]);
       temp.agregarLineas(textosParams[i], textosLineas[i]);
     }
+
+    for (int estrella = 0; estrella < estrellas.size(); estrella ++) {
+      Imagen estrel = estrellas.get(estrella);
+      if (i == estrel.numero) {
+        Diapo temp = diapos.get(i);
+        temp.agregarImagen(estrel);
+      }
+    }
+
+    for (int dibujo = 0; dibujo < dibujos.size(); dibujo++) {
+      Imagen dib = dibujos.get(dibujo);
+      if (i == dib.numero) {
+        Diapo temp = diapos.get(i);
+        temp.agregarImagen(dib);
+      }
+    }
   }
 
+
+
   // agregar imagen correspondiente a ese proyector
-  diapos.get(32).agregarImagen(estrellas.get(proyector * 2));
-  diapos.get(32).agregarImagen(estrellas.get(proyector * 2 + 1));
+  //diapos.get(32).agregarImagen(estrellas.get(proyector * 2));
+  //diapos.get(32).agregarImagen(estrellas.get(proyector * 2 + 1));
 }

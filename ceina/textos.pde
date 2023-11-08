@@ -6,6 +6,7 @@ class Texto {
   float posY;
   float tamano;
   int caracterActual;
+  int alineacion;
 
   Texto(String nuevoTexto, float[] params) {
     texto = nuevoTexto;
@@ -13,12 +14,15 @@ class Texto {
     posX = params[1];
     posY = params[2];
     tamano = params[3];
+    alineacion = int(params[4]);
     caracterActual = 0;
   }
 
   void aumentarCaracter() {
-    caracterActual++;
-    caracterActual = constrain(caracterActual, 0, texto.length());
+    if (Math.random() < 0.1) {
+      caracterActual++;
+      caracterActual = constrain(caracterActual, 0, texto.length());
+    }
   }
 }
 
@@ -26,7 +30,6 @@ class Texto {
 PFont[] fuentes = new PFont[130];
 
 void cargarFuente() {
-  //fuente = loadFont("Inika-64.vlw");
   for (int i = 0; i < fuentes.length; i++) {
     fuentes[i] = loadFont("Inika-" + str(i) + ".vlw");
   }
@@ -45,7 +48,7 @@ String[] primeraDiapo = {
 
 float[][] primeraDiapoParams = {
   // angulo, posX, posY, tamano
-  {0, -10, -10, 32}
+  {0, -10, -10, 32, 0}
 };
 
 int[][] primeraDiapoLineas = {
@@ -59,11 +62,16 @@ String[] memoria = {
   "50 años-luz - Imaginación radical"
 };
 
+// params
+// angulo en grados,
+// posX en porcentaje, posY en porcentaje
+// tamanoFuente
+// alineamiento (0 LEFT, 1 CENTER, 2 RIGHT)
 float[][] memoriaParams = {
-  {0, 20, 30, 42},
-  {0, 20, 50, 20},
-  {0, 20, 80, 20},
-  {0, 40, 90, 20}
+  {0, 35, 20, 42, 1},
+  {0, 35, 40, 20, 1},
+  {0, 35, 70, 20, 2},
+  {0, 35, 80, 20, 2}
 };
 
 int[][] memoriaLineas = {
@@ -85,15 +93,15 @@ String[] aproximaciones = {
 };
 
 float[][] aproximacionesParams = {
-  {0, 50, 20, 40},
-  {0, 60, 40, 20},
-  {0, 70, 50, 40},
-  {0, 50, 70, 20},
-  {0, 50, 80, 30},
-  {0, 40, 60, 20},
-  {0, 30, 50, 20},
-  {0, 20, 30, 40},
-  {0, 20, 15, 20},
+  {0, 50, 20, 40, 0},
+  {0, 60, 40, 20, 0},
+  {0, 70, 50, 40, 0},
+  {0, 50, 70, 20, 0},
+  {0, 50, 80, 30, 0},
+  {0, 40, 60, 20, 0},
+  {0, 30, 50, 20, 0},
+  {0, 20, 30, 40, 0},
+  {0, 20, 15, 20, 0},
 };
 
 int[][] aproximacionesLineas = {
@@ -128,15 +136,15 @@ String[] fisicaAstronomia = {
 };
 
 float[][] fisicaAstronomiaParams = {
-  {0, 30, 20, 32},
-  {0, 30, 25, 14},
-  {0, 50, 40, 32},
-  {0, 25, 60, 32},
-  {0, 80, 20, 20},
-  {0, 80, 50, 16},
-  {0, 80, 60, 32},
-  {0, 80, 80, 32},
-  {0, 80, 90, 12}
+  {0, 30, 20, 32, 0},
+  {0, 30, 25, 14, 0},
+  {0, 50, 40, 32, 0},
+  {0, 25, 60, 32, 0},
+  {0, 80, 20, 20, 0},
+  {0, 80, 50, 16, 0},
+  {0, 80, 60, 32, 0},
+  {0, 80, 80, 32, 0},
+  {0, 80, 90, 12, 0}
 };
 
 int[][] fisicaAstronomiaLineas = {
@@ -170,17 +178,17 @@ String[] cuerpoModifica = {
 };
 
 float[][] cuerpoModificaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] cuerpoModificaLineas = {
@@ -218,15 +226,15 @@ String[] transitoComo = {
 };
 
 float[][] transitoComoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] transitoComoLineas = {
@@ -258,27 +266,27 @@ String[] autoRecordarnos = {
 };
 
 float[][] autoRecordarnosParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] autoRecordarnosLineas = {
@@ -299,16 +307,16 @@ String[] diaJuliano = {
 };
 
 float[][] diaJulianoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] diaJulianoLineas = {
@@ -328,15 +336,15 @@ String[] calendarioAndino = {
 };
 
 float[][] calendarioAndinoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] calendarioAndinoLineas = {
@@ -362,21 +370,21 @@ String[] neuroCiencia = {
 };
 
 float[][] neuroCienciaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] neuroCienciaLineas = {
@@ -402,21 +410,21 @@ String[] memoriaCorporal = {
 };
 
 float[][] memoriaCorporalParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] memoriaCorporalLineas = {
@@ -440,15 +448,15 @@ String[] verdadMemoria = {
 };
 
 float[][] verdadMemoriaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] verdadMemoriaLineas = {
@@ -465,12 +473,12 @@ String[] silencioEnsordecedor = {
 };
 
 float[][] silencioEnsordecedorParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] silencioEnsordecedorLineas = {
@@ -499,17 +507,17 @@ String[] silencioEco = {
 
 // diapo13
 float[][] silencioEcoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 3, 02}
 };
 
 int[][] silencioEcoLineas = {
@@ -540,17 +548,17 @@ String[] tiempoUnix = {
 };
 
 float[][] tiempoUnixParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] tiempoUnixLineas = {
@@ -566,8 +574,8 @@ String[] microEvento = {
 };
 
 float[][] microEventoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] microEventoLineas = {
@@ -583,11 +591,11 @@ String[] polvoCallado = {
 };
 
 float[][] polvoCalladoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] polvoCalladoLineas = {
@@ -611,8 +619,8 @@ String[] objetoCuantico = {
 };
 
 float[][] objetoCuanticoParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] objetoCuanticoLineas = {
@@ -632,10 +640,10 @@ String[] vientoLevanta = {
 };
 
 float[][] vientoLevantaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] vientoLevantaLineas = {
@@ -648,8 +656,8 @@ String[] elLenguaje = {
 };
 
 float[][] elLenguajeParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] elLenguajeLineas = {
@@ -665,9 +673,9 @@ String[] tiempoDolor = {
 };
 
 float[][] tiempoDolorParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
 };
 
 
@@ -681,8 +689,8 @@ String[] lenguajeHace = {
 };
 
 float[][] lenguajeHaceParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] lenguajeHaceLineas = {
@@ -702,10 +710,10 @@ String[] eventoCero = {
 };
 
 float[][] eventoCeroParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] eventoCeroLineas = {
@@ -728,11 +736,11 @@ String[] laAntropologa = {
 };
 
 float[][] laAntropologaParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] laAntropologaLineas = {
@@ -749,12 +757,12 @@ String[] materiaFuera = {
 };
 
 float[][] materiaFueraParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] materiaFueraLineas = {
@@ -768,8 +776,8 @@ String[] depositadoEn = {
 
 // diapo25
 float[][] depositadoEnParams = {
-  {270, 30, 50, 16},
-  {0, 30, 80, 16}
+  {270, 30, 50, 16, 0},
+  {0, 30, 80, 16, 0}
 };
 
 int[][] depositadoEnLineas = {
@@ -787,9 +795,9 @@ String[] vivianaLlora = {
 };
 
 float[][] vivianaLloraParams = {
-  {0, 0, 0, 32},
-  {0, 0, 0, 32},
-  {0, 0, 0, 32}
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0},
+  {0, 0, 0, 32, 0}
 };
 
 int[][] vivianaLloraLineas = {
@@ -813,11 +821,11 @@ String[] materiaSolida = {
 };
 
 float[][] materiaSolidaParams = {
-  {0, 50, 30, 14},
-  {0, 15, 50, 14},
-  {0, 50, 50, 14},
-  {0, 50, 70, 14},
-  {0, 80, 50, 14}
+  {0, 50, 30, 14, 0},
+  {0, 15, 50, 14, 0},
+  {0, 50, 50, 14, 0},
+  {0, 50, 70, 14, 0},
+  {0, 80, 50, 14, 0}
 };
 
 int[][] materiaSolidaLineas = {
@@ -844,9 +852,9 @@ String[] observandoOrionis = {
 };
 
 float[][] observandoOrionisParams = {
-  {0, 15, 40, 14},
-  {0, 50, 50, 14},
-  {0, 85, 60, 14}
+  {0, 15, 40, 14, 0},
+  {0, 50, 50, 14, 0},
+  {0, 85, 60, 14, 0}
 };
 
 int[][] observandoOrionisLineas = {
@@ -865,9 +873,9 @@ String[] excluirAlgo = {
 };
 
 float[][] excluirAlgoParams = {
-  {0, 15, 60, 14},
-  {0, 50, 60, 14},
-  {0, 80, 60, 14}
+  {0, 15, 60, 14, 0},
+  {0, 50, 60, 14, 0},
+  {0, 80, 60, 14, 0}
 };
 
 int[][] excluirAlgoLineas = {
@@ -884,8 +892,8 @@ String[] cenizasArrojadas = {
 };
 
 float[][] cenizasArrojadasParams = {
-  {0, 20, 35, 14},
-  {0, 80, 35, 14}
+  {0, 20, 35, 14, 0},
+  {0, 80, 35, 14, 0}
 };
 
 int[][] cenizasArrojadasLineas = {
@@ -902,12 +910,12 @@ String[] aguaElemento = {
 };
 
 float[][] aguaElementoParams = {
-  {0, 50, 50, 16},
-  {0, 70, 25, 12},
-  {0, 80, 75, 12},
-  {60, 5, 15, 12},
-  {60, 15, 50, 12},
-  {60, 25, 85, 12}
+  {0, 50, 50, 16, 0},
+  {0, 70, 25, 12, 0},
+  {0, 80, 75, 12, 0},
+  {60, 5, 15, 12, 0},
+  {60, 15, 50, 12, 0},
+  {60, 25, 85, 12, 0}
 };
 
 int[][] aguaElementoLineas = {
@@ -916,12 +924,24 @@ int[][] aguaElementoLineas = {
 };
 
 // diapo32
+String[] penultimaDiapo = {
+  "x"
+};
+
+float[][] penultimaDiapoParams = {
+  {0, -100, -100, 32, 0}
+};
+
+int[][] penultimaDiapoLineas = {
+};
+
+// diapo33
 String[] ultimaDiapo = {
   "x"
 };
 
 float[][] ultimaDiapoParams = {
-  {0, 0, 0, 32}
+  {0, -100, -100, 32, 0}
 };
 
 int[][] ultimaDiapoLineas = {
@@ -960,6 +980,7 @@ String[][] textosTodos = {
   excluirAlgo,
   cenizasArrojadas,
   aguaElemento,
+  penultimaDiapo,
   ultimaDiapo
 };
 
@@ -996,6 +1017,7 @@ float[][][] textosParams = {
   excluirAlgoParams,
   cenizasArrojadasParams,
   aguaElementoParams,
+  penultimaDiapoParams,
   ultimaDiapoParams
 };
 
@@ -1032,6 +1054,7 @@ int[][][] textosLineas = {
   excluirAlgoLineas,
   cenizasArrojadasLineas,
   aguaElementoLineas,
+  penultimaDiapoLineas,
   ultimaDiapoLineas
 };
 

@@ -10,6 +10,8 @@ boolean probando = true;
 // proyector puede ser 0, 1, 2
 int proyector = 2;
 
+int diaposPorPantalla = 3;
+
 // agregar splash screen
 // entre cada triada de proyectores
 // por ejemplo, palabra silencio
@@ -25,12 +27,7 @@ int proyector = 2;
 // una linea que viaja y termina
 // en una de las preguntas importantes
 
-boolean prueba = false;
 
-
-Linea[] lineas = new Linea[10];
-
-int diaposPantalla = 3;
 
 void setup() {
 
@@ -51,9 +48,7 @@ void setup() {
   //fullScreen();
 
   inicializarTiempos();
-
   inicializarImagenes();
-
   inicializarDiapos();
 
   background(255);
@@ -68,6 +63,7 @@ void draw() {
   if (probando) {
     textSize(64);
     textFont(fuentes[64]);
+    textAlign(CENTER, CENTER);
     fill(negro);
     text(escenaActual, 90*width/100, 10*height/100);
   }
@@ -76,8 +72,9 @@ void draw() {
 
   Diapo diapoActual = diapos.get(escenaActual);
 
+  //diapoActual.actualizar();
   diapoActual.mostrarImagenes();
-  diapoActual.actualizar();
   diapoActual.mostrarLineas();
   diapoActual.mostrarTextos();
+  diapoActual.actualizar();
 }
