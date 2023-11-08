@@ -894,19 +894,34 @@ int[][] tiempoUnixLineas = {
 
 // diapo15
 String[] microEvento = {
+  // 0
+  " ",
+  // 1
   "DEL\n" +
   "MICRO EVENTO\n" +
-  "AL HIPER OBJETO\n" +
+  "AL HIPER    OBJETO\n" +
   "-idea y vuelta - entrelazados-",
-  "micropartículas: polvo en suspensión / polvo de estrellas"
+  // 2
+  "micropartículas: polvo en suspensión / polvo de estrellas",
+  // 3
+  " "
 };
 
 float[][] microEventoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 50, 0 - 100, 32, 1},
+  // 1
+  {0, 50, 40, 32, 1},
+  // 2
+  {0, 50, 80, 22, 1},
+  // 3
+  {0, 50, height+ 100, 32, 1}
 };
 
 int[][] microEventoLineas = {
+  {0, 1},
+  {1, 2},
+  {2, 3}
 };
 
 // diapo16
