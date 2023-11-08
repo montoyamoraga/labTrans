@@ -64,7 +64,8 @@ String[] memoria = {
 
 // params
 // angulo en grados,
-// posX en porcentaje, posY en porcentaje
+// posX en porcentaje,
+// posY en porcentaje
 // tamanoFuente
 // alineamiento (0 LEFT, 1 CENTER, 2 RIGHT)
 float[][] memoriaParams = {
@@ -88,20 +89,18 @@ String[] aproximaciones = {
   "APROXIMACIONES TRANSDISCIPLINARES",
   "LITERATURA",
   "DISEÑO",
-  "SABERES",
   "ARTE"
 };
 
 float[][] aproximacionesParams = {
-  {0, 50, 20, 40, 0},
-  {0, 60, 40, 20, 0},
-  {0, 70, 50, 40, 0},
-  {0, 50, 70, 20, 0},
-  {0, 50, 80, 30, 0},
-  {0, 40, 60, 20, 0},
-  {0, 30, 50, 20, 0},
-  {0, 20, 30, 40, 0},
-  {0, 20, 15, 20, 0},
+  {0, 50, 10, 30, 1},
+  {0, 80, 30, 20, 2},
+  {0, 80, 50, 30, 2},
+  {0, 80, 70, 20, 1},
+  {0, 50, 90, 30, 1},
+  {0, 30, 60, 20, 1},
+  {0, 30, 50, 20, 1},
+  {0, 20, 15, 20, 1},
 };
 
 int[][] aproximacionesLineas = {
@@ -109,7 +108,6 @@ int[][] aproximacionesLineas = {
   {1, 5},
   {2, 6},
   {3, 7},
-  {4, 8},
 };
 
 // diapo03

@@ -33,7 +33,8 @@ ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
 // posX
 // posY
 String[][] listaDibujos = {
-  {"1", "dibujos/diapo-01.png", "25", "50", "50"}
+  {"1", "dibujos/diapo-01.png", "25", "70", "50"},
+  {"2", "dibujos/diapo-02.png", "30", "50", "50"}
 };
 
 String[][] listaEstrellas = {

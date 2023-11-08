@@ -61,11 +61,13 @@ void draw() {
   background(255);
 
   if (probando) {
+    pushStyle();
     textSize(64);
     textFont(fuentes[64]);
     textAlign(CENTER, CENTER);
     fill(negro);
     text(escenaActual, 90*width/100, 10*height/100);
+    popStyle();
   }
 
   actualizarEscenaActual();
