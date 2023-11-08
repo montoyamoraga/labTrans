@@ -326,84 +326,166 @@ int[][] transitoComoLineas = {
 
 // diapo06
 String[] autoRecordarnos = {
+  // 0
   "AUTO RECORDARNOS",
-  "¿SE PUEDE APRENDER A OLVIDAR?",
+  // 1
+  "¿SE PUEDE APRENDER A OLVIDAR?\n" +
   "¿CÓMO ATRAVESAMOS LAS IMÁGENES Y LOS IMAGINARIOS?",
-  "TRUENO",
+  // 2
+  "\nTRUENO\n",
+  // 3
   "acontecimiento que cambia el curso de las cosas",
-  "¿ENCANDILA?",
-  "¿ES UNA IMAGEN?",
-  "ES UN QUIEBRE",
+  // 4
+  "¿ENCANDILA?\n\n" +
+  "¿ES UNA IMAGEN\n\n" +
+  "ES UN QUIEBRE\n\n" +
   "¿ES UN PARÉNTESIS?",
-  "recordar emerge en el silencio que queda tras el trueno - el trueno es lo que nos recuerda lo vivo",
-  "LUZ EN EL CEREBRO",
-  "TRÁNSITO DE LA LUZ",
-  "IMAGEN COMO INSCRIPCIÓN MORFOLÓGICA DEL TIEMPO",
+  // 5
+  "recordar emerge en el silencio que\n" +
+  "queda tras el trueno - el trueno es lo\n" +
+  "que nos recuerda lo vivo\n",
+  // 6
+  "\nLUZ EN EL CEREBRO",
+  // 7
+  "TRÁNSITO DE LA LUZ\n",
+  // 8
+  "IMAGEN COMO INSCRIPCIÓN\n" +
+  "MORFOLÓGICA DEL TIEMPO",
+  // 9
   "Transitar los tiempos de las memorias",
-  "SILENCIO",
-  "El silencio es una condición del espacio (astronomía)",
-  "El proceso de reconstrucción de la memoria necesita del silencio (neurociencia)",
-  "No existe el silencio, solo el ruido imperceptible",
+  // 10
+  "\nSILENCIO\n",
+  // 11
+  "El silencio es una\n" +
+  "condición del espacio\n" +
+  "(astronomía)",
+  // 12
+  "El proceso de\n" +
+  "reconstrucción de la\n" +
+  "memoria necesita del\n" +
+  "silencio\n" +
+  "(neurociencia)",
+  // 13
+  "No existe el silencio,\n" +
+  "solo el ruido\n" +
+  "imperceptible",
+  // 14
   "Nuestros tiempos",
+  // 15
   "Tiempos ancestrales",
+  // 16
   "Tiempos astronómicos"
 };
 
 float[][] autoRecordarnosParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 50, 5, 20, 1},
+  // 1
+  {0, 50, 15, 12, 1},
+  // 2
+  {0, 25, 25, 26, 2},
+  // 3
+  {0, 25, 40, 12, 1},
+  // 4
+  {0, 25, 60, 16, 2},
+  // 5
+  {0, 50, 25, 10, 1},
+  // 6
+  {0, 40, 60, 12, 0},
+  // 7
+  {0, 55, 60, 12, 0},
+  // 8
+  {0, 50, 70, 10, 1},
+  // 9
+  {0, 50, 80, 16, 1},
+  // 10
+  {0, 70, 25, 26, 0},
+  // 11
+  {0, 70, 35, 12, 0},
+  // 12
+  {0, 70, 50, 12, 0},
+  // 13
+  {0, 70, 65, 12, 0},
+  // 14
+  {0, 10, 90, 12, 0},
+  // 15
+  {0, 40, 90, 12, 0},
+  // 16
+  {0, 70, 90, 12, 0},
 };
 
 int[][] autoRecordarnosLineas = {
+  {1, 5},
+  {2, 5},
+  {2, 3},
+  {3, 4},
+  {4, 6},
+  {5, 8},
+  {5, 10},
+  {6, 7},
+  {8, 9}
 };
 
 // diapo07
 String[] diaJuliano = {
-  "CHAKANA",
-  "WENUMAPU",
+  // 0
+  "CHAKANA\n",
+  // 1
+  "WENUMAPU\n",
+  // 2
   "SILENCIO DE LA MIRADA",
+  // 3
   "TESTIMONIO",
+  // 4
   "(testigo sin mirada)",
+  // 5
   "MIGUEL LAWNER",
+  // 6
   "DÍA JULIANO",
-  "TRUENO",
-  "MAPA DE ESTRELLAS 50 AÑOS-LUZ ALREDEDOR DE LA TIERRA",
-  "y de los bordes confines de la luz"
+  // 7
+  "\nTRUENO",
+  // 8
+  "\nMAPA DE ESTRELLAS 50 AÑOS-LUZ\nALREDEDOR DE LA TIERRA\n",
+  // 9
+  " ",
+  // 10
+  " "
 };
 
 float[][] diaJulianoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 10, 15, 16, 1},
+  // 1
+  {0, 25, 15, 16, 1},
+  // 2
+  {0, 20, 80, 10, 2},
+  // 3
+  {0, 20, 85, 10, 2},
+  // 4
+  {0, 20, 90, 10, 2},
+  // 5
+  {0, 20, 96, 12, 2},
+  // 6
+  {0, 80, 10, 14, 0},
+  // 7
+  {0, 70, 80, 20, 2},
+  // 8
+  {0, 40, 90, 14, 1},
+  // 9
+  {0, 20, 40, 32, 1},
+  // 10
+  {0, 70, 40, 32, 1}
 };
 
 int[][] diaJulianoLineas = {
+  {0, 1},
+  {0, 9},
+  {1, 9},
+  {2, 7},
+  {6, 10},
+  {7, 9},
+  {7, 10},
+  {9, 10}
 };
 
 // diapo08
