@@ -19,7 +19,8 @@ class Texto {
   }
 
   void aumentarCaracter() {
-    if (Math.random() < 0.1) {
+    //if (Math.random() < 0.1) {
+    if (Math.random() < 0.9) {
       caracterActual++;
       caracterActual = constrain(caracterActual, 0, texto.length());
     }
@@ -112,12 +113,17 @@ int[][] aproximacionesLineas = {
 
 // diapo03
 String[] fisicaAstronomia = {
+  // 0
   "FÍSICA - ASTRONOMÍA",
+  // 1
   "tiempos humanos versus tiempos astronómicos",
+  // 2
   "El tránsito de la luz y el sonido\n" +
   "transmiten información en un\n" +
   "desfase temporal",
+  // 3
   "la memoria se (re)crea aquí y ahora",
+  // 4
   "50 años\n" +
   "versus\n" +
   "50 años-luz\n" +
@@ -126,88 +132,147 @@ String[] fisicaAstronomia = {
   "recepción de un\n" +
   "mensaje de un planeta\n" +
   "a otro.",
+  // 5
   "NEUROCIENCIA",
+  // 6
   "mecanismos neurobiológicos",
+  // 7
   "SINFONÍA FISIOLÓGICA\n" +
   "Estimulación física",
+  // 8
   "cerebro sometido a aislamiento"
 };
 
 float[][] fisicaAstronomiaParams = {
-  {0, 30, 20, 32, 0},
-  {0, 30, 25, 14, 0},
-  {0, 50, 40, 32, 0},
-  {0, 25, 60, 32, 0},
-  {0, 80, 20, 20, 0},
-  {0, 80, 50, 16, 0},
-  {0, 80, 60, 32, 0},
-  {0, 80, 80, 32, 0},
-  {0, 80, 90, 12, 0}
+  // 0
+  {0, 10, 20, 16, 0},
+  // 1
+  {0, 20, 25, 12, 1},
+  // 2
+  {0, 30, 40, 14, 0},
+  // 3
+  {0, 20, 60, 14, 1},
+  // 4
+  {0, 80, 20, 16, 0},
+  // 5
+  {0, 80, 50, 20, 1},
+  // 6
+  {0, 80, 60, 12, 1},
+  // 7
+  {0, 80, 80, 14, 1},
+  // 8
+  {0, 80, 90, 14, 1}
 };
 
 int[][] fisicaAstronomiaLineas = {
+  {1, 2},
+  {1, 3},
+  {4, 5}
 };
 
 // diapo04
 String[] cuerpoModifica = {
+  // 0
   "MORFOLOGÍA(S) COMO ESCRITURA(S) DE LA(S) MEMORIA(S)",
+  // 1
   "Un cuerpo modifica su forma a partir de los fenómenos\n" +
   "que le acontecen = la forma del cuerpo da cuenta de su\n" +
   "historia y recrea la memoria en el aquí/ahora.",
+  // 2
   "ECOLOGÍA DE LA MEMORIA\n" +
   "seres vivos en relación a\n" +
-  "su ambiente -",
+  "su ambiente -\n",
+  // 3
   "No hay memoria\n" +
   "sin vida/ sin vivir",
+  // 4
   "El cerebro reorganiza y facilita procesos y\n" +
   "funciones de la memoria, pero la\n" +
   "memoria es un fenómeno del organismo.",
+  // 5
   "la memoria no se almacena",
+  // 6
   "SOLO LOS ORGANISMOS\n" +
   "VIVOS RECUERDAN Y\n" +
   "PUEDEN HACER SENTIDO",
+  // 7
   "Morfologías de la luz, el sonido, los cuerpos celestes, humanos, vegetales...",
+  // 8
   "árboles genealógicos de las estrellas...\n" +
   "Cómo rastrear químicamente sus orígenes/ancestros (Paula Jofré)",
+  // 9
   "HEREDAR EL\n" +
   "CONOCIMIENTO\n" +
   "seres vivos son cyborgs naturales",
-  "tecnologái y memoria - nuevas perspectivas con las AI"
+  // 10
+  "tecnología y memoria - nuevas perspectivas con las AI"
 };
 
 float[][] cuerpoModificaParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 30, 10, 16, 1},
+  // 1
+  {0, 30, 25, 14, 1},
+  // 2
+  {0, 30, 50, 12, 0},
+  // 3
+  {0, 60, 50, 12, 1},
+  // 4
+  {0, 70, 10, 12, 0},
+  // 5
+  {0, 80, 25, 12, 0},
+  // 6
+  {0, 80, 50, 12, 0},
+  // 7
+  {0, 60, 65, 16, 1},
+  // 8
+  {0, 15, 80, 12, 0},
+  // 9
+  {0, 70, 80, 12, 0},
+  // 10
+  {0, 80, 90, 10, 1}
 };
 
 int[][] cuerpoModificaLineas = {
+  {0, 1},
+  {1, 2},
+  {2, 3},
+  {3, 4},
+  {3, 6},
+  {3, 7},
+  {4, 5},
+  {5, 6},
+  {6, 7},
+  {8, 9},
+  {9, 10}
 };
 
 // diapo05
 String[] transitoComo = {
+  // 0
   "TRÁNSITO como\n" +
   "otra forma de\n" +
   "organizar el\n" +
   "conocimiento",
+  // 1
   "ESCRITURA DE LA MEMORIA",
-  "EPISTEMOLOGÍAS Sur",
+  // 2
+  "\nEPISTEMOLOGÍAS Sur",
+  // 3
   "SABERES SITUADOS",
-  "Imaginación Radical",
+  // 4
+  "\nImaginación Radical",
+  // 5
   "GENEALOGÍAS DE FORMAS DE MENSAJES CLANDESTINOS",
+  // 6
+  "(TRÁNSITO DE LA LUZ\n" +
   "(TEMPORALIDAD de los\n" +
   "ASTROS) Mensajes\n" +
   "que viajaron hace 50\n" +
-  "años y aún no llegan",
+  "años y aún no llegan\n\n\n",
+  // 7
   "Tránsito de mensajes",
+  // 8
   "SEÑALES DE HUMO\n" +
   "MENSAJES EN UNA\n" +
   "BOTELLA\n" +
@@ -220,22 +285,43 @@ String[] transitoComo = {
   "HACKEAR SISTEMAS\n" +
   "EMOTICONES\n" +
   "CICATRICES\n" +
-  " ..."
+  " ...",
+  // 9
+  " "
 };
 
 float[][] transitoComoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 10, 20, 12, 1},
+  // 1
+  {0, 40, 10, 12, 1},
+  // 2
+  {0, 10, 80, 14, 1},
+  // 3
+  {0, 40, 75, 10, 1},
+  // 4
+  {0, 70, 80, 14, 1},
+  // 5
+  {0, 30, 50, 14, 0},
+  // 6
+  {0, 75, 30, 14, 0},
+  // 7
+  {0, 90, 40, 10, 1},
+  // 8
+  {0, 95, 70, 14, 2},
+  // 9
+  {0, 20, 40, 32, 0}
 };
 
 int[][] transitoComoLineas = {
+  {0, 9},
+  {1, 9},
+  {2, 4},
+  {4, 6},
+  {4, 8},
+  {5, 6},
+  {5, 9},
+  {2, 9}
 };
 
 // diapo06

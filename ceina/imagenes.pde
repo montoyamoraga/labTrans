@@ -34,7 +34,9 @@ ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
 // posY
 String[][] listaDibujos = {
   {"1", "dibujos/diapo-01.png", "25", "70", "50"},
-  {"2", "dibujos/diapo-02.png", "30", "50", "50"}
+  {"2", "dibujos/diapo-02.png", "30", "50", "50"},
+  {"3", "dibujos/diapo-03.png", "20", "65", "20"},
+  {"5", "dibujos/diapo-05.png", "10", "20", "40"}
 };
 
 String[][] listaEstrellas = {
