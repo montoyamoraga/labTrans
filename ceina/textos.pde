@@ -683,34 +683,62 @@ int[][] memoriaCorporalLineas = {
 
 // diapo11
 String[] verdadMemoria = {
-  "¿CÓMO SE PRODUCE LA MEMORIA?",
-  "¿Qué hace la verdad en la Memoria?",
+  // 0
+  "¿CÓMO SE PRODUCE LA MEMORIA?\n",
+  // 1
+  "¿Qué hace la verdad en la Memoria?\n",
+  // 2
   "La Memoria es un relato. El negacionismo se funda en\n" +
   "un hecho mínimo al que se le confiere la representación\n" +
   "del todo",
+  // 3
   "HIPER OBJETOS",
-  "sesgos cognitivos y por tanto sesgos respecto a la\n" +
-  "lectura ideológica de la realidad",
+  // 4
+  "...sesgos cognitivos y por tanto sesgos respecto a la\n" +
+  "lectura ideológica de la realidad.",
+  // 5
   "¿CÓMO NOS RE-CONOCEMOS EN UNA\n" +
   "MEMORIA COMÚN?",
+  // 6
   "Mirar de manera oblicua trans trans trans",
+  // 7
   "JAQUEAR EL RELATO OFICIAL / JAQUEAR LA MEMORIA",
+  // 8
   "Jaquear un dato: concatenación causal",
+  // 9
+  " "
 };
 
 float[][] verdadMemoriaParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 30, 20, 18, 1},
+  // 1
+  {0, 30, 30, 14, 1},
+  // 2
+  {0, 30, 40, 16, 0},
+  // 3
+  {0, 30, 50, 18, 0},
+  // 4
+  {0, 30, 60, 14, 1},
+  // 5
+  {0, 80, 10, 18, 1},
+  // 6
+  {0, 80, 40, 16, 1},
+  // 7
+  {0, 85, 75, 12, 1},
+  // 8
+  {0, 85, 80, 10, 1},
+  // 9
+  {0, 80, 20, 32, 1}
 };
 
 int[][] verdadMemoriaLineas = {
+  {0, 9},
+  {1, 2},
+  {2, 4},
+  {4, 7},
+  {5, 9},
+  {7, 9}
 };
 
 // diapo12
