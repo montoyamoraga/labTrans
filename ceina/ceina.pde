@@ -128,12 +128,13 @@ void draw() {
     rectMode(CORNER);
     noStroke();
     fill(0, 255);
-    rect(0, 0, width, height*10/100);
-    rect(0, height*90/100, width, height);
+    rect(0, 0, width, height * 75/100);
+    rect(0, height * 75/100, width, height);
     popStyle();
+   
 
-    Imagen estrellaIzquierda = estrellas.get(0);
-    Imagen estrellaDerecha = estrellas.get(1);
+    Imagen estrellaIzquierda = estrellas.get(proyector * 2);
+    Imagen estrellaDerecha = estrellas.get(proyector * 2 + 1);
 
     estrellaIzquierda.mostrar();
     estrellaDerecha.mostrar();

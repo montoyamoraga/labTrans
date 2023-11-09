@@ -230,7 +230,6 @@ void inicializarDiapos() {
   }
 
 
-
   // agregar imagen correspondiente a ese proyector
   //diapos.get(32).agregarImagen(estrellas.get(proyector * 2));
   //diapos.get(32).agregarImagen(estrellas.get(proyector * 2 + 1));
