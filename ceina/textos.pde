@@ -810,7 +810,7 @@ String[] silencioEco = {
   // 9
   "El sonido es radioactivo\n",
   // 10
-  "El sonido que comenzó hace x años-luz\n" +
+  "El sonido que comenzó hace 50 años-luz\n" +
   "también opera en la herencia familiar"
 };
 
@@ -1153,7 +1153,7 @@ String[] laAntropologa = {
   // 0
   "La antropóloga Mary Douglas\n" +
   "define al polvo como\n" +
-  "matter our of place",
+  "matter out of place",
   // 1
   "MATERIA FUERA DE\n" +
   "LUGAR",
@@ -1239,7 +1239,7 @@ String[] vivianaLlora = {
   // 0
   "Viviana llora. Viviana oyó torbellines de peces el aire\n" +
   "disputándose bocados de una despedida trunca, de un rezo no oído,\n" +
-  "de un amor no dicho. Viviana está en la playa. Vivina es Chile\n",
+  "de un amor no dicho. Viviana está en la playa. Viviana es Chile\n",
   // 1
   "El mar carnívoro de Chile es el anverso de las\n" +
   "aguas tranquilas donde llegan las cenizas de los\n" +
