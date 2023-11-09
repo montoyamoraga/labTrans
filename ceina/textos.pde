@@ -116,7 +116,7 @@ String[] fisicaAstronomia = {
   // 0
   "FÍSICA - ASTRONOMÍA",
   // 1
-  "tiempos humanos versus tiempos astronómicos",
+  "tiempos humanos versus tiempos astronómicos\n",
   // 2
   "El tránsito de la luz y el sonido\n" +
   "transmiten información en un\n" +
@@ -856,7 +856,7 @@ String[] tiempoUnix = {
   // 0
   " ",
   // 1
-  "TRUENO como\n" +
+  "\n\nTRUENO como\n" +
   "otra forma de\n" +
   "organizar el\n" +
   "conocimiento",
@@ -871,9 +871,9 @@ String[] tiempoUnix = {
   "GENEALOGÍA DEL TRUENO PARA ENTRETEJER RELATOS\n" +
   "HACIA RE-CONOCERNOS EN UNA MEMORIA COMÚN",
   // 5
-  "TIEMPO UNIX",
+  "TIEMPO UNIX\n",
   // 6
-  "Escalas Temporales",
+  "\nEscalas Temporales",
   // 7
   "ANALOGÍAS ENTRE LA FISIOLOGÍA Y LA\n" +
   "COGNICIÓN, EL MITO, LA POESÍA, LA ASTRONOMÍA\n" +
@@ -881,28 +881,55 @@ String[] tiempoUnix = {
   // 8
   "Transitar los tiempos de las memorias",
   // 9
-  "Nuestros tiempos",
+  "Nuestros tiempos\n",
   // 10
-  "Tiempos ancestrales",
+  "\nTiempos ancestrales",
   // 11
-  "Tiempos astronómicos"
+  "Tiempos astronómicos\n",
+  // 12
+  " "
 };
 
 float[][] tiempoUnixParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 10, - 100, 32, 1},
+  // 1
+  {0, 10, 20, 16, 1},
+  // 2
+  {0, 40, 20, 16, 1},
+  // 3
+  {0, 70, 30, 14, 1},
+  // 4
+  {0, 70, 50, 16, 1},
+  // 5
+  {0, 20, 70, 22, 1},
+  // 6
+  {0, 40, 70, 16, 1},
+  // 7
+  {0, 75, 70, 16, 1},
+  // 8
+  {0, 50, 85, 14, 1},
+  // 9
+  {0, 20, 90, 16, 1},
+  // 10
+  {0, 50, 90, 16, 1},
+  // 11
+  {0, 80, 90, 16, 1},
+  // 12
+  {0, 20, 50, 32, 1},
 };
 
 int[][] tiempoUnixLineas = {
+  {0, 1},
+  {2, 6},
+  {3, 4},
+  {4, 7},
+  {4, 12},
+  {5, 6},
+  {6, 7},
+  {9, 10},
+  {10, 11}
+  
 };
 
 // diapo15

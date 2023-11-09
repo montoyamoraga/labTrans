@@ -1,9 +1,21 @@
-// miercoles
 // hacer ejemplo de 3 proyectores
 // pero con un computador
 // en processing
 
 boolean probando = true;
+
+// TODO
+// tratar de hacer que las imagenes
+// aparezcan, o giren, o tengan cierto fadeIn fadeOut
+
+// TODO
+// encontrar la diapo con mas texto
+// para saber cuanto se demora
+// en torno a un minuto por diapo
+
+// hacer que la primera vez que recorren
+// sea muy fijo y ordenado
+// que la aleatoreidad ocurra en las siguientes pasadas
 
 // proyector puede ser 0, 1, 2
 int proyector = 2;
@@ -43,6 +55,7 @@ void setup() {
   // 400px cada una
   //size(1920, 1080);
   size(960, 540);
+  //size(480, 270);
   //fullScreen();
 
   inicializarTiempos();
@@ -60,8 +73,8 @@ void draw() {
 
   if (probando) {
     pushStyle();
-    textSize(64);
-    textFont(fuentes[64]);
+    textSize(32);
+    textFont(fuentes[32]);
     textAlign(CENTER, CENTER);
     fill(negro);
     text(escenaActual, 90*width/100, 10*height/100);
