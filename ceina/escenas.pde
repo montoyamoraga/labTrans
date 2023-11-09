@@ -31,7 +31,7 @@ void actualizarEscenaActual(boolean forzar) {
 void keyPressed() {
   if (key == ' ') {
     actualizarEscenaActual(true);
-    background(255);
+    //background(255);
   } else if (
     key == '0' ||
     key == '1' ||

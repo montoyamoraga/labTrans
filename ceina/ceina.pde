@@ -47,7 +47,15 @@ void setup() {
 
 void draw() {
 
-  background(255);
+  //background(255);
+
+  //agregar transparencia encima
+  pushStyle();
+  rectMode(CORNER);
+  noStroke();
+  fill(255, 40 * 255/100);
+  rect(0, 0, width, height);
+  popStyle();
 
   if (probando) {
     pushStyle();
@@ -67,4 +75,43 @@ void draw() {
   diapoActual.mostrarLineas();
   diapoActual.mostrarTextos();
   diapoActual.actualizar();
+
+  // figura especial diapo30
+  if (escenaActual == 29) {
+    pushStyle();
+    rectMode(CENTER);
+    stroke(negro, 40 * 255/100);
+    noFill();
+    translate(width/2, height/2);
+    rotate(radians(30));
+    rect(0,
+      0,
+      25*width/100,
+      70*height/100);
+    popStyle();
+  }
+
+
+  // figura especial diapo30
+  if (escenaActual == 30) {
+    pushStyle();
+    rectMode(CENTER);
+    stroke(negro, 40 * 255/100);
+    noFill();
+    translate(width/2, height/2);
+    rotate(radians(15));
+    rect(0,
+      0,
+      25*width/100,
+      70*height/100);
+    popStyle();
+  }
+
+  //// agregar transparencia encima
+  //pushStyle();
+  //rectMode(CORNER);
+  //noStroke();
+  //fill(255, 40 * 255/100);
+  //rect(0, 0, width, height);
+  //popStyle();
 }

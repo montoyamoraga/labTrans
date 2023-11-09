@@ -1315,20 +1315,26 @@ int[][] observandoOrionisLineas = {
 
 // diapo29
 String[] excluirAlgo = {
+  // 0
   "Excluir algo de la\n" +
   "memoria es erradicarlo\n" +
   "del tiempo",
+  // 1
   "El mar agitado fue escogido para esconder\n" +
   "los cuerpos. Su vastedad, sus olas\n" +
   "poderosas prometían mantener el silencio y\n" +
   "excluir de la memoria colectiva a esos cuerpos.",
+  // 2
   "¿CUÁL ES EL TIEMPO DEL DOLOR?"
 };
 
 float[][] excluirAlgoParams = {
-  {0, 15, 60, 14, 0, 0},
-  {0, 50, 60, 14, 0, 0},
-  {0, 80, 60, 14, 0, 0}
+  // 0
+  {0, 10, 60, 14, 0, 0},
+  // 1
+  {0, 34, 60, 14, 0, 0},
+  // 2
+  {0, 70, 60, 14, 0, 0}
 };
 
 int[][] excluirAlgoLineas = {
@@ -1345,8 +1351,8 @@ String[] cenizasArrojadas = {
 };
 
 float[][] cenizasArrojadasParams = {
-  {0, 20, 35, 14, 0, 0},
-  {0, 80, 35, 14, 0, 0}
+  {0, 15, 35, 14, 0, 0},
+  {0, 70, 35, 14, 0, 0}
 };
 
 int[][] cenizasArrojadasLineas = {
