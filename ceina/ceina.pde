@@ -38,9 +38,9 @@ void setup() {
 
   // 400px cada una
   //size(1920, 1080);
-  size(960, 540);
+  //size(960, 540);
   //size(480, 270);
-  //fullScreen();
+  fullScreen();
 
   inicializarTiempos();
   inicializarImagenes();
