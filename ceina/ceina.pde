@@ -5,10 +5,6 @@
 boolean probando = true;
 
 // TODO
-// tratar de hacer que las imagenes
-// aparezcan, o giren, o tengan cierto fadeIn fadeOut
-
-// TODO
 // encontrar la diapo con mas texto
 // para saber cuanto se demora
 // en torno a un minuto por diapo
@@ -18,26 +14,9 @@ boolean probando = true;
 // que la aleatoreidad ocurra en las siguientes pasadas
 
 // proyector puede ser 0, 1, 2
-int proyector = 2;
+int proyector = 0;
 
 int diaposPorPantalla = 3;
-
-// agregar splash screen
-// entre cada triada de proyectores
-// por ejemplo, palabra silencio
-// que atraviesa las tres pantallas
-// si len cio
-
-// la primera diapo
-// que no tenga creditos
-// sino que diga memoria
-// me mo ria entre los 3 proyectores
-
-// o linea en vez de palabra
-// una linea que viaja y termina
-// en una de las preguntas importantes
-
-
 
 void setup() {
 
