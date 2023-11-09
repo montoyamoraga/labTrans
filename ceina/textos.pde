@@ -1230,19 +1230,21 @@ int[][] depositadoEnLineas = {
 
 // diapo26
 String[] vivianaLlora = {
+  // 0
   "Viviana llora. Viviana oyó torbellines de peces el aire\n" +
   "disputándose bocados de una despedida trunca, de un rezo no oído,\n" +
-  "de un amor no dicho. Viviana está en la playa. Vivina es Chile",
+  "de un amor no dicho. Viviana está en la playa. Vivina es Chile\n",
+  // 1
   "El mar carnívoro de Chile es el anverso de las\n" +
   "aguas tranquilas donde llegan las cenizas de los\n" +
-  "cuerpos transformados en harina de pescado",
-  "Raúl Zurita"
+  "cuerpos transformados en harina de pescado\n",
 };
 
 float[][] vivianaLloraParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 10, 60, 14, 0},
+  // 1
+  {0, 60, 40, 14, 0},
 };
 
 int[][] vivianaLloraLineas = {
