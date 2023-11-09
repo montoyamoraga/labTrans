@@ -1066,12 +1066,10 @@ int[][] vientoLevantaLineas = {
 // diapo19
 String[] elLenguaje = {
   "El lenguaje hace más de lo que sabe",
-  "Paul de Man"
 };
 
 float[][] elLenguajeParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  {-30, 70, 40, 32, 2}
 };
 
 int[][] elLenguajeLineas = {
@@ -1079,32 +1077,37 @@ int[][] elLenguajeLineas = {
 
 // diapo20
 String[] tiempoDolor = {
+  // 0
   "¿Cuál es el tiempo del dolor?",
+  // 1
   "El quiebre del lenguaje\n" +
   "El evento cero",
+  // 2
   "El tiempo del dolor comienza\n" +
-  "con su propio vocabulario."
+  "con su propio vocabulario.",
 };
 
 float[][] tiempoDolorParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
+  // 0
+  {15, 80, 30, 20, 2},
+  // 1
+  {0, 80, 50, 20, 2},
+  // 2
+  {-15, 80, 70, 20, 2},
 };
 
 
 int[][] tiempoDolorLineas = {
+  {1, 3}
 };
 
 // diapo21
 String[] lenguajeHace = {
-  "El lenguaje hace más de lo que sabe",
-  "Paul de Man"
+  "E l    l e n g u a j e    h a c e    m á s    d e    l o    q u e   s a b e ",
 };
 
 float[][] lenguajeHaceParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  {15, 80, 80, 25, 2}
 };
 
 int[][] lenguajeHaceLineas = {
