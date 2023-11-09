@@ -104,7 +104,7 @@ class Diapo {
       // escalar tamano fuente
       float nuevoTamanoFuente = float(width) * temp.tamano / float(960);
       textSize(nuevoTamanoFuente);
-      
+
       if (temp.alineacion == 0) {
         textAlign(LEFT, CENTER);
       } else if (temp.alineacion == 1) {
@@ -112,9 +112,14 @@ class Diapo {
       } else if (temp.alineacion == 2) {
         textAlign(RIGHT, CENTER);
       }
-      fill(0);
-      stroke(0);
-      
+      if (temp.numeroColor == 0) {
+        fill(negro);
+        stroke(negro);
+      } else if (temp.numeroColor == 1) {
+        fill(azul);
+        stroke(azul);
+      }
+
       // cajita blanca abajo del texto
       //pushStyle();
       //fill(255);
@@ -140,7 +145,7 @@ class Diapo {
         0
         );
       popMatrix();
-      
+
       popStyle();
     }
   }
