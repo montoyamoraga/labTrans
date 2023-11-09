@@ -1181,21 +1181,33 @@ int[][] laAntropologaLineas = {
 
 // diapo24
 String[] materiaFuera = {
+  // 0
   "Materia fuera de lugar",
+  // 1
   "Partículas finas",
+  // 2
   "Tiempo del dolor",
+  // 3
   "Cenizas al Río Sola",
+  // 4
   "cenizas al Río Vistula",
+  // 5
   "Polvo callado"
 };
 
 float[][] materiaFueraParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 50, 10, 26, 2},
+  // 1
+  {45 + random(-10, 10), 20, 47, 24, 2},
+  // 2
+  {-45 + random(-10, 10), 40, 40, 24, 0},
+  // 3
+  {-45 + random(-10, 10), 50, 75, 24, 0},
+  // 4
+  {45 + random(-10, 10), 25, 80, 24, 2},
+  // 5
+  {0, 25, 90, 26, 0}
 };
 
 int[][] materiaFueraLineas = {
