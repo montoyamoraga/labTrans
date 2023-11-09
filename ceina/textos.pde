@@ -929,7 +929,7 @@ int[][] tiempoUnixLineas = {
   {6, 7},
   {9, 10},
   {10, 11}
-  
+
 };
 
 // diapo15
@@ -966,22 +966,38 @@ int[][] microEventoLineas = {
 
 // diapo16
 String[] polvoCallado = {
-  "POLVO CALLADO",
+  // 0
+  " ",
+  // 1
+  "\n\nPOLVO CALLADO",
+  // 2
   "(partículas en suspensión: materia fina)",
-  "Volé en POLVO FINO de la sepultura y fui espesando sobre tu campo, todo para mirarte",
-  "Gabriela Mistral",
-  "finas partículas atraviesan la atmósfera"
+  // 3
+  "Volé en POLVO FINO de la sepultura y fui espesando sobre tu campo, todo para mirarte\n",
+  // 4
+  "finas partículas atraviesan la atmósfera",
+  // 5
+  " "
 };
 
 float[][] polvoCalladoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {degrees(atan2(float(height), 2*float(height))), -100, -100, 32, 1},
+  // 1
+  {0, 70, 20, 32, 1},
+  // 2
+  {degrees(atan2(float(height), 2*float(height))), 30, 20, 16, 0},
+  // 3
+  {0, 50, 60, 18, 1},
+  // 4
+  {degrees(atan2(float(height), 2*float(height))), 30, 70, 16, 0},
+  // 5
+  {degrees(atan2(float(height), 2*float(height))), 100, 100, 32, 1},
 };
 
 int[][] polvoCalladoLineas = {
+  {1, 0},
+  {3, 5}
 };
 
 // diapo17
