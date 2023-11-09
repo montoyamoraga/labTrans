@@ -1144,26 +1144,36 @@ int[][] eventoCeroLineas = {
 
 // diapo23
 String[] laAntropologa = {
+  // 0
   "La antropóloga Mary Douglas\n" +
   "define al polvo como\n" +
   "matter our of place",
+  // 1
   "MATERIA FUERA DE\n" +
   "LUGAR",
+  // 2
   "Los calderos a vapor de la pesquera, los que se usan para hacer\n" +
   "harina de pescado, sirvieron para reducir a polvo a los cuerpos de\n" +
   "los detenidos y ejecutados en los primeros años de la dictadura.",
+  // 3
   "Quien fuera inventor de la cámara de gases móvil durante la\n" +
   "Segunda Guerra Mundial, es designado en 1973 director de la\n" +
   "Pesquera Arauco en San Antonio.",
-  "Se trata del comandante Walter Rauff"
+  // 4
+  "Se trata del comandante Walter Rauff  "
 };
 
 float[][] laAntropologaParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 15, 40, 14, 0},
+  // 1
+  {0, 50, 40, 16, 0},
+  // 2
+  {0, 10, 70, 10, 0},
+  // 3
+  {0, 10, 80, 10, 0},
+  // 4
+  {0, 30, 90, 10, 2},
 };
 
 int[][] laAntropologaLineas = {
