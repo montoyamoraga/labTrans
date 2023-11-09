@@ -2,7 +2,12 @@
 // pero con un computador
 // en processing
 
+// probando = true con numeros en pantalla
+// false sin numeros
 boolean probando = true;
+
+// proyector puede ser 0, 1, 2
+int proyector = 0;
 
 boolean modoDiapos = true;
 
@@ -15,8 +20,7 @@ boolean modoDiapos = true;
 // sea muy fijo y ordenado
 // que la aleatoreidad ocurra en las siguientes pasadas
 
-// proyector puede ser 0, 1, 2
-int proyector = 0;
+
 
 int diaposPorPantalla = 3;
 
