@@ -190,7 +190,7 @@ String[] cuerpoModifica = {
   "su ambiente -\n",
   // 3
   "No hay memoria\n" +
-  "sin vida/ sin vivir",
+  "sin vida / sin vivir",
   // 4
   "El cerebro reorganiza y facilita procesos y\n" +
   "funciones de la memoria, pero la\n" +
@@ -729,7 +729,7 @@ float[][] verdadMemoriaParams = {
   // 5
   {0, 80, 10, 18, 1, 0},
   // 6
-  {0, 80, 40, 16, 1, 0},
+  {0, 80, 50, 16, 1, 0},
   // 7
   {0, 85, 75, 12, 1, 0},
   // 8
@@ -942,7 +942,7 @@ String[] microEvento = {
   "DEL\n" +
   "MICRO EVENTO\n" +
   "AL HIPER    OBJETO\n" +
-  "-idea y vuelta - entrelazados-",
+  "-ida y vuelta - entrelazados-",
   // 2
   "micropartículas: polvo en suspensión / polvo de estrellas",
   // 3
@@ -979,7 +979,9 @@ String[] polvoCallado = {
   // 4
   "finas partículas atraviesan la atmósfera",
   // 5
-  " "
+  " ",
+  // 6
+  "Gabriela Mistral"
 };
 
 float[][] polvoCalladoParams = {
@@ -995,6 +997,8 @@ float[][] polvoCalladoParams = {
   {degrees(atan2(float(height), 2*float(height))), 30, 70, 16, 0, 0},
   // 5
   {degrees(atan2(float(height), 2*float(height))), 100, 100, 32, 1, 0},
+  // 6
+  {0, 50, 70, 16, 1, 0},
 };
 
 int[][] polvoCalladoLineas = {
@@ -1128,7 +1132,9 @@ String[] eventoCero = {
   "  podridos escalones de historia. Estoy en marcha, dije,  \n" +
   "  y atrás queda el gran espejismo de la Tierra.  ",
   // 3
-  " "
+  " ",
+  // 4
+  "Juan Wenuan Escalona"
 };
 
 float[][] eventoCeroParams = {
@@ -1139,7 +1145,9 @@ float[][] eventoCeroParams = {
   // 2
   {0, 35, 70, 12, 2, 0},
   // 3
-  {0, 40, 110, 32, 1, 0}
+  {0, 40, 110, 32, 1, 0},
+  // 4
+  {0, 35, 80, 12, 2, 0},
 };
 
 int[][] eventoCeroLineas = {
@@ -1237,7 +1245,7 @@ int[][] depositadoEnLineas = {
 // diapo26
 String[] vivianaLlora = {
   // 0
-  "Viviana llora. Viviana oyó torbellines de peces el aire\n" +
+  "Viviana llora. Viviana oyó torbellinos de peces el aire\n" +
   "disputándose bocados de una despedida trunca, de un rezo no oído,\n" +
   "de un amor no dicho. Viviana está en la playa. Viviana es Chile\n",
   // 1
@@ -1258,27 +1266,27 @@ int[][] vivianaLloraLineas = {
 
 // diapo27
 String[] materiaSolida = {
-  "Materia sólida en partículas",
-  "La harina de pescado puede tener un\n" +
-  "tamaño que varía entre 2,5 y 5 mm.",
-  "Cuando caen micro meteoritos a la\n" +
-  "tierra pueden ser cuerpos con una\n" +
-  "edad de miles de millones\n" +
-  "de años y un diámetro de 2 mm.",
-  "POLVO CALLADO\n" +
-  "UN SILENCIO FUERA DE LUGAR",
-  "En la cremación los restos óseos\n" +
-  "se reducen a cenizas, pero en realidad no\n" +
-  "es ceniza, sino una arena gruesa y gris\n" +
-  "pálida."
+  "    Materia sólida en partículas",
+  "    La harina de pescado puede tener un\n" +
+  "    tamaño que varía entre 2,5 y 5 mm.",
+  "    Cuando caen micro meteoritos a la\n" +
+  "    tierra pueden ser cuerpos con una\n" +
+  "    edad de miles de millones\n" +
+  "    de años y un diámetro de 2 mm.",
+  "    POLVO CALLADO\n" +
+  "    UN SILENCIO FUERA DE LUGAR",
+  "    En la cremación los restos óseos\n" +
+  "    se reducen a cenizas, pero en realidad no\n" +
+  "    es ceniza, sino una arena gruesa y gris\n" +
+  "    pálida."
 };
 
 float[][] materiaSolidaParams = {
-  {0, 50, 30, 14, 0, 0},
-  {0, 15, 50, 14, 0, 0},
-  {0, 50, 50, 14, 0, 0},
-  {0, 50, 70, 14, 0, 0},
-  {0, 80, 50, 14, 0, 0}
+  {0, 45, 30, 14, 0, 0},
+  {0, 10, 50, 14, 0, 0},
+  {0, 45, 50, 14, 0, 0},
+  {0, 45, 70, 14, 0, 0},
+  {0, 75, 50, 14, 0, 0}
 };
 
 int[][] materiaSolidaLineas = {
@@ -1292,22 +1300,25 @@ int[][] materiaSolidaLineas = {
 
 // diapo28
 String[] observandoOrionis = {
+  // 0
   "Observando a ORIONIS\n" +
   "científicos han propuesto que\n" +
   "como elemento el agua es más\n" +
   "antigua incluso que el sol.",
+  // 1
   "¿CUÁL ES EL TIEMPO DEL DOLOR?",
+  // 2
   "V883 ORIONIS\n" +
   "nube interestelar a 1300 años\n" +
   "luz de la tierra. Contiene más\n" +
   "agua que todos los océanos de\n" +
-  "nuestro planeta juntos.",
+  "nuestro planeta juntos."
 };
 
 float[][] observandoOrionisParams = {
   {0, 15, 40, 14, 0, 0},
-  {0, 50, 50, 14, 0, 0},
-  {0, 85, 60, 14, 0, 0}
+  {0, 40, 50, 14, 0, 0},
+  {0, 70, 60, 14, 0, 0}
 };
 
 int[][] observandoOrionisLineas = {
@@ -1360,20 +1371,32 @@ int[][] cenizasArrojadasLineas = {
 
 // diapo31
 String[] aguaElemento = {
+  // 0
   "EL AGUA ES UN ELEMENTO MÁS ANTIGUO QUE EL SOL",
+  // 1
   "¿CUÁL ES EL TIEMPO DEL DOLOR?",
+  // 2
   "¿CUÁL ES EL TIEMPO DE LA MEMORIA?",
+  // 3
   "(materia fuera\nde lugar)",
+  // 4
   "(polvo\ncallado)",
+  // 5
   "(silencio)"
 };
 
 float[][] aguaElementoParams = {
-  {0, 50, 50, 16, 0, 0},
-  {0, 70, 25, 12, 0, 0},
-  {0, 80, 75, 12, 0, 0},
+  // 0
+  {0, 40, 50, 16, 0, 0},
+  // 1
+  {0, 60, 25, 12, 0, 0},
+  // 2
+  {0, 70, 75, 12, 0, 0},
+  // 3
   {60, 5, 15, 12, 0, 0},
+  // 4
   {60, 15, 50, 12, 0, 0},
+  // 5
   {60, 25, 85, 12, 0, 0}
 };
 

@@ -7,7 +7,7 @@
 boolean probando = true;
 
 // proyector puede ser 0, 1, 2
-int proyector = 0;
+int proyector = 2;
 
 boolean modoDiapos = true;
 
@@ -19,8 +19,6 @@ boolean modoDiapos = true;
 // hacer que la primera vez que recorren
 // sea muy fijo y ordenado
 // que la aleatoreidad ocurra en las siguientes pasadas
-
-
 
 int diaposPorPantalla = 3;
 
@@ -40,9 +38,9 @@ void setup() {
 
   // 400px cada una
   //size(1920, 1080);
-  // size(960, 540);
+  size(960, 540);
   //size(480, 270);
-  fullScreen();
+  //fullScreen();
 
   inicializarTiempos();
   inicializarImagenes();
