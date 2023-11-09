@@ -1036,25 +1036,31 @@ int[][] objetoCuanticoLineas = {
 
 // diapo18
 String[] vientoLevanta = {
-  "el viento levanta la tierra\n" +
-  "que removimos con las uñas\n" +
-  "el polvo difumina todas las caras\n" +
-  "en la pampa cómo reconocerse\n" +
-  "si no hay pluma que aguatne un tirón\n" +
-  "la sangre brota tiñendo las manos",
-  "Mariana Camelio",
-  "¿dolor?",
-  "¿memoria?"
+  // 0
+  "el viento levanta la tierra  \n" +
+  "que removimos con las uñas  \n" +
+  "el polvo difumina todas las caras  \n" +
+  "en la pampa cómo reconocerse  \n" +
+  "si no hay pluma que aguatne un tirón  \n" +
+  "la sangre brota tiñendo las manos  ",
+  // 1
+  "  ¿dolor?\n",
+  // 2
+  "\n  ¿memoria?"
 };
 
 float[][] vientoLevantaParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 50, 50, 20, 2},
+  // 1
+  {0, 80, 35, 32, 1},
+  // 2
+  {0, 80, 65, 32, 1}
 };
 
 int[][] vientoLevantaLineas = {
+  {2, 0},
+  {2, 1}
 };
 
 // diapo19
