@@ -1,4 +1,6 @@
-int escenaActual = proyector;
+
+// iniciar escenaActual, saltarse la 0
+int escenaActual = proyector + 1;
 long tiempoEntreDiapos;
 long tiempoAnterior;
 String escenaSiguiente = "";
@@ -8,20 +10,27 @@ void inicializarTiempos() {
   tiempoAnterior = millis();
 }
 
-void actualizarEscenaActual() {
+void actualizarEscenaActual(boolean forzar) {
 
-  if (millis() - tiempoAnterior > tiempoEntreDiapos) {
+  if (forzar) {
     escenaActual = escenaActual + diaposPorPantalla;
-    escenaActual = escenaActual % textosTodos.length;
     tiempoAnterior = millis();
+  } else {
+    if (millis() - tiempoAnterior > tiempoEntreDiapos) {
+      escenaActual = escenaActual + diaposPorPantalla;
+      tiempoAnterior = millis();
+    }
+  }
+
+  // iniciar escenaActual, saltarse la 0
+  if (escenaActual >= textosTodos.length - 1) {
+    escenaActual = proyector + 1;
   }
 }
 
 void keyPressed() {
   if (key == ' ') {
-    escenaActual = escenaActual + diaposPorPantalla;
-    escenaActual = escenaActual % textosTodos.length;
-    tiempoAnterior = millis();
+    actualizarEscenaActual(true);
     background(255);
   } else if (
     key == '0' ||

@@ -77,9 +77,14 @@ float[][] memoriaParams = {
   {0, 35, 80, 20, 2, 0}
 };
 
+
+// params
+// texto inicio
+// texto fin
+// color
 int[][] memoriaLineas = {
-  {0, 1},
-  {1, 2}
+  {0, 1, 0},
+  {1, 2, 0}
 };
 
 // diapo02
@@ -106,10 +111,10 @@ float[][] aproximacionesParams = {
 };
 
 int[][] aproximacionesLineas = {
-  {0, 4},
-  {1, 5},
-  {2, 6},
-  {3, 7},
+  {0, 4, 0},
+  {1, 5, 0},
+  {2, 6, 0},
+  {3, 7, 0}
 };
 
 // diapo03
@@ -166,9 +171,9 @@ float[][] fisicaAstronomiaParams = {
 };
 
 int[][] fisicaAstronomiaLineas = {
-  {1, 2},
-  {1, 3},
-  {4, 5}
+  {1, 2, 0},
+  {1, 3, 0},
+  {4, 5, 0}
 };
 
 // diapo04
@@ -235,17 +240,17 @@ float[][] cuerpoModificaParams = {
 };
 
 int[][] cuerpoModificaLineas = {
-  {0, 1},
-  {1, 2},
-  {2, 3},
-  {3, 4},
-  {3, 6},
-  {3, 7},
-  {4, 5},
-  {5, 6},
-  {6, 7},
-  {8, 9},
-  {9, 10}
+  {0, 1, 0},
+  {1, 2, 0},
+  {2, 3, 0},
+  {3, 4, 0},
+  {3, 6, 0},
+  {3, 7, 0},
+  {4, 5, 0},
+  {5, 6, 0},
+  {6, 7, 0},
+  {8, 9, 0},
+  {9, 10, 0}
 };
 
 // diapo05
@@ -315,14 +320,14 @@ float[][] transitoComoParams = {
 };
 
 int[][] transitoComoLineas = {
-  {0, 9},
-  {1, 9},
-  {2, 4},
-  {4, 6},
-  {4, 8},
-  {5, 6},
-  {5, 9},
-  {2, 9}
+  {0, 9, 0},
+  {1, 9, 0},
+  {2, 4, 0},
+  {4, 6, 0},
+  {4, 8, 0},
+  {5, 6, 0},
+  {5, 9, 0},
+  {2, 9, 0}
 };
 
 // diapo06
@@ -416,15 +421,15 @@ float[][] autoRecordarnosParams = {
 };
 
 int[][] autoRecordarnosLineas = {
-  {1, 5},
-  {2, 5},
-  {2, 3},
-  {3, 4},
-  {4, 6},
-  {5, 8},
-  {5, 10},
-  {6, 7},
-  {8, 9}
+  {1, 5, 0},
+  {2, 5, 0},
+  {2, 3, 0},
+  {3, 4, 0},
+  {4, 6, 0},
+  {5, 8, 0},
+  {5, 10, 0},
+  {6, 7, 0},
+  {8, 9, 0}
 };
 
 // diapo07
@@ -479,14 +484,14 @@ float[][] diaJulianoParams = {
 };
 
 int[][] diaJulianoLineas = {
-  {0, 1},
-  {0, 9},
-  {1, 9},
-  {2, 7},
-  {6, 10},
-  {7, 9},
-  {7, 10},
-  {9, 10}
+  {0, 1, 0},
+  {0, 9, 0},
+  {1, 9, 0},
+  {2, 7, 0},
+  {6, 10, 0},
+  {7, 9, 0},
+  {7, 10, 0},
+  {9, 10, 0}
 };
 
 // diapo08
@@ -533,14 +538,14 @@ float[][] calendarioAndinoParams = {
 };
 
 int[][] calendarioAndinoLineas = {
-  {1, 2},
-  {2, 3},
-  {2, 5},
-  {2, 7},
-  {3, 4},
-  {4, 7},
-  {5, 6},
-  {6, 7}
+  {1, 2, 0},
+  {2, 3, 0},
+  {2, 5, 0},
+  {2, 7, 0},
+  {3, 4, 0},
+  {4, 7, 0},
+  {5, 6, 0},
+  {6, 7, 0}
 
 };
 
@@ -590,7 +595,7 @@ float[][] neuroCienciaParams = {
   // 5
   {0, 45, 75, 14, 1, 0},
   // 6
-  {0, 65, 50, 16, 1, 0},
+  {0, 65, 50, 16, 1, 1},
   // 7
   {270, 80, 50, 16, 1, 0},
   // 8
@@ -602,10 +607,10 @@ float[][] neuroCienciaParams = {
 };
 
 int[][] neuroCienciaLineas = {
-  {0, 2},
-  {1, 5},
-  {6, 7},
-  {6, 10},
+  {0, 2, 0},
+  {1, 5, 0},
+  {6, 7, 0},
+  {6, 10, 0},
 };
 
 // diapo10
@@ -672,14 +677,14 @@ float[][] memoriaCorporalParams = {
 };
 
 int[][] memoriaCorporalLineas = {
-  {0, 1},
-  {0, 7},
-  {1, 2},
-  {1, 8},
-  {3, 4},
-  {4, 5},
-  {7, 10},
-  {9, 11}
+  {0, 1, 0},
+  {0, 7, 0},
+  {1, 2, 0},
+  {1, 8, 0},
+  {3, 4, 0},
+  {4, 5, 0},
+  {7, 10, 0},
+  {9, 11, 0}
 };
 
 // diapo11
@@ -734,12 +739,12 @@ float[][] verdadMemoriaParams = {
 };
 
 int[][] verdadMemoriaLineas = {
-  {0, 9},
-  {1, 2},
-  {2, 4},
-  {4, 7},
-  {5, 9},
-  {7, 9}
+  {0, 9, 0},
+  {1, 2, 0},
+  {2, 4, 0},
+  {4, 7, 0},
+  {5, 9, 0},
+  {7, 9, 0}
 };
 
 // diapo12
@@ -774,7 +779,7 @@ float[][] silencioEnsordecedorParams = {
 };
 
 int[][] silencioEnsordecedorLineas = {
-  {2, 3}
+  {2, 3, 0}
 };
 
 // diapo13
@@ -836,20 +841,16 @@ float[][] silencioEcoParams = {
 };
 
 int[][] silencioEcoLineas = {
-  {0, 1},
-  {1, 2},
-  {2, 3},
-  //{2, 4},
-  {4, 2},
-  {2, 5},
-  //{2, 6},
-  {6, 2},
-  {2, 7},
-  //{2, 8},
-  {8, 2},
-  {2, 9},
-  //{2, 10}
-  {10, 2}
+  {0, 1, 0},
+  {1, 2, 0},
+  {2, 3, 0},
+  {4, 2, 0},
+  {2, 5, 0},
+  {6, 2, 0},
+  {2, 7, 0},
+  {8, 2, 0},
+  {2, 9, 0},
+  {10, 2, 0}
 };
 
 // diapo14
@@ -921,15 +922,15 @@ float[][] tiempoUnixParams = {
 };
 
 int[][] tiempoUnixLineas = {
-  {0, 1},
-  {2, 6},
-  {3, 4},
-  {4, 7},
-  {4, 12},
-  {5, 6},
-  {6, 7},
-  {9, 10},
-  {10, 11}
+  {0, 1, 0},
+  {2, 6, 0},
+  {3, 4, 0},
+  {4, 7, 0},
+  {4, 12, 0},
+  {5, 6, 0},
+  {6, 7, 0},
+  {9, 10, 0},
+  {10, 11, 0}
 
 };
 
@@ -960,9 +961,9 @@ float[][] microEventoParams = {
 };
 
 int[][] microEventoLineas = {
-  {0, 1},
-  {1, 2},
-  {2, 3}
+  {0, 1, 0},
+  {1, 2, 0},
+  {2, 3, 0}
 };
 
 // diapo16
@@ -997,8 +998,8 @@ float[][] polvoCalladoParams = {
 };
 
 int[][] polvoCalladoLineas = {
-  {1, 0},
-  {3, 5}
+  {1, 0, 0},
+  {3, 5, 0}
 };
 
 // diapo17
@@ -1032,7 +1033,7 @@ float[][] objetoCuanticoParams = {
 };
 
 int[][] objetoCuanticoLineas = {
-  {2, 1},
+  {2, 1, 0},
 };
 
 // diapo18
@@ -1060,8 +1061,8 @@ float[][] vientoLevantaParams = {
 };
 
 int[][] vientoLevantaLineas = {
-  {2, 0},
-  {2, 1}
+  {2, 0, 0},
+  {2, 1, 0}
 };
 
 // diapo19
@@ -1142,9 +1143,9 @@ float[][] eventoCeroParams = {
 };
 
 int[][] eventoCeroLineas = {
-  {1, 0},
-  {1, 2},
-  {1, 3}
+  {1, 0, 0},
+  {1, 2, 0},
+  {1, 3, 0}
 };
 
 // diapo23
@@ -1281,12 +1282,12 @@ float[][] materiaSolidaParams = {
 };
 
 int[][] materiaSolidaLineas = {
-  {0, 1},
-  {0, 2},
-  {0, 4},
-  {1, 3},
-  {2, 3},
-  {3, 4}
+  {0, 1, 0},
+  {0, 2, 0},
+  {0, 4, 0},
+  {1, 3, 0},
+  {2, 3, 0},
+  {3, 4, 0}
 };
 
 // diapo28
@@ -1371,23 +1372,11 @@ float[][] aguaElementoParams = {
 };
 
 int[][] aguaElementoLineas = {
-  {1, 2},
-  {3, 5}
+  {1, 2, 0},
+  {3, 5, 0}
 };
 
 // diapo32
-String[] penultimaDiapo = {
-  "x"
-};
-
-float[][] penultimaDiapoParams = {
-  {0, -100, -100, 32, 0, 0}
-};
-
-int[][] penultimaDiapoLineas = {
-};
-
-// diapo33
 String[] ultimaDiapo = {
   "x"
 };
@@ -1432,7 +1421,6 @@ String[][] textosTodos = {
   excluirAlgo,
   cenizasArrojadas,
   aguaElemento,
-  penultimaDiapo,
   ultimaDiapo
 };
 
@@ -1469,7 +1457,6 @@ float[][][] textosParams = {
   excluirAlgoParams,
   cenizasArrojadasParams,
   aguaElementoParams,
-  penultimaDiapoParams,
   ultimaDiapoParams
 };
 
@@ -1506,7 +1493,6 @@ int[][][] textosLineas = {
   excluirAlgoLineas,
   cenizasArrojadasLineas,
   aguaElementoLineas,
-  penultimaDiapoLineas,
   ultimaDiapoLineas
 };
 

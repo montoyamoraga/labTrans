@@ -15,10 +15,18 @@ class Linea {
   color lineaStroke;
   float porcentaje;
   float paso;
+  
+  int numeroColor;
 
   // constructor
-  Linea(color nuevoColor, PVector comienzo, PVector fin) {
-    lineaStroke = nuevoColor;
+  Linea(int nuevoColor, PVector comienzo, PVector fin) {
+    
+    if (nuevoColor == 0) {
+      lineaStroke = negro;
+    }
+    else if (nuevoColor == 1) {
+      lineaStroke = azul;
+    }
 
     posInicial = comienzo;
 
@@ -49,7 +57,8 @@ class Linea {
     float y0 = posInicial.y;
     float x1 = posActual.x;
     float y1 = posActual.y;
-
+    
+    stroke(lineaStroke);
     line(x0, y0, x1, y1);
 
     popStyle();

@@ -59,7 +59,7 @@ void draw() {
     popStyle();
   }
 
-  actualizarEscenaActual();
+  actualizarEscenaActual(false);
 
   Diapo diapoActual = diapos.get(escenaActual);
 

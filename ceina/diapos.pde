@@ -88,7 +88,7 @@ class Diapo {
       inicio = new PVector(inicioX, inicioY);
       fin = new PVector(finX, finY);
 
-      Linea temp = new Linea(color(0), inicio, fin);
+      Linea temp = new Linea(nuevosTextosLineas[i][2], inicio, fin);
 
       lineas.add(temp);
     }
@@ -151,13 +151,12 @@ class Diapo {
   }
 
   void mostrarLineas() {
-    pushStyle();
-    stroke(0);
     for (int i = 0; i < lineas.size(); i ++) {
+      pushStyle();
       Linea temp = lineas.get(i);
       temp.dibujar();
+      popStyle();
     }
-    popStyle();
   }
 
   void actualizar() {
