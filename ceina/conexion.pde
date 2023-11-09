@@ -42,6 +42,8 @@ void oscEvent(OscMessage oscNuevoMensaje) {
           modoDiapos = false;
         } else {
           modoDiapos = true;
+          //escenaActual = proyector + 1;
+          //inicializarDiapos();
         }
 
         if (i + 1 == 4) {
@@ -49,7 +51,7 @@ void oscEvent(OscMessage oscNuevoMensaje) {
           inicializarDiapos();
         }
 
-        escenaActual = int(i + 1);
+        //escenaActual = int(i + 1);
         tiempoAnterior = millis();
         diapos.get(escenaActual).inicializar();
         escenaSiguiente = "";
