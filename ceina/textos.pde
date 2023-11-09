@@ -1098,7 +1098,6 @@ float[][] tiempoDolorParams = {
 
 
 int[][] tiempoDolorLineas = {
-  {1, 3}
 };
 
 // diapo21
@@ -1115,25 +1114,32 @@ int[][] lenguajeHaceLineas = {
 
 // diapo22
 String[] eventoCero = {
-  "EL EVENTO CERO\n" +
-  "ES EL QUIEBRE DEL LENGUAJE",
-  "EL TIEMPO DEL DOLOR COMIENZA\n" +
-  "CON SU PROPIO VOCABULARIO",
-  "Miro el sol ponerse contra este mapa roto,\n" +
-  "mientras abajo se fraguan espalda y lenguaje en los\n" +
-  "podridos escalones de historia. Estoy en marcha, dije,\n" +
-  "y atrás queda el gran espejismo de la Tierra.",
-  "Juan Wenuan Escalona"
+  // 0
+  "  EL EVENTO CERO\n" +
+  "  ES EL QUIEBRE DEL LENGUAJE",
+  // 1
+  "    EL TIEMPO DEL DOLOR COMIENZA\n" +
+  "    CON SU PROPIO VOCABULARIO",
+  // 2
+  "  Miro el sol ponerse contra este mapa roto,  \n" +
+  "  mientras abajo se fraguan espalda y lenguaje en los  \n" +
+  "  podridos escalones de historia. Estoy en marcha, dije,  \n" +
+  "  y atrás queda el gran espejismo de la Tierra.  ",
+  // 3
+  " "
 };
 
 float[][] eventoCeroParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  {0, 60, 10, 18, 0},
+  {0, 40, 40, 20, 0},
+  {0, 35, 70, 12, 2},
+  {0, 40, 110, 32, 1},
 };
 
 int[][] eventoCeroLineas = {
+  {1, 0},
+  {1, 2},
+  {1, 3}
 };
 
 // diapo23
