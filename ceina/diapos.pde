@@ -101,7 +101,9 @@ class Diapo {
 
       Texto temp = textos.get(i);
       textFont(fuentes[int(temp.tamano)]);
-      textSize(temp.tamano);
+      // escalar tamano fuente
+      float nuevoTamanoFuente = float(width) * temp.tamano / float(960);
+      textSize(nuevoTamanoFuente);
       
       if (temp.alineacion == 0) {
         textAlign(LEFT, CENTER);

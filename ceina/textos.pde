@@ -30,13 +30,11 @@ class Texto {
 // font inika de constanza artigas
 PFont[] fuentes = new PFont[130];
 
-void cargarFuente() {
+void cargarFuentes() {
   for (int i = 0; i < fuentes.length; i++) {
     fuentes[i] = loadFont("Inika-" + str(i) + ".vlw");
   }
-}
 
-void definirFuente() {
   textAlign(CENTER, CENTER);
   stroke(0);
 }

@@ -26,16 +26,15 @@ void setup() {
   enviarMensajeOSC();
 
   // tipografia
-  cargarFuente();
-  definirFuente();
+  cargarFuentes();
 
   smooth();
 
   // 400px cada una
   //size(1920, 1080);
-  size(960, 540);
+  //size(960, 540);
   //size(480, 270);
-  //fullScreen();
+  fullScreen();
 
   inicializarTiempos();
   inicializarImagenes();
@@ -64,7 +63,6 @@ void draw() {
 
   Diapo diapoActual = diapos.get(escenaActual);
 
-  //diapoActual.actualizar();
   diapoActual.mostrarImagenes();
   diapoActual.mostrarLineas();
   diapoActual.mostrarTextos();
