@@ -3,10 +3,13 @@ class Imagen {
   int numero;
   float posX;
   float posY;
+  int tinte;
+  
 
   Imagen(int numeroDiapo, String path) {
     imagen = loadImage(path);
     numero = numeroDiapo;
+    tinte = 0;
   }
 
   void escalar(int ancho) {
@@ -19,7 +22,14 @@ class Imagen {
   }
 
   void mostrar() {
+    if (tinte < 255 && Math.random() < 0.3) {
+      tinte = tinte + 1;
+    }
+    
+    pushStyle();
+    tint(255, tinte);
     image(imagen, posX, posY);
+    popStyle();
   }
 }
 
