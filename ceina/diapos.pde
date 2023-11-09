@@ -203,6 +203,7 @@ class Diapo {
 ArrayList<Diapo> diapos = new ArrayList<Diapo>();
 
 void inicializarDiapos() {
+  diapos = new ArrayList<Diapo>();
   for (int i = 0; i < textosTodos.length; i++ ) {
     diapos.add(new Diapo(i));
     for (int texto = 0; texto < textosTodos[i].length; texto++) {

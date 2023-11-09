@@ -10,8 +10,7 @@ boolean[] pushButtons = new boolean[16];
 int puertoRecibir = 8000;
 int puertoEnviar = 12000;
 
-String direccionRemota ="192.168.1.87";
-
+String direccionRemota ="192.168.2.217";
 
 void definirLocacionRemota() {
   miLocacionRemota = new NetAddress(direccionRemota, puertoEnviar);
@@ -38,6 +37,14 @@ void oscEvent(OscMessage oscNuevoMensaje) {
       pushButtons[i] = true;
       if (oscNuevoMensaje.get(0).floatValue() == 0) {
         println("soltado " + str(i + 1));
+        
+        if ((i + 1) == 16) {
+          modoDiapos = false;
+          
+        } else {
+          modoDiapos = true;
+        }
+        
         escenaActual = int(i + 1);
         tiempoAnterior = millis();
         diapos.get(escenaActual).inicializar();

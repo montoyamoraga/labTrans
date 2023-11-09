@@ -4,7 +4,6 @@ class Imagen {
   float posX;
   float posY;
   int tinte;
-  
 
   Imagen(int numeroDiapo, String path) {
     imagen = loadImage(path);

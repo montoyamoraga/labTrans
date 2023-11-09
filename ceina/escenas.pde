@@ -25,6 +25,7 @@ void actualizarEscenaActual(boolean forzar) {
   // iniciar escenaActual, saltarse la 0
   if (escenaActual >= textosTodos.length - 1) {
     escenaActual = proyector + 1;
+    inicializarDiapos();
   }
 }
 
