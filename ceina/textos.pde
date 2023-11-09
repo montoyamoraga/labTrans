@@ -1002,6 +1002,7 @@ int[][] polvoCalladoLineas = {
 
 // diapo17
 String[] objetoCuantico = {
+  // 0
   "El polvo es un objeto cuántico.\n" +
   "Un día entra por la rotura de tu ventana,\n" +
   "por la cerradura de la puerta,\n" +
@@ -1014,15 +1015,23 @@ String[] objetoCuantico = {
   "o una mariposa naranja en la catedral de la noche.\n" +
   "siempre está viva y\n" +
   "siempre está muerta.",
-  "Juan Pablo Riveros"
+  // 1
+  "",
+  // 2
+  ""
 };
 
 float[][] objetoCuanticoParams = {
-  {0, 0, 0, 32, 0},
-  {0, 0, 0, 32, 0}
+  // 0
+  {0, 20, 30, 26, 0},
+  // 1
+  {0, -10, -11, 32, 1},
+  // 2
+  {0, 150, 30, 32, 1},
 };
 
 int[][] objetoCuanticoLineas = {
+  {2, 1},
 };
 
 // diapo18
