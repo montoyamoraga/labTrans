@@ -13,11 +13,11 @@ boolean modoDiapos = true;
 int diaposPorPantalla = 3;
 
 void setup() {
-  
+
   // ratios 16:9
   size(1280, 720);
   //size(1920, 1080);
-  
+
   // ratios 4:3
   // size(800, 600);
 
@@ -28,7 +28,7 @@ void setup() {
 
   // tipografia
   cargarFuentes();
- 
+
   smooth();
 
   // esconder cursor
@@ -55,15 +55,16 @@ void draw() {
     fill(255, 40 * 255/100);
     rect(0, 0, width, height);
     popStyle();
-    if (probando) {
-      pushStyle();
-      textSize(32);
-      textFont(fuentes[32]);
-      textAlign(CENTER, CENTER);
-      fill(negro);
-      text(escenaActual, 90*width/100, 10*height/100);
-      popStyle();
-    }
+
+
+    pushStyle();
+    textSize(32);
+    textFont(fuentes[32]);
+    textAlign(CENTER, CENTER);
+    fill(negro);
+    text(escenaActual, 90 * width/100, 10 * height/100);
+    popStyle();
+
 
     actualizarEscenaActual(false);
 
@@ -84,8 +85,8 @@ void draw() {
       rotate(radians(30));
       rect(0,
         0,
-        25*width/100,
-        70*height/100);
+        25 * width/100,
+        70 * height/100);
       popStyle();
     }
 
@@ -100,18 +101,11 @@ void draw() {
       rotate(radians(15));
       rect(0,
         0,
-        25*width/100,
-        70*height/100);
+        25 * width/100,
+        70 * height/100);
       popStyle();
     }
 
-    //// agregar transparencia encima
-    //pushStyle();
-    //rectMode(CORNER);
-    //noStroke();
-    //fill(255, 40 * 255/100);
-    //rect(0, 0, width, height);
-    //popStyle();
   }
   // modo estrellas
   else {
@@ -122,7 +116,6 @@ void draw() {
     rect(0, 0, width, height * 75/100);
     rect(0, height * 75/100, width, height);
     popStyle();
-
 
     Imagen estrellaIzquierda = estrellas.get(proyector * 2);
     Imagen estrellaDerecha = estrellas.get(proyector * 2 + 1);

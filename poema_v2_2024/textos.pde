@@ -38,10 +38,8 @@ void cargarFuentes() {
   }
 
   textAlign(CENTER, CENTER);
-  stroke(0);
+  stroke(negro);
 }
-
-String fecha = "jueves 09 noviembre 2023";
 
 String[] primeraDiapo = {
   "x"

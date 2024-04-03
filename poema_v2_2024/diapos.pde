@@ -119,20 +119,6 @@ class Diapo {
         stroke(azul);
       }
 
-      // cajita blanca abajo del texto
-      //pushStyle();
-      //fill(255);
-      //stroke(0);
-      //noStroke();
-      //rectMode(CENTER);
-      //rect(
-      //  temp.posX * width/100,
-      //  temp.posY * height/100,
-      //  textWidth(temp.texto),
-      //  0.7 * textoNumeroLineas.get(i) * (textAscent() + textDescent())
-      //  );
-      //popStyle();
-
       pushMatrix();
 
       translate(
