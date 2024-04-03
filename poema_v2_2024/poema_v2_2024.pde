@@ -1,15 +1,26 @@
 // probando = true con numeros en pantalla
 // false sin numeros
+
+boolean modoProgramar = true;
+
 boolean probando = false;
 
 // proyector puede ser 0, 1, 2
-int proyector = 2;
+int proyector = 0;
 
 boolean modoDiapos = true;
 
 int diaposPorPantalla = 3;
 
+
 void setup() {
+  
+  // ratios 16:9
+  size(1280, 720);
+  //size(1920, 1080);
+  
+  // ratios 4:3
+  size(800, 600);
 
   // conexion
   definirLocacionRemota();
@@ -21,13 +32,8 @@ void setup() {
 
   smooth();
 
+  // esconder cursor
   noCursor();
-
-  // 400px cada una
-  //size(1920, 1080);
-  //size(960, 540);
-  //size(480, 270);
-  fullScreen();
 
   inicializarTiempos();
   inicializarImagenes();
@@ -39,8 +45,6 @@ void setup() {
 }
 
 void draw() {
-
-  //background(255);
 
   if (modoDiapos) {
 
