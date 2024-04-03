@@ -1,10 +1,9 @@
-// ceina
+// poema_v2_2024
 // codigo por montoyamoraga
 // hecho con processing 4
 // tipografia inika por constanza artigas
-// 09 noviembre 2023
-// presentado en ceina, santiago de chile
-// en el contexto de la bienal de artes mediales chile
+// presentado en universidad diego portales, santiago de chile
+// en el contexto de la preparacion de un paper academico
 
 String[] creditos = {
   "aarón montoya",
