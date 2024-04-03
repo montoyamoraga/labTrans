@@ -42,8 +42,6 @@ void oscEvent(OscMessage oscNuevoMensaje) {
           modoDiapos = false;
         } else {
           modoDiapos = true;
-          //escenaActual = proyector + 1;
-          //inicializarDiapos();
         }
 
         if (i + 1 == 4) {

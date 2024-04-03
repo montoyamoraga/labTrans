@@ -3,8 +3,6 @@
 
 boolean modoProgramar = true;
 
-boolean probando = false;
-
 // proyector puede ser 0, 1, 2
 int proyector = 0;
 
@@ -55,16 +53,6 @@ void draw() {
     fill(255, 40 * 255/100);
     rect(0, 0, width, height);
     popStyle();
-
-
-    pushStyle();
-    textSize(32);
-    textFont(fuentes[32]);
-    textAlign(CENTER, CENTER);
-    fill(negro);
-    text(escenaActual, 90 * width/100, 10 * height/100);
-    popStyle();
-
 
     actualizarEscenaActual(false);
 
