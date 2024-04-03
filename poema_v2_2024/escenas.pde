@@ -10,7 +10,7 @@ void inicializarTiempos() {
   tiempoAnterior = millis();
 }
 
-void actualizarEscenaActual(boolean forzar) {
+void actualizarEscenaActual() {
 
   if (millis() - tiempoAnterior > tiempoEntreDiapos) {
     escenaActual = escenaActual + diaposPorPantalla;
@@ -26,7 +26,7 @@ void actualizarEscenaActual(boolean forzar) {
 
 void keyPressed() {
   if (key == ' ') {
-    actualizarEscenaActual(true);
+    actualizarEscenaActual();
     //background(255);
   } else if (
     key == '0' ||

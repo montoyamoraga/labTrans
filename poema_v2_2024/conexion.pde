@@ -38,23 +38,20 @@ void oscEvent(OscMessage oscNuevoMensaje) {
       if (oscNuevoMensaje.get(0).floatValue() == 0) {
         println("soltado " + str(i + 1));
 
-        if ((i + 1) == 16) {
-          modoDiapos = false;
-        } else {
-          modoDiapos = true;
-        }
+        //if ((i + 1) == 16) {
+        //  modoDiapos = false;
+        //} else {
+        //  modoDiapos = true;
+        //}
 
         if (i + 1 == 4) {
           escenaActual = proyector + 1;
           inicializarDiapos();
         }
 
-        //escenaActual = int(i + 1);
         tiempoAnterior = millis();
         diapos.get(escenaActual).inicializar();
         escenaSiguiente = "";
-      } else if (oscNuevoMensaje.get(0).floatValue() == 1) {
-        println("presionado " + str(i + 1));
       }
     }
   }

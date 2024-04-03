@@ -6,8 +6,6 @@ boolean modoProgramar = true;
 // proyector puede ser 0, 1, 2
 int proyector = 0;
 
-boolean modoDiapos = true;
-
 int diaposPorPantalla = 3;
 
 void setup() {
@@ -44,71 +42,69 @@ void setup() {
 
 void draw() {
 
-  if (modoDiapos) {
+  //agregar transparencia encima
+  pushStyle();
+  rectMode(CORNER);
+  noStroke();
+  fill(255, 40 * 255/100);
+  rect(0, 0, width, height);
+  popStyle();
 
-    //agregar transparencia encima
+  actualizarEscenaActual();
+
+  Diapo diapoActual = diapos.get(escenaActual);
+
+  diapoActual.mostrarImagenes();
+  diapoActual.mostrarLineas();
+  diapoActual.mostrarTextos();
+  diapoActual.actualizar();
+
+  // figura especial diapo30
+  if (escenaActual == 29) {
     pushStyle();
-    rectMode(CORNER);
-    noStroke();
-    fill(255, 40 * 255/100);
-    rect(0, 0, width, height);
+    rectMode(CENTER);
+    stroke(negro, 40 * 255/100);
+    noFill();
+    translate(width/2, height/2);
+    rotate(radians(30));
+    rect(0,
+      0,
+      25 * width/100,
+      70 * height/100);
     popStyle();
-
-    actualizarEscenaActual(false);
-
-    Diapo diapoActual = diapos.get(escenaActual);
-
-    diapoActual.mostrarImagenes();
-    diapoActual.mostrarLineas();
-    diapoActual.mostrarTextos();
-    diapoActual.actualizar();
-
-    // figura especial diapo30
-    if (escenaActual == 29) {
-      pushStyle();
-      rectMode(CENTER);
-      stroke(negro, 40 * 255/100);
-      noFill();
-      translate(width/2, height/2);
-      rotate(radians(30));
-      rect(0,
-        0,
-        25 * width/100,
-        70 * height/100);
-      popStyle();
-    }
-
-
-    // figura especial diapo30
-    if (escenaActual == 30) {
-      pushStyle();
-      rectMode(CENTER);
-      stroke(negro, 40 * 255/100);
-      noFill();
-      translate(width/2, height/2);
-      rotate(radians(15));
-      rect(0,
-        0,
-        25 * width/100,
-        70 * height/100);
-      popStyle();
-    }
-
   }
+
+
+  // figura especial diapo30
+  if (escenaActual == 30) {
+    pushStyle();
+    rectMode(CENTER);
+    stroke(negro, 40 * 255/100);
+    noFill();
+    translate(width/2, height/2);
+    rotate(radians(15));
+    rect(0,
+      0,
+      25 * width/100,
+      70 * height/100);
+    popStyle();
+  }
+
+
   // modo estrellas
-  else {
-    pushStyle();
-    rectMode(CORNER);
-    noStroke();
-    fill(0, 255);
-    rect(0, 0, width, height * 75/100);
-    rect(0, height * 75/100, width, height);
-    popStyle();
+  //else {
+  //  pushStyle();
+  //  rectMode(CORNER);
+  //  noStroke();
+  //  fill(0, 255);
+  //  rect(0, 0, width, height * 75/100);
+  //  rect(0, height * 75/100, width, height);
+  //  popStyle();
 
-    Imagen estrellaIzquierda = estrellas.get(proyector * 2);
-    Imagen estrellaDerecha = estrellas.get(proyector * 2 + 1);
+  //  Imagen estrellaIzquierda = estrellas.get(proyector * 2);
+  //  Imagen estrellaDerecha = estrellas.get(proyector * 2 + 1);
 
-    estrellaIzquierda.mostrar();
-    estrellaDerecha.mostrar();
-  }
+  //  estrellaIzquierda.mostrar();
+  //  estrellaDerecha.mostrar();
+  //}
 }
