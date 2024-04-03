@@ -6,8 +6,8 @@ este software fue escrito para Processing 4.x, disponible en <https://processing
 
 ## versiones
 
-- 2023_ceina: primera iteración, presentada a 3 pantallas en el Centro de Extensión del Instituto Nacional, Santiago de Chile, en 2023, en el contexto de la Bienal de Artes Mediales.
-- 2024_paper: segunda iteración, preparada para 1 pantalla grande, para la preparación de un paper.
+- poema_v1_2023: primera iteración, presentada a 3 pantallas en el Centro de Extensión del Instituto Nacional, Santiago de Chile, en 2023, en el contexto de la Bienal de Artes Mediales.
+- poema_v2_2024: segunda iteración, preparada para 1 pantalla grande, para la preparación de un paper, presentada en la Universidad Diego Portales.
 
 ## código
 
