@@ -12,7 +12,6 @@ boolean modoDiapos = true;
 
 int diaposPorPantalla = 3;
 
-
 void setup() {
   
   // ratios 16:9
@@ -20,7 +19,7 @@ void setup() {
   //size(1920, 1080);
   
   // ratios 4:3
-  size(800, 600);
+  // size(800, 600);
 
   // conexion
   definirLocacionRemota();
@@ -29,7 +28,7 @@ void setup() {
 
   // tipografia
   cargarFuentes();
-
+ 
   smooth();
 
   // esconder cursor
@@ -39,7 +38,8 @@ void setup() {
   inicializarImagenes();
   inicializarDiapos();
 
-  background(255);
+  // fondo blanco
+  background(blanco);
 
   frameRate(40);
 }
