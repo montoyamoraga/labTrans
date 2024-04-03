@@ -12,14 +12,9 @@ void inicializarTiempos() {
 
 void actualizarEscenaActual(boolean forzar) {
 
-  if (forzar) {
+  if (millis() - tiempoAnterior > tiempoEntreDiapos) {
     escenaActual = escenaActual + diaposPorPantalla;
     tiempoAnterior = millis();
-  } else {
-    if (millis() - tiempoAnterior > tiempoEntreDiapos) {
-      escenaActual = escenaActual + diaposPorPantalla;
-      tiempoAnterior = millis();
-    }
   }
 
   // iniciar escenaActual, saltarse la 0
