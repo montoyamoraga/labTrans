@@ -1,7 +1,3 @@
-// hacer ejemplo de 3 proyectores
-// pero con un computador
-// en processing
-
 // probando = true con numeros en pantalla
 // false sin numeros
 boolean probando = false;
@@ -10,15 +6,6 @@ boolean probando = false;
 int proyector = 2;
 
 boolean modoDiapos = true;
-
-// TODO
-// encontrar la diapo con mas texto
-// para saber cuanto se demora
-// en torno a un minuto por diapo
-
-// hacer que la primera vez que recorren
-// sea muy fijo y ordenado
-// que la aleatoreidad ocurra en las siguientes pasadas
 
 int diaposPorPantalla = 3;
 
@@ -131,7 +118,7 @@ void draw() {
     rect(0, 0, width, height * 75/100);
     rect(0, height * 75/100, width, height);
     popStyle();
-   
+
 
     Imagen estrellaIzquierda = estrellas.get(proyector * 2);
     Imagen estrellaDerecha = estrellas.get(proyector * 2 + 1);

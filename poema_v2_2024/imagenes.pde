@@ -24,7 +24,7 @@ class Imagen {
     if (tinte < 255 && Math.random() < 0.3) {
       tinte = tinte + 1;
     }
-    
+
     pushStyle();
     tint(255, tinte);
     image(imagen, posX, posY);
