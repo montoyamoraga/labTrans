@@ -21,7 +21,7 @@ class Imagen {
   }
 
   void mostrar() {
-    if (tinte < 255 && Math.random() < 0.3) {
+    if (tinte < 255 && Math.random() < 0.5) {
       tinte = tinte + 1;
     }
 

@@ -1,6 +1,3 @@
-// false sin numeros
-boolean modoProgramar = true;
-
 // proyector puede ser 0, 1, 2
 int proyector = 0;
 
@@ -9,11 +6,11 @@ int diaposPorPantalla = 3;
 void setup() {
 
   // ratios 16:9
-  size(1280, 720);
-  //size(1920, 1080);
+  //size(1280, 720);
+  size(1920, 1080);
 
   // ratios 4:3
-  // size(800, 600);
+  //size(800, 600);
 
   // conexion
   definirLocacionRemota();
@@ -35,7 +32,7 @@ void setup() {
   // fondo blanco
   background(negro);
 
-  frameRate(40);
+  frameRate(30);
 }
 
 void draw() {
@@ -51,9 +48,8 @@ void draw() {
   actualizarEscenaActual();
 
   Diapo diapoActual = diapos.get(escenaActual);
-
-  diapoActual.mostrarImagenes();
   diapoActual.mostrarLineas();
+  diapoActual.mostrarImagenes();
   diapoActual.mostrarTextos();
   diapoActual.actualizar();
 
@@ -104,4 +100,6 @@ void draw() {
   //  estrellaIzquierda.mostrar();
   //  estrellaDerecha.mostrar();
   //}
+  
+  saveFrame("./frames/#######.tif");
 }

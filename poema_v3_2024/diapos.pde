@@ -113,7 +113,7 @@ class Diapo {
       }
       if (temp.numeroColor == 0) {
         fill(blanco);
-        stroke(blanco);
+        stroke(negro);
       } else if (temp.numeroColor == 1) {
         fill(azul);
         stroke(azul);

@@ -38,12 +38,6 @@ void oscEvent(OscMessage oscNuevoMensaje) {
       if (oscNuevoMensaje.get(0).floatValue() == 0) {
         println("soltado " + str(i + 1));
 
-        //if ((i + 1) == 16) {
-        //  modoDiapos = false;
-        //} else {
-        //  modoDiapos = true;
-        //}
-
         if (i + 1 == 4) {
           escenaActual = proyector + 1;
           inicializarDiapos();

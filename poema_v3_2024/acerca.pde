@@ -1,9 +1,9 @@
-// poema_v2_2024
+// poema_v3_2024
 // codigo por montoyamoraga
 // hecho con processing 4
 // tipografia inika por constanza artigas
 // presentado en universidad diego portales, santiago de chile
-// en el contexto de la preparacion de un paper academico
+// en el contexto de un evento para princeton seminar
 
 String[] creditos = {
   "aarón montoya",

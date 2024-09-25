@@ -57,7 +57,8 @@ class Linea {
     float y0 = posInicial.y;
     float x1 = posActual.x;
     float y1 = posActual.y;
-
+    
+    strokeWeight(0.5);
     stroke(lineaStroke);
     line(x0, y0, x1, y1);
 

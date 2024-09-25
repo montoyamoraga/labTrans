@@ -1,13 +1,13 @@
 
 // iniciar escenaActual, saltarse la 0
-int escenaActual = proyector + 1;
+int escenaActual = proyector + 2;
 long tiempoEntreDiapos;
 long tiempoAnterior;
 String escenaSiguiente = "";
 
 void inicializarTiempos() {
   // tiempoEntreDiapos =  int(1.2 * 1000 * 60);
-  tiempoEntreDiapos =  int(0.8 * 1000 * 60);
+  tiempoEntreDiapos =  int(0.5 * 1000 * 60);
   tiempoAnterior = millis();
 }
 
