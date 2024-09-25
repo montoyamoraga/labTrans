@@ -1,8 +1,6 @@
 // proyector puede ser 0, 1, 2
 int proyector = 0;
 
-int diaposPorPantalla = 3;
-
 void setup() {
 
   // ratios 16:9

@@ -7,14 +7,13 @@ String escenaSiguiente = "";
 
 void inicializarTiempos() {
   // tiempoEntreDiapos =  int(1.2 * 1000 * 60);
-  tiempoEntreDiapos =  int(0.5 * 1000 * 60);
+  tiempoEntreDiapos =  int(0.9 * 1000 * 60);
   tiempoAnterior = millis();
 }
 
 void actualizarEscenaActual() {
 
   if (millis() - tiempoAnterior > tiempoEntreDiapos) {
-    // escenaActual = escenaActual + diaposPorPantalla;
     escenaActual = escenaActual + 1;
     tiempoAnterior = millis();
   }
