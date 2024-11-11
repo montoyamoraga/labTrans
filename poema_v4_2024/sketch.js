@@ -54,7 +54,7 @@ function draw() {
       50 * width/100,
       50 * height/100);
     // rotate(radians(temp.angulo));
-    text(preguntaActual.datos.preguntaPrincipal,
+    text(preguntaActual.preguntaPrincipal,
        0,
        0
        );
