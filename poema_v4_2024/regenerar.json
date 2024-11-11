@@ -14,6 +14,26 @@
         "¿Cómo regenerar y a la vez romper las fronteras de clases sociales?",
          "¿Qué asociamos con el abandono, con la falta de cuidado?"
       ]
+    },
+    {
+      "preguntaPrincipal": "¿Qué podemos regenerar hoy / aquí?",
+      "preguntasRelacionadas": [
+        "¿Regenerar culturas?",
+        "¿Qué es la naturaleza?",
+        "¿Tenemos disposición a adaptarnos? ¿A qué?",
+        "¿Cómo se mide?",
+        "¿Qué significa asilvestrar las ciudades?",
+        "¿Tenemos disposición a desaprender?"
+      ]
+    },
+    {
+      "preguntaPrincipal": "¿Cómo piensas los bosques?",
+      "preguntasRelacionadas": [
+        "¿Qué entiendes por sanar?",
+        "¿Qué es la maleza?",
+        "¿Cómo se genera la transformación?",
+        "¿Cómo ocurre la curiosidad?"
+      ]
     }
   ]
 }
