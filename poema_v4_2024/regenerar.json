@@ -2,16 +2,18 @@
   "preguntasPrincipales":
   [
     {
-      "pregu":"John",                    
-      "lastName":"Doe"
-    },
-    {
-      "firstName":"Anna",
-      "lastName":"Smith"
-    },
-    {
-      "firstName":"Peter",
-      "lastName":"Jones"
+      "preguntaPrincipal": "¿Qué entendemos por regenerar?",
+      "preguntasRelacionadas": [
+        "¿Se puede regenerar sin sentido de comunidad?",
+        "¿Regenerar tiene que ver con un equilibrio recuperado o con la generación de un nuevo equilibrio?",
+        "¿Qué proceso o evento es percibido como un riesgo, pero puede ser resignificado como una oportunidad?",
+        "¿Qué es una herida?",
+        "¿Cada cuánto tiempo mides lo que te importa?",
+        "¿Qué es para ti una era?",
+        "¿Qué tiene valor para ti hoy, qué lo tuvo ayer, y qué puede tenerlo mañana?",
+        "¿Cómo regenerar y a la vez romper las fronteras de clases sociales?",
+         "¿Qué asociamos con el abandono, con la falta de cuidado?"
+      ]
     }
   ]
 }
