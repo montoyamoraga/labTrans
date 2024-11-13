@@ -139,6 +139,6 @@ function keyPressed() {
       ),
     );
   } else if (key == 'F') {
-    preguntasFormulario.slice(0, -1);
+    preguntasFormulario = preguntasFormulario.slice(0, -1);
   }
 }
