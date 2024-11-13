@@ -15,10 +15,6 @@ let formularioURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3
 let formulario = null;
 let formularioPreguntas = null;
 
-let preguntasMostradas = new Array();
-
-
-
 function cargarFormulario() {
   formulario = loadTable(formularioURL, "csv", "header", procesarFormulario);
 }
@@ -46,8 +42,6 @@ function setup() {
   relleno = blanco;
 
   preguntaActual = null;
-
-
 
   smooth();
   
@@ -81,7 +75,7 @@ function draw() {
       50 * width/100,
       50 * height/100);
     // rotate(radians(temp.angulo));
-    text(preguntaActual.preguntaPrincipal,
+    text(preguntaActual.preguntaPrincipal.substring(0, preguntaActual.principalCaracterActual),
        0,
        0
        );

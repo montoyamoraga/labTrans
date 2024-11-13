@@ -12,6 +12,10 @@ class Texto {
     this.caracterActual = 0;
   }
 
+
+
+
+
   aumentarCaracter() {
     if (Math.random() < 0.3) {
       this.caracterActual = this.caracterActual + 1;
