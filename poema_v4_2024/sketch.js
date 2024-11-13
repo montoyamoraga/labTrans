@@ -7,6 +7,8 @@ let blanco;
 
 let preguntaActual;
 
+let respuestas = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pubhtml";
+
 
 function preload() {
   cargarFuentes();
