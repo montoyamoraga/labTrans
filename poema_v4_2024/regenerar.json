@@ -34,6 +34,15 @@
         "¿Cómo se genera la transformación?",
         "¿Cómo ocurre la curiosidad?"
       ]
+    },
+    {
+      "preguntaPrincipal": "¿Lo regenerativo es un derecho, una necesidad, una sofisticación?",
+      "preguntasRelacionadas": [
+        "¿Qué pasa con la salud mental?",
+        "¿Qué es lo nativo?",
+        "¿Cómo distribuimos las áreas verdes?",
+        "¿Es el espacio público un lugar para regenerar?"
+      ]
     }
   ]
 }

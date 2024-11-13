@@ -17,4 +17,3 @@ class Pregunta {
 function cargarPreguntas() {
     misPreguntas = loadJSON("./regenerar.json");
 }
-

@@ -5,14 +5,33 @@ let negro;
 let azul;
 let blanco;
 
+let fondo;
+let borde;
+let relleno;
+
 let preguntaActual;
 
-let respuestas = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pubhtml";
+let formularioURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pub?output=csv";
+let formulario = null;
+let formularioPreguntas = null;
+
+let preguntasMostradas = new Array();
+
+
+
+function cargarFormulario() {
+  formulario = loadTable(formularioURL, "csv", "header", procesarFormulario);
+}
+
+function procesarFormulario() {
+  formularioPreguntas = [...formulario.getColumn("Tu pregunta")];
+}
 
 
 function preload() {
   cargarFuentes();
   cargarPreguntas();
+  cargarFormulario();
 }
 
 function setup() {
@@ -22,7 +41,13 @@ function setup() {
   azul = color(0, 0, 255);
   blanco = color(255, 255, 255);
 
+  borde = negro;
+  fondo = negro;
+  relleno = blanco;
+
   preguntaActual = null;
+
+
 
   smooth();
   
@@ -30,7 +55,7 @@ function setup() {
   
   configurarFuentes();
   
-  background(negro);
+  background(fondo);
 
   frameRate(30);
 }
@@ -48,8 +73,8 @@ function draw() {
 
     push();
     textSize(32);
-    fill(blanco);
-    stroke(negro);
+    fill(relleno);
+    stroke(borde);
     translate(
       //temp.posX * width/100,
       // temp.posY * height/100);
@@ -72,5 +97,8 @@ function windowResized() {
 function keyPressed() {
   if (key == "p") {
     preguntaActual = new Pregunta();
+  }
+  else if (key == "n") {
+    cargarFormulario();
   }
 }
