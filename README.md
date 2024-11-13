@@ -17,6 +17,4 @@ este software fue escrito originalmente para Processing 4.x, disponible en <http
 - textos.pde: textos usados en la obra
 - visuales.pde: funciones para desplegar visuales específicas a esta obra
 
-
-
 <https://forms.gle/RDA651tQm9DGRMNp9>
