@@ -140,5 +140,10 @@ function keyPressed() {
     );
   } else if (key == 'F') {
     preguntasFormulario = preguntasFormulario.slice(0, -1);
+  } else if ((key = 'X')) {
+    background(fondo);
+    preguntasIniciales = new Array();
+    preguntasInicialesSecundarias = new Array();
+    preguntasFormulario = new Array();
   }
 }
