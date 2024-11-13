@@ -69,9 +69,16 @@ class PreguntaSecundaria {
     this.preguntaPrincipalTexto = this.datos.preguntaPrincipal;
     this.preguntasRelacionadas = this.datos.preguntasRelacionadas;
 
+    // this.preguntaSecundariaTexto =
+    //   this.datos.preguntasRelacionadas[
+    //     Math.random * this.datos.preguntasRelacionadas.length
+    //   ];
+
     this.preguntaSecundariaTexto =
       this.datos.preguntasRelacionadas[
-        Math.random * this.datos.preguntasRelacionadas.length
+        Math.floor(
+          Math.random() * this.datos.preguntasRelacionadas.length,
+        )
       ];
 
     this.angulo = angulo;
@@ -105,8 +112,12 @@ class PreguntaSecundaria {
 
     translate(this.posX * width, this.posY * height);
     rotate(radians(this.angulo));
-    console.log(this.preguntaSecundariaTexto);
-    // text(this.preguntaSecundariaTexto.substring(0, this.caracterActual), 0, 0);
+
+    text(
+      this.preguntaSecundariaTexto.substring(0, this.caracterActual),
+      0,
+      0,
+    );
     pop();
   }
 }
@@ -143,7 +154,7 @@ class PreguntaFormulario {
     let nuevoTamanoFuente = (float(width) * this.tamano) / float(20);
     textSize(nuevoTamanoFuente);
 
-    fill(relleno);
+    fill(rellenoFormulario);
     stroke(rellenoFormulario);
 
     translate(this.posX * width, this.posY * height);

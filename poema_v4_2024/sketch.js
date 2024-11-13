@@ -3,6 +3,7 @@ let azul;
 let blanco;
 let amarillo;
 let verde;
+let rosado;
 
 let fondo;
 let borde;
@@ -48,13 +49,14 @@ function setup() {
   blanco = color(255, 255, 255);
   amarillo = color(255, 255, 0);
   verde = color(0, 255, 0);
+  rosado = color(255, 192, 203);
 
   // definir colores usados
   borde = negro;
   fondo = negro;
   relleno = blanco;
-  rellenoSecundario = azul;
-  rellenoFormulario = verde;
+  rellenoSecundario = amarillo;
+  rellenoFormulario = rosado;
 
   // definir condiciones iniciales
   smooth();
