@@ -1,6 +1,3 @@
-
-
-
 let negro;
 let azul;
 let blanco;
@@ -8,23 +5,30 @@ let blanco;
 let fondo;
 let borde;
 let relleno;
+let rellenoSecundario;
 
-
-let formularioURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pub?output=csv";
+let formularioURL =
+  'https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pub?output=csv';
 let formulario = null;
 let formularioPreguntas = null;
 
 let preguntasIniciales = new Array();
+let preguntasInicialesSecundarias = new Array();
 let preguntasFormulario = new Array();
 
+
 function cargarFormulario() {
-  formulario = loadTable(formularioURL, "csv", "header", procesarFormulario);
+  formulario = loadTable(
+    formularioURL,
+    'csv',
+    'header',
+    procesarFormulario,
+  );
 }
 
 function procesarFormulario() {
-  formularioPreguntas = [...formulario.getColumn("Tu pregunta")];
+  formularioPreguntas = [...formulario.getColumn('Tu pregunta')];
 }
-
 
 function preload() {
   cargarFuentes();
@@ -33,7 +37,6 @@ function preload() {
 }
 
 function setup() {
-
   // crear lienzo
   createCanvas(windowWidth, windowHeight);
 
@@ -46,86 +49,44 @@ function setup() {
   borde = negro;
   fondo = negro;
   relleno = blanco;
+  rellenoSecundario = azul;
 
   // definir condiciones iniciales
   smooth();
   noCursor();
   frameRate(30);
-  
+
   // configurar fuentes tipograficas
   configurarFuentes();
-  
+
   // pintar fondo
   background(fondo);
-
 }
 
 function draw() {
-  
   // fondo con transparencia
-  // push();
-  // rectMode(CORNER);
-  // noStroke();
-  // fill(0, 40 * 255/100);
-  // rect(0, 0, windowWidth, windowHeight);
-  // pop();
+  push();
+  rectMode(CORNER);
+  noStroke();
+  fill(0, (40 * 255) / 100);
+  rect(0, 0, windowWidth, windowHeight);
+  pop();
 
   for (let i = 0; i < preguntasIniciales.length; i++) {
-    
-    // push();
-    // textSize(preguntasIniciales[i].tamano);
-    // float nuevoTamanoFuente = float(width) * temp.tamano / float(960);
-    // textSize(nuevoTamanoFuente);
-    // fill(relleno);
-    // stroke(relleno);
-    // translate(
-    //  width/2,
-    //  height/2);
-    // // translate(
-    // //   preguntasIniciales[i].posX,
-    // //   preguntasIniciales[i].posY);
-    // rotate(radians(preguntasIniciales[i].angulo));
-    // text(preguntasIniciales[i].preguntaPrincipalTexto,
-    //   0,
-    //   0
-    // );
-    // // text(preguntasIniciales[i].preguntaPrincipal.substring(0, preguntasIniciales[i].principalCaracterActual),
-    // // text(preguntasIniciales[i].preguntaPrincipal,
-    // //    0,
-    // //    0
-    // //    );
-    // pop();
-
+  
     preguntasIniciales[i].aumentarCaracter();
     preguntasIniciales[i].mostrarPregunta();
-
   }
 
-  for (let i = 0; i < preguntasFormulario.length; i++) {
-
+  for (let i = 0; i < preguntasInicialesSecundarias.length; i++) {
+  
+    preguntasInicialesSecundarias[i].aumentarCaracter();
+    preguntasInicialesSecundarias[i].mostrarPregunta();
   }
 
+  for (let i = 0; i < preguntasFormulario.length; i++) {}
 
 
-  // if (preguntaActual) {
-
-    // push();
-    // textSize(32);
-    // fill(relleno);
-    // stroke(borde);
-    // translate(
-    //   //temp.posX * width/100,
-    //   // temp.posY * height/100);
-    //   50 * width/100,
-    //   50 * height/100);
-    // // rotate(radians(temp.angulo));
-    // text(preguntaActual.preguntaPrincipal.substring(0, preguntaActual.principalCaracterActual),
-    //    0,
-    //    0
-    //    );
-    // pop();
-
-  // }
 }
 
 function windowResized() {
@@ -133,15 +94,34 @@ function windowResized() {
 }
 
 function keyPressed() {
-  if (key == "p") {
+  if (key == 'p') {
     // constructor PreguntaInicial(angulo, posX, posY, tamano, coloreado)
-    preguntasIniciales.push(new PreguntaInicial(Math.random()*TWO_PI, Math.random(), Math.random(),Math.random(), borde));
-
-
-  } else if (key == "o") {
-
+    preguntasIniciales.push(
+      new PreguntaInicial(
+        Math.random() * TWO_PI,
+        Math.random(),
+        Math.random(),
+        Math.random(),
+        relleno,
+      ),
+    );
+  } else if (key == "P") {
+    preguntasIniciales = preguntasIniciales.slice(0, -1);
+  } else if (key == 's') {
+    preguntasInicialesSecundarias.push(
+      new PreguntaSecundaria(
+        Math.random() * TWO_PI,
+        Math.random(),
+        Math.random(),
+        Math.random(),
+        relleno,
+      ),
+    );
   }
-  else if (key == "n") {
+  else if (key == 'S') {
+    preguntasInicialesSecundarias = preguntasInicialesSecundarias.slice(0, -1);
+  }
+  else if (key == 'n') {
     cargarFormulario();
   }
 }
