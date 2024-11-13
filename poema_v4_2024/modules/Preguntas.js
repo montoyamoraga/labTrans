@@ -35,7 +35,6 @@ class PreguntaInicial {
   }
 
   mostrarPregunta() {
-
     push();
 
     textFont(fuentes[0]);
@@ -45,14 +44,17 @@ class PreguntaInicial {
     fill(relleno);
     stroke(relleno);
 
-    translate((this.posX * width), (this.posY * height));
+    translate(this.posX * width, this.posY * height);
     rotate(radians(this.angulo));
-    text(this.preguntaPrincipalTexto.substring(0, this.caracterActual), 0, 0);
+    text(
+      this.preguntaPrincipalTexto.substring(0, this.caracterActual),
+      0,
+      0,
+    );
     // text(this.preguntaPrincipalTexto, 0, 0);
     pop();
   }
 }
-
 
 class PreguntaSecundaria {
   constructor(angulo, posX, posY, tamano, coloreado) {
@@ -67,7 +69,10 @@ class PreguntaSecundaria {
     this.preguntaPrincipalTexto = this.datos.preguntaPrincipal;
     this.preguntasRelacionadas = this.datos.preguntasRelacionadas;
 
-    this.preguntaSecundariaTexto = this.datos.preguntasRelacionadas[Math.random * this.datos.preguntasRelacionadas.length];
+    this.preguntaSecundariaTexto =
+      this.datos.preguntasRelacionadas[
+        Math.random * this.datos.preguntasRelacionadas.length
+      ];
 
     this.angulo = angulo;
     this.posX = posX;
@@ -89,7 +94,6 @@ class PreguntaSecundaria {
   }
 
   mostrarPregunta() {
-
     push();
 
     textFont(fuentes[1]);
@@ -99,7 +103,7 @@ class PreguntaSecundaria {
     fill(rellenoSecundario);
     stroke(rellenoSecundario);
 
-    translate((this.posX * width), (this.posY * height));
+    translate(this.posX * width, this.posY * height);
     rotate(radians(this.angulo));
     console.log(this.preguntaSecundariaTexto);
     // text(this.preguntaSecundariaTexto.substring(0, this.caracterActual), 0, 0);
@@ -107,10 +111,47 @@ class PreguntaSecundaria {
   }
 }
 
+class PreguntaFormulario {
+  constructor(angulo, posX, posY, tamano, coloreado) {
+    this.texto =
+      formularioPreguntas[
+        Math.floor(Math.random() * formularioPreguntas.length)
+      ];
+    this.angulo = angulo;
+    this.posX = posX;
+    this.posY = posY;
+    this.tamano = tamano;
+    this.coloreado = coloreado;
+    this.caracterActual = 0;
+  }
 
+  aumentarCaracter() {
+    if (Math.random() < 0.1) {
+      this.caracterActual = this.caracterActual + 1;
+      this.caracterActual = constrain(
+        this.caracterActual,
+        0,
+        this.texto.length,
+      );
+    }
+  }
 
+  mostrarPregunta() {
+    push();
 
+    textFont(fuentes[2]);
+    let nuevoTamanoFuente = (float(width) * this.tamano) / float(20);
+    textSize(nuevoTamanoFuente);
 
+    fill(relleno);
+    stroke(rellenoFormulario);
+
+    translate(this.posX * width, this.posY * height);
+    rotate(radians(this.angulo));
+    text(this.texto.substring(0, this.caracterActual), 0, 0);
+    pop();
+  }
+}
 
 function cargarPreguntas() {
   misPreguntasIniciales = loadJSON('./regenerar.json');

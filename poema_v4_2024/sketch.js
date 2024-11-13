@@ -1,11 +1,13 @@
 let negro;
 let azul;
 let blanco;
+let amarillo;
 
 let fondo;
 let borde;
 let relleno;
 let rellenoSecundario;
+let rellenoFormulario;
 
 let formularioURL =
   'https://docs.google.com/spreadsheets/d/e/2PACX-1vSwisbThAk3YX_yj0UfKmtFkl031yWPFTkc06nnR3EpAZk_lJydbvxncsTNVg0Ob2_jnCgHEQ_W50r1/pub?output=csv';
@@ -15,7 +17,6 @@ let formularioPreguntas = null;
 let preguntasIniciales = new Array();
 let preguntasInicialesSecundarias = new Array();
 let preguntasFormulario = new Array();
-
 
 function cargarFormulario() {
   formulario = loadTable(
@@ -44,12 +45,14 @@ function setup() {
   negro = color(0, 0, 0);
   azul = color(0, 0, 255);
   blanco = color(255, 255, 255);
+  amarillo = color(255, 255, 0);
 
   // definir colores usados
   borde = negro;
   fondo = negro;
   relleno = blanco;
   rellenoSecundario = azul;
+  rellenoFormulario = amarillo;
 
   // definir condiciones iniciales
   smooth();
@@ -73,20 +76,19 @@ function draw() {
   pop();
 
   for (let i = 0; i < preguntasIniciales.length; i++) {
-  
     preguntasIniciales[i].aumentarCaracter();
     preguntasIniciales[i].mostrarPregunta();
   }
 
   for (let i = 0; i < preguntasInicialesSecundarias.length; i++) {
-  
     preguntasInicialesSecundarias[i].aumentarCaracter();
     preguntasInicialesSecundarias[i].mostrarPregunta();
   }
 
-  for (let i = 0; i < preguntasFormulario.length; i++) {}
-
-
+  for (let i = 0; i < preguntasFormulario.length; i++) {
+    preguntasFormulario[i].aumentarCaracter();
+    preguntasFormulario[i].mostrarPregunta();
+  }
 }
 
 function windowResized() {
@@ -105,7 +107,7 @@ function keyPressed() {
         relleno,
       ),
     );
-  } else if (key == "P") {
+  } else if (key == 'P') {
     preguntasIniciales = preguntasIniciales.slice(0, -1);
   } else if (key == 's') {
     preguntasInicialesSecundarias.push(
@@ -117,11 +119,22 @@ function keyPressed() {
         relleno,
       ),
     );
-  }
-  else if (key == 'S') {
-    preguntasInicialesSecundarias = preguntasInicialesSecundarias.slice(0, -1);
-  }
-  else if (key == 'n') {
+  } else if (key == 'S') {
+    preguntasInicialesSecundarias =
+      preguntasInicialesSecundarias.slice(0, -1);
+  } else if (key == 'c') {
     cargarFormulario();
+  } else if (key == 'f') {
+    preguntasFormulario.push(
+      new PreguntaFormulario(
+        Math.random() * TWO_PI,
+        Math.random(),
+        Math.random(),
+        Math.random(),
+        relleno,
+      ),
+    );
+  } else if (key == 'F') {
+    preguntasFormulario.slice(0, -1);
   }
 }
