@@ -176,7 +176,6 @@ class Diapo {
   void mostrarImagenes() {
 
     for (int i = 0; i < imagenes.size(); i++) {
-      println(imagenes.size());
       imagenes.get(i).mostrar();
     }
   }

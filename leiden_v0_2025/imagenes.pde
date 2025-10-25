@@ -1,4 +1,5 @@
 String[] nombresImagenes = {
+  "estrellas.jpg",
   "bosque.jpg",
   "camino.jpg",
   "laguna.jpg",
@@ -18,9 +19,9 @@ void cargarImagenes() {
 
   for (int i = 0; i < imagenes.length; i++) {
     if (imagenes[i].width > imagenes[i].height) {
-      imagenes[i].resize(floor(porcentajeX(90)), 0);
+      imagenes[i].resize(floor(porcentajeX(100)), 0);
     } else {
-      imagenes[i].resize(0, floor(porcentajeY(90)));
+      imagenes[i].resize(0, floor(porcentajeY(100)));
     }
   }
 }

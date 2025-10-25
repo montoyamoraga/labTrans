@@ -43,31 +43,14 @@ ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
 // posX
 // posY
 String[][] listaDibujos = {
-  //{"0", "dibujos/diapo-01.png", "25", "70", "50"},
-  //{"0", "dibujos/diapo-02.png", "30", "50", "50"},
   {"0", "dibujos/diapo-01.png", "30", "50", "50"},
   {"14", "dibujos/diapo-14.png", "10", "20", "50"}
 };
 
-String[][] listaEstrellas = {
-  {"1", "numeradas/0.jpg", "50", "25", "50"},
-  //{"32", "numeradas/1.jpg", "50", "75", "50"},
-  //{"32", "numeradas/2.jpg", "50", "25", "50"},
-  //{"32", "numeradas/3.jpg", "50", "75", "50"},
-  //{"32", "numeradas/4.jpg", "50", "25", "50"},
-  //{"32", "numeradas/5.jpg", "50", "75", "50"}
-};
+
 
 void inicializarImagenes() {
   imageMode(CENTER);
-  for (int i = 0; i < listaEstrellas.length; i++) {
-    estrellas.add(new Imagen(int(listaEstrellas[i][0]), listaEstrellas[i][1] ));
-    estrellas.get(i).escalar(int(listaEstrellas[i][2]) * width/100);
-    estrellas.get(i).posicionar(
-      int(listaEstrellas[i][3]) * width/100,
-      int(listaEstrellas[i][4]) * height/100
-      );
-  }
 
   for (int i = 0; i < listaDibujos.length; i++) {
     dibujos.add(new Imagen(int(listaDibujos[i][0]), listaDibujos[i][1]));

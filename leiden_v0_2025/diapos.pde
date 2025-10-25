@@ -22,10 +22,11 @@ void mostrarDiapo(int diapo) {
       porcentajeY(70)
       );
   } else if (diapo == 1) {
-    text(escuelaArte,
-      porcentajeX(50),
-      porcentajeY(50)
-      );
+    mostrarImagen(0);
+    //text(escuelaArte,
+    //  porcentajeX(50),
+    //  porcentajeY(50)
+    //  );
   } else if (diapo == 2) {
     Diapo diapoActual = diapos.get(0);
     diapoActual.mostrarLineas();
@@ -54,13 +55,13 @@ void mostrarDiapo(int diapo) {
   } else if (diapo == 13) {
   } else if (diapo == 14) {
   } else if (diapo == 15) {
-    mostrarImagen(0);
-  } else if (diapo == 16) {
     mostrarImagen(1);
-  } else if (diapo == 17) {
+  } else if (diapo == 16) {
     mostrarImagen(2);
-  } else if (diapo == 18) {
+  } else if (diapo == 17) {
     mostrarImagen(3);
+  } else if (diapo == 18) {
+    mostrarImagen(4);
   } else if (diapo == 19) {
     for (int i = 0; i < equipoLabTrans.length; i++) {
       text(equipoLabTrans[i],
