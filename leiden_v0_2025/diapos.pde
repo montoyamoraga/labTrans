@@ -11,16 +11,16 @@ void mostrarMetadata() {
 
 void mostrarDiapo(int diapo) {
   if (diapo == 0) {
-    text("diapo0",
-      porcentajeX(50),
-      porcentajeY(50)
-      );
-    configurarFecha();
+    //text("diapo0",
+    //  porcentajeX(50),
+    //  porcentajeY(50)
+    //  );
+    //configurarFecha();
 
-    text(dia + " / " + mes + " / " + agno,
-      porcentajeX(70),
-      porcentajeY(70)
-      );
+    //text(dia + " / " + mes + " / " + agno,
+    //  porcentajeX(70),
+    //  porcentajeY(70)
+    //  );
   } else if (diapo == 1) {
     mostrarImagen(0);
     //text(escuelaArte,
@@ -36,16 +36,24 @@ void mostrarDiapo(int diapo) {
 
     diapoActual.actualizar();
   } else if (diapo == 3) {
-    text(labca,
-      porcentajeX(50),
-      porcentajeY(50)
-      );
+    Diapo diapoActual = diapos.get(0);
+    diapoActual.mostrarLineas();
+    diapoActual.mostrarTextos();
+    diapoActual.mostrarImagenes();
+    //text(" ",
+    //  porcentajeX(50),
+    //  porcentajeY(50)
+    //  );
   } else if (diapo == 4) {
-    text(labTrans,
+    text("CEINA",
       porcentajeX(50),
       porcentajeY(50)
       );
   } else if (diapo == 5) {
+    text("BNP",
+      porcentajeX(50),
+      porcentajeY(50)
+      );
   } else if (diapo == 6) {
   } else if (diapo == 7) {
   } else if (diapo == 8) {

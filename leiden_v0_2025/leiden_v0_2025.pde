@@ -28,7 +28,7 @@ void draw() {
   popStyle();
 
   //background(negro);
-  mostrarMetadata();
+  //mostrarMetadata();
   mostrarDiapo(diapoActual);
 }
 
