@@ -52,64 +52,37 @@ void cargarFuentes() {
 
 // diapo02
 String[] aproximaciones = {
-  "IMÁGENES",
-  "NEUROCIENCIA",
+  "CÓDIGO\n",
+  "NEUROCIENCIA\n",
   "EXPERIENCIA\nSENSIBLE",
-  "ASTRONOMÍA",
-  "PROGRAMA TRANSDISCIPLINAR",
-  "LITERATURA",
-  "PROGRAMACION",
-  "ARTE"
+  "\nASTRONOMÍA",
+  "\nPROGRAMA DE PENSAMIENTO TRANSDISCIPLINAR",
+  "\nLITERATURA",
+  "CONOCIMIENTO\n",
+  "ARTE\n",
+  " "
 };
 
 float[][] aproximacionesParams = {
   {0, 50, 10, 30, 1, 0},
-  {0, 80, 30, 20, 2, 0},
-  {0, 80, 50, 30, 2, 0},
-  {0, 80, 70, 20, 1, 0},
-  {0, 50, 90, 30, 1, 0},
-  {0, 30, 60, 20, 1, 0},
-  {0, 30, 50, 20, 1, 0},
+  {0, 90, 30, 15, 2, 0},
+  {0, 90, 50, 30, 2, 0},
+  {0, 90, 70, 15, 1, 0},
+  {0, 50, 90, 25, 1, 0},
+  {0, 30, 60, 15, 1, 0},
+  {0, 15, 50, 30, 1, 0},
   {0, 20, 15, 20, 1, 0},
+  {0, 50, 50, 20, 1, 0}
 };
 
 int[][] aproximacionesLineas = {
   {0, 4, 0},
-  {1, 5, 0},
   {2, 6, 0},
-  {3, 7, 0}
-};
 
-// diapo03
-String[] fisicaAstronomia = {
-  // 0
-  "FÍSICA - ASTRONOMÍA",
-  // 1
-  "tiempos humanos versus tiempos astronómicos\n",
-  // 2
-  "El tránsito de la luz y el sonido\n" +
-  "transmiten información en un\n" +
-  "desfase temporal",
-  // 3
-  "la memoria se (re)crea aquí y ahora",
-  // 4
-  "50 años\n" +
-  "versus\n" +
-  "50 años-luz\n" +
-  "sonido\n" +
-  "versus\n" +
-  "recepción de un\n" +
-  "mensaje de un planeta\n" +
-  "a otro.",
-  // 5
-  "NEUROCIENCIA",
-  // 6
-  "mecanismos neurobiológicos",
-  // 7
-  "SINFONÍA FISIOLÓGICA\n" +
-  "Estimulación física",
-  // 8
-  "cerebro sometido a aislamiento"
+  {1, 8, 0},
+  {3, 8, 0},
+  {5, 8, 0},
+  {7, 8, 0},
 };
 
 

@@ -30,7 +30,6 @@ class Diapo {
   void inicializar() {
     textoActual = 0;
     tiempoActualizacion = millis();
-    //inicializarDiapos();
   }
 
   void agregarTexto(String nuevoTexto, float[] params) {
@@ -175,7 +174,9 @@ class Diapo {
   }
 
   void mostrarImagenes() {
+
     for (int i = 0; i < imagenes.size(); i++) {
+      println(imagenes.size());
       imagenes.get(i).mostrar();
     }
   }

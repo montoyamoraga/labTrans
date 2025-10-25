@@ -4,8 +4,9 @@ int diapoActual = 0;
 int diapoTotal = 20;
 
 void setup() {
-  //size(800, 600);
-  size(1600, 1200);
+
+  size(1280, 720);
+
   noCursor();
 
   cargarImagenes();
@@ -34,4 +35,12 @@ void draw() {
 void mousePressed() {
   diapoActual = diapoActual + 1;
   diapoActual = diapoActual % diapoTotal;
+}
+
+void keyPressed() {
+  if (keyCode == LEFT || keyCode == UP) {
+    diapoActual = diapoActual - 1;
+  } else if (keyCode == RIGHT || keyCode == DOWN) {
+    diapoActual = diapoActual + 1;
+  }
 }

@@ -29,8 +29,9 @@ void mostrarDiapo(int diapo) {
   } else if (diapo == 2) {
     Diapo diapoActual = diapos.get(0);
     diapoActual.mostrarLineas();
-    diapoActual.mostrarImagenes();
     diapoActual.mostrarTextos();
+    diapoActual.mostrarImagenes();
+
     diapoActual.actualizar();
   } else if (diapo == 3) {
     text(labca,

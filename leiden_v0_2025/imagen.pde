@@ -21,11 +21,12 @@ class Imagen {
   }
 
   void mostrar() {
-    if (tinte < 255 && Math.random() < 0.3) {
+    if (tinte < 255 && Math.random() < 0.5) {
       tinte = tinte + 1;
     }
 
     pushStyle();
+    imageMode(CENTER);
     tint(255, tinte);
     image(imagen, posX, posY);
     popStyle();
@@ -42,9 +43,9 @@ ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
 // posX
 // posY
 String[][] listaDibujos = {
-  {"1", "dibujos/diapo-01.png", "25", "70", "50"},
-  {"2", "dibujos/diapo-02.png", "30", "50", "50"},
-  {"5", "dibujos/diapo-05.png", "10", "20", "40"},
+  //{"0", "dibujos/diapo-01.png", "25", "70", "50"},
+  //{"0", "dibujos/diapo-02.png", "30", "50", "50"},
+  {"0", "dibujos/diapo-01.png", "30", "50", "50"},
   {"14", "dibujos/diapo-14.png", "10", "20", "50"}
 };
 
