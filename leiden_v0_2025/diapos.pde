@@ -28,6 +28,7 @@ void mostrarDiapo(int diapo) {
     //  porcentajeY(50)
     //  );
   } else if (diapo == 2) {
+    mostrarImagen(0);
     Diapo diapoActual = diapos.get(0);
     diapoActual.mostrarLineas();
     diapoActual.mostrarTextos();
