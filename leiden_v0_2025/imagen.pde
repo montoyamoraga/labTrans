@@ -24,7 +24,7 @@ class Imagen {
     if (tinte < 255 && Math.random() < 0.3) {
       tinte = tinte + 1;
     }
-    
+
     pushStyle();
     tint(255, tinte);
     image(imagen, posX, posY);
@@ -44,22 +44,17 @@ ArrayList<Imagen> dibujos = new ArrayList<Imagen>();
 String[][] listaDibujos = {
   {"1", "dibujos/diapo-01.png", "25", "70", "50"},
   {"2", "dibujos/diapo-02.png", "30", "50", "50"},
-  {"3", "dibujos/diapo-03.png", "20", "65", "20"},
   {"5", "dibujos/diapo-05.png", "10", "20", "40"},
-  {"7", "dibujos/diapo-07a.png", "30", "20", "40"},
-  {"7", "dibujos/diapo-07b.png", "30", "70", "40"},
-  {"9", "dibujos/diapo-09.png", "20", "30", "50"},
-  {"11", "dibujos/diapo-11.png", "10", "80", "20"},
   {"14", "dibujos/diapo-14.png", "10", "20", "50"}
 };
 
 String[][] listaEstrellas = {
-  {"32", "numeradas/0.jpg", "50", "25", "50"},
-  {"32", "numeradas/1.jpg", "50", "75", "50"},
-  {"32", "numeradas/2.jpg", "50", "25", "50"},
-  {"32", "numeradas/3.jpg", "50", "75", "50"},
-  {"32", "numeradas/4.jpg", "50", "25", "50"},
-  {"32", "numeradas/5.jpg", "50", "75", "50"}
+  {"1", "numeradas/0.jpg", "50", "25", "50"},
+  //{"32", "numeradas/1.jpg", "50", "75", "50"},
+  //{"32", "numeradas/2.jpg", "50", "25", "50"},
+  //{"32", "numeradas/3.jpg", "50", "75", "50"},
+  //{"32", "numeradas/4.jpg", "50", "25", "50"},
+  //{"32", "numeradas/5.jpg", "50", "75", "50"}
 };
 
 void inicializarImagenes() {

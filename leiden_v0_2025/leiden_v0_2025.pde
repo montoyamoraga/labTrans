@@ -11,7 +11,6 @@ void setup() {
   cargarImagenes();
   cargarFuentes();
 
-  inicializarTiempos();
   inicializarImagenes();
   inicializarDiapos();
 
@@ -27,23 +26,12 @@ void draw() {
   rect(0, 0, width, height);
   popStyle();
 
-  actualizarEscenaActual();
-
-  Diapo diapoActual = diapos.get(escenaActual);
-  diapoActual.mostrarLineas();
-  diapoActual.mostrarImagenes();
-  diapoActual.mostrarTextos();
-  diapoActual.actualizar();
-
   //background(negro);
   mostrarMetadata();
-  //mostrarDiapo(diapoActual);
+  mostrarDiapo(diapoActual);
 }
 
 void mousePressed() {
   diapoActual = diapoActual + 1;
   diapoActual = diapoActual % diapoTotal;
-
-  escenaActual = escenaActual + 1;
-  escenaActual = escenaActual % diapoTotal;
 }

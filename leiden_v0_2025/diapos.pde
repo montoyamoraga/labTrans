@@ -3,7 +3,7 @@ int tamanoMetadata = 20;
 void mostrarMetadata() {
   configurarMetadata();
   text("diapo " + nf(diapoActual, 2) + "/" + str(diapoTotal - 1),
-    porcentajeX(70.0),
+    porcentajeX(90.0),
     porcentajeY(90.0)
     );
 }
@@ -11,7 +11,6 @@ void mostrarMetadata() {
 
 void mostrarDiapo(int diapo) {
   if (diapo == 0) {
-
     text("diapo0",
       porcentajeX(50),
       porcentajeY(50)
@@ -28,16 +27,21 @@ void mostrarDiapo(int diapo) {
       porcentajeY(50)
       );
   } else if (diapo == 2) {
+    Diapo diapoActual = diapos.get(0);
+    diapoActual.mostrarLineas();
+    diapoActual.mostrarImagenes();
+    diapoActual.mostrarTextos();
+    diapoActual.actualizar();
+  } else if (diapo == 3) {
     text(labca,
       porcentajeX(50),
       porcentajeY(50)
       );
-  } else if (diapo == 3) {
+  } else if (diapo == 4) {
     text(labTrans,
       porcentajeX(50),
       porcentajeY(50)
       );
-  } else if (diapo == 4) {
   } else if (diapo == 5) {
   } else if (diapo == 6) {
   } else if (diapo == 7) {
