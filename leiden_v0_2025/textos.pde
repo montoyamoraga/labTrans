@@ -35,11 +35,3 @@ String[] equipoLabTrans = {aaron,
   francisco,
   rodrigo
 };
-
-
-
-//reuniones
-// visita bosque
-//50agnosluz
-//contuy
-//glosario al final - bernardita

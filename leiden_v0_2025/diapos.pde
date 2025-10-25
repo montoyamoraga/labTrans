@@ -12,10 +12,13 @@ void mostrarMetadata() {
 void mostrarDiapo(int diapo) {
   if (diapo == 0) {
 
-    text("diapo0", 50 * width/100, 50 * height/100);
+    text("diapo0",
+      porcentajeX(50),
+      porcentajeY(50)
+      );
     configurarFecha();
 
-    text(dia + "/" + mes + "/" + agno,
+    text(dia + " / " + mes + " / " + agno,
       porcentajeX(70),
       porcentajeY(70)
       );
@@ -46,9 +49,13 @@ void mostrarDiapo(int diapo) {
   } else if (diapo == 13) {
   } else if (diapo == 14) {
   } else if (diapo == 15) {
+    mostrarImagen(0);
   } else if (diapo == 16) {
+    mostrarImagen(1);
   } else if (diapo == 17) {
+    mostrarImagen(2);
   } else if (diapo == 18) {
+    mostrarImagen(3);
   } else if (diapo == 19) {
     for (int i = 0; i < equipoLabTrans.length; i++) {
       text(equipoLabTrans[i],
