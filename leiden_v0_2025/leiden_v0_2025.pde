@@ -11,6 +11,7 @@ void setup() {
 
   cargarImagenes();
   cargarFuentes();
+  cargarVideos();
 
   inicializarImagenes();
   inicializarDiapos();

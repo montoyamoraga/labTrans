@@ -55,6 +55,7 @@ void mostrarDiapo(int diapo) {
       porcentajeY(50)
       );
   } else if (diapo == 6) {
+    mostrarVideoBucle();
   } else if (diapo == 7) {
   } else if (diapo == 8) {
   } else if (diapo == 9) {
