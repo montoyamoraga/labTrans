@@ -68,15 +68,44 @@ void mostrarDiapo(int diapo) {
     // mimArbusto
     mostrarImagen(27);
   } else if (diapo == 17) {
-    //mostrarImagen(3);
+    // mim carolina
+    mostrarImagen(28);
   } else if (diapo == 18) {
-    //mostrarImagen(4);
+    mostrarImagen(29);
   } else if (diapo == 19) {
-    for (int i = 0; i < equipoLabTrans.length; i++) {
-      text(equipoLabTrans[i],
-        porcentajeX(50),
-        porcentajeY(25 + 5*i)
-        );
-    }
+    mostrarImagen(30);
+    //for (int i = 0; i < equipoLabTrans.length; i++) {
+    //  text(equipoLabTrans[i],
+    //    porcentajeX(50),
+    //    porcentajeY(25 + 5*i)
+    //    );
+    //}
+  } else if (diapo == 20) {
+    mostrarImagen(31);
+  } else if (diapo == 21) {
+    mostrarImagen(32);
+  } else if (diapo == 22) {
+    mostrarImagen(33);
+  } else if (diapo == 23) {
+    mostrarImagen(34);
+  } else if (diapo == 24) {
+    mostrarImagen(35);
+  } else if (diapo == 25) {
+    mostrarImagen(36);
+  } else if (diapo == 26 ) {
+    mostrarImagen(37);
+  } else if (diapo == 27) {
+    mostrarImagen(38);
+  } else if (diapo == 28) {
+    mostrarImagen(39);
+  } else if (diapo == 29) {
+    mostrarImagen(40);
+  } else if (diapo == 30) {
+    mostrarImagen(17);
+  } else if (diapo == 31) {
+    mostrarImagen(18);
+  } else if (diapo == 32) {
+  } else if (diapo == 33) {
+  } else if (diapo == 34) {
   }
 }

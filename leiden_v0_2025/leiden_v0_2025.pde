@@ -1,7 +1,7 @@
 // v0
 
 int diapoActual = 0;
-int diapoTotal = 20;
+int diapoTotal = 50;
 
 void setup() {
 

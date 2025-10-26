@@ -21,16 +21,15 @@ String labca = "LAB CA";
 
 String labTrans = "LAB TRANS";
 
-String aaron = "Aarón Montoya";
-String andrea = "Andrea Jösch";
-String bernardita = "Bernardita Croxatto";
-String erika = "Erika Labbé";
-String francisco = "Francisco Parada";
-String rodrigo = "Rodrigo Rojas";
+String aaron = "Aarón Montoya - diseño";
+String erika = "Erika Labbé - astronomía";
+String francisco = "Francisco Parada - neurociencia";
+String rodrigo = "Rodrigo Rojas - literatura";
+String andreaBernardita = "Andrea Jösch y Bernardita Croxatto - artes visuales";
 
 String[] equipoLabTrans = {aaron,
-  andrea,
-  bernardita,
+
+  andreaBernardita,
   erika,
   francisco,
   rodrigo

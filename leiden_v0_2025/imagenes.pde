@@ -2,13 +2,13 @@ String[] nombresImagenes = {
   // 0
   "estrellas.jpg",
   // 1
-  "carolinaBosque.jpg",
+  "ceina1.jpg",
   // 2
-  "carolinaCamino.jpg",
+  "ceina1.jpg",
   // 3
-  "carolinaLaguna.jpg",
+  "ceina1.jpg",
   // 4
-  "carolinaPataGuanaco.jpg",
+  "ceina1.jpg",
   // 5
   "ceina1.jpg",
   // 6
@@ -38,7 +38,7 @@ String[] nombresImagenes = {
   // 18
   "nucleo1.jpg",
   // 19
-  "nucleo2.jpg",
+  "nucleo1.jpg",
   // 20
   "ceinaEstrellas.jpg",
   // 21
@@ -55,6 +55,32 @@ String[] nombresImagenes = {
   "mimCaminata.jpg",
   // 27
   "mimArbusto.jpg",
+  // 28
+  "mim0.jpg",
+  // 29
+  "mim1.jpg",
+  // 30
+  "mim2.jpg",
+  // 31
+  "mim3.jpg",
+  // 32
+  "mim4.jpg",
+  // 33
+  "mim5.jpg",
+  // 34
+  "mim6.jpg",
+  // 35
+  "mim7.jpg",
+  // 36
+  "mim8.jpg",
+  // 37
+  "mim9.jpg",
+  // 38
+  "mim10.jpg",
+  // 39
+  "diagramaMim1.jpg",
+  // 40
+  "diagramaMim2.jpg",
 };
 
 String[] nombresImagenesVerticales = {
@@ -68,15 +94,19 @@ void cargarImagenes() {
   imageMode(CENTER);
 
   for (int i = 0; i < nombresImagenes.length; i++) {
-    imagenes[i] = loadImage(nombresImagenes[i]);
+    if (nombresImagenes[i] != " ") {
+      imagenes[i] = loadImage(nombresImagenes[i]);
+    }
   }
 
 
   for (int i = 0; i < imagenes.length; i++) {
     if (imagenes[i].width > imagenes[i].height) {
-      imagenes[i].resize(floor(porcentajeX(100)), 0);
+      imagenes[i].resize(150 + ceil(porcentajeX(100)), 0);
+      // imagenes[i].resize(0, ceil(porcentajeY(100)));
     } else {
-      imagenes[i].resize(0, floor(porcentajeY(100)));
+      imagenes[i].resize(0, 150 + ceil(porcentajeY(100)));
+      // imagenes[i].resize(ceil(porcentajeX(100)), 0);
     }
   }
 }
