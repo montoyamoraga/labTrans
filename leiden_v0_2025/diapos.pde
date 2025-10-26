@@ -11,67 +11,65 @@ void mostrarMetadata() {
 
 void mostrarDiapo(int diapo) {
   if (diapo == 0) {
-    //text("diapo0",
-    //  porcentajeX(50),
-    //  porcentajeY(50)
-    //  );
-    //configurarFecha();
-
-    //text(dia + " / " + mes + " / " + agno,
-    //  porcentajeX(70),
-    //  porcentajeY(70)
-    //  );
   } else if (diapo == 1) {
     mostrarImagen(0);
-    //text(escuelaArte,
-    //  porcentajeX(50),
-    //  porcentajeY(50)
-    //  );
   } else if (diapo == 2) {
-    mostrarImagen(0);
-    Diapo diapoActual = diapos.get(0);
-    diapoActual.mostrarLineas();
-    diapoActual.mostrarTextos();
-    diapoActual.mostrarImagenes();
-
-    diapoActual.actualizar();
+    // grandes exitos
+    mostrarImagen(20);
+    //mostrarImagen(0);
   } else if (diapo == 3) {
-    Diapo diapoActual = diapos.get(0);
-    diapoActual.mostrarLineas();
-    diapoActual.mostrarTextos();
-    diapoActual.mostrarImagenes();
+    mostrarImagen(21);
+    //Diapo diapoActual = diapos.get(0);
+    //diapoActual.mostrarLineas();
+    //diapoActual.mostrarTextos();
+    //diapoActual.mostrarImagenes();
     //text(" ",
     //  porcentajeX(50),
     //  porcentajeY(50)
     //  );
   } else if (diapo == 4) {
-    text("CEINA",
-      porcentajeX(50),
-      porcentajeY(50)
-      );
+    mostrarImagen(22);
   } else if (diapo == 5) {
-    text("BNP",
-      porcentajeX(50),
-      porcentajeY(50)
-      );
+    // 2 verticales de estrellas
   } else if (diapo == 6) {
-    mostrarVideoBucle();
+    // bnp
+    mostrarImagen(25);
   } else if (diapo == 7) {
+    mostrarImagen(15);
   } else if (diapo == 8) {
+    mostrarImagen(7);
   } else if (diapo == 9) {
+    mostrarImagen(9);
+    //mostrarVideoDangello();
   } else if (diapo == 10) {
+    // LENGUA SENAS
+    //mostrarImagen(7);
   } else if (diapo == 11) {
+    // dangello
+    mostrarVideoDangello();
   } else if (diapo == 12) {
+    // diagrama completo
+    mostrarVideoBucle();
+    //mostrarImagen(11);
   } else if (diapo == 13) {
+    // APURAR
+    Diapo diapoActual = diapos.get(0);
+    diapoActual.mostrarLineas();
+    diapoActual.mostrarTextos();
+    diapoActual.mostrarImagenes();
+    diapoActual.actualizar();
   } else if (diapo == 14) {
+    // CONTUY
   } else if (diapo == 15) {
-    mostrarImagen(1);
+    // mimPaseo
+    mostrarImagen(26);
   } else if (diapo == 16) {
-    mostrarImagen(2);
+    // mimArbusto
+    mostrarImagen(27);
   } else if (diapo == 17) {
-    mostrarImagen(3);
+    //mostrarImagen(3);
   } else if (diapo == 18) {
-    mostrarImagen(4);
+    //mostrarImagen(4);
   } else if (diapo == 19) {
     for (int i = 0; i < equipoLabTrans.length; i++) {
       text(equipoLabTrans[i],
