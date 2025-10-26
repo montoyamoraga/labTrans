@@ -34,7 +34,7 @@ PFont[] fuentes = new PFont[130];
 
 void cargarFuentes() {
   for (int i = 0; i < fuentes.length; i++) {
-    fuentes[i] = loadFont("Inika-" + str(i) + ".vlw");
+    fuentes[i] = loadFont("fonts/Inika-" + str(i) + ".vlw");
   }
 
   textAlign(CENTER, CENTER);

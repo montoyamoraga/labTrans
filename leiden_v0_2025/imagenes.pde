@@ -1,86 +1,70 @@
 String[] nombresImagenes = {
-  // 0
+  // 00
   "estrellas.jpg",
-  // 1
-  "ceina1.jpg",
-  // 2
-  "ceina1.jpg",
-  // 3
-  "ceina1.jpg",
-  // 4
-  "ceina1.jpg",
-  // 5
-  "ceina1.jpg",
-  // 6
-  "ceina1.jpg",
-  // 7
-  "bnpErika.jpg",
-  // 8
-  "bnp1.jpg",
-  // 9
-  "bnpPublico.jpg",
-  // 10
-  "bnp3.jpg",
-  // 11
-  "bnp4.jpg",
-  // 12
-  "bnp5.jpg",
-  // 13
-  "bnp6.jpg",
-  // 14
-  "bnp6.jpg",
-  // 15
-  "bnpAndrea.jpg",
-  // 16
-  "bnp9.jpg",
-  // 17
-  "nucleo0.jpg",
-  // 18
-  "nucleo1.jpg",
-  // 19
-  "nucleo1.jpg",
-  // 20
+  // 01
   "ceinaEstrellas.jpg",
-  // 21
+  // 02
   "ceinaAaronFrancisco.jpg",
-  // 22
+  // 03
   "ceinaDiagramas.jpg",
-  // 23
-  "lenguaSenas0.jpg",
-  // 24
-  "lenguaSenas1.jpg",
-  // 25
+  // 04
+  "ceinaVerticales.jpg",
+  // 05
   "bnpDangello.jpg",
-  // 26
+  // 06
+  "bnpAndrea.jpg",
+  // 07
+  "bnpErika.jpg",
+  // 08
+  "bnpPublico.jpg",
+  // 09
+  "lenguaSenas.jpg",
+  // 10
+  "contuyFungi.jpg",
+  // 11
+  "contuyHuerta.jpg",
+  // 12
+  "contuyMesa.jpg",
+  // 13
+  "contuyPaisaje.jpg",
+  // 14
+  "contuySenora.jpg",
+   // 15
   "mimCaminata.jpg",
-  // 27
+  // 16
   "mimArbusto.jpg",
-  // 28
+  // 17
   "mim0.jpg",
-  // 29
+  // 18
   "mim1.jpg",
-  // 30
+  // 19
   "mim2.jpg",
-  // 31
+  // 20
   "mim3.jpg",
-  // 32
+  // 21
   "mim4.jpg",
-  // 33
+  // 22
   "mim5.jpg",
-  // 34
+  // 23
   "mim6.jpg",
-  // 35
+  // 24
   "mim7.jpg",
-  // 36
+  // 25
   "mim8.jpg",
-  // 37
+  // 26
   "mim9.jpg",
-  // 38
+  // 27
   "mim10.jpg",
-  // 39
+  // 28
   "diagramaMim1.jpg",
-  // 40
+  // 29
   "diagramaMim2.jpg",
+  // 30
+  "nucleo0.jpg",
+  // 31
+  "nucleo1.jpg",
+  // 32
+  "ceinaEstrellas.jpg",
 };
 
 String[] nombresImagenesVerticales = {
