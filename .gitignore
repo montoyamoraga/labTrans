@@ -4,3 +4,7 @@
 # imagenes
 *.tif
 *.tiff
+
+# videos
+*.mp4
+*.mov
