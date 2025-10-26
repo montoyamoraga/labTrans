@@ -43,22 +43,23 @@ void mostrarDiapo(int diapo) {
     //mostrarVideoDangello();
   } else if (diapo == 10) {
     // LENGUA SENAS
-    //mostrarImagen(7);
+    mostrarImagen(23);
   } else if (diapo == 11) {
+    // LENGUA SENAS
+    mostrarImagen(24);
+  } else if (diapo == 12) {
     // dangello
     mostrarVideoDangello();
-  } else if (diapo == 12) {
+  } else if (diapo == 13) {
     // diagrama completo
     mostrarVideoBucle();
-    //mostrarImagen(11);
-  } else if (diapo == 13) {
+  } else if (diapo == 14) {
     // APURAR
     Diapo diapoActual = diapos.get(0);
     diapoActual.mostrarLineas();
     diapoActual.mostrarTextos();
     diapoActual.mostrarImagenes();
     diapoActual.actualizar();
-  } else if (diapo == 14) {
     // CONTUY
   } else if (diapo == 15) {
     // mimPaseo

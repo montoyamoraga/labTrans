@@ -2,43 +2,43 @@ String[] nombresImagenes = {
   // 0
   "estrellas.jpg",
   // 1
-  "bosque.jpg",
+  "carolinaBosque.jpg",
   // 2
-  "camino.jpg",
+  "carolinaCamino.jpg",
   // 3
-  "laguna.jpg",
+  "carolinaLaguna.jpg",
   // 4
-  "pataGuanaco.jpg",
+  "carolinaPataGuanaco.jpg",
   // 5
   "ceina1.jpg",
   // 6
   "ceina1.jpg",
   // 7
-  "bnpErika.png",
+  "bnpErika.jpg",
   // 8
-  "bnp1.png",
+  "bnp1.jpg",
   // 9
-  "bnpPublico.png",
+  "bnpPublico.jpg",
   // 10
-  "bnp3.png",
+  "bnp3.jpg",
   // 11
-  "bnp4.png",
+  "bnp4.jpg",
   // 12
-  "bnp5.png",
+  "bnp5.jpg",
   // 13
-  "bnp6.png",
+  "bnp6.jpg",
   // 14
-  "bnp6.png",
+  "bnp6.jpg",
   // 15
-  "bnpAndrea.png",
+  "bnpAndrea.jpg",
   // 16
-  "bnp9.png",
+  "bnp9.jpg",
   // 17
-  "nucleo0.png",
+  "nucleo0.jpg",
   // 18
-  "nucleo1.png",
+  "nucleo1.jpg",
   // 19
-  "nucleo2.png",
+  "nucleo2.jpg",
   // 20
   "ceinaEstrellas.jpg",
   // 21
@@ -46,11 +46,11 @@ String[] nombresImagenes = {
   // 22
   "ceinaDiagramas.jpg",
   // 23
-  "lenguaSenas0.png",
+  "lenguaSenas0.jpg",
   // 24
-  "lenguaSenas1.png",
+  "lenguaSenas1.jpg",
   // 25
-  "bnpDangello.png",
+  "bnpDangello.jpg",
   // 26
   "mimCaminata.jpg",
   // 27
