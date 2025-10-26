@@ -1,3 +1,5 @@
+boolean borde = true;
+
 String[] nombresImagenes = {
   // 00
   "estrellas.jpg",
@@ -85,21 +87,44 @@ void cargarImagenes() {
 
 
   for (int i = 0; i < imagenes.length; i++) {
-    if (imagenes[i].width > imagenes[i].height) {
+    if (borde) {
+      if (imagenes[i].width > imagenes[i].height) {
+      //imagenes[i].resize(ceil(porcentajeX(80)), 0);
+      imagenes[i].resize(0, ceil(porcentajeY(80)));
+    } else {
+      //imagenes[i].resize(0, ceil(porcentajeY(80)));
+     imagenes[i].resize(ceil(porcentajeX(80)), 0);
+    }
+    }
+    else {
+      if (imagenes[i].width > imagenes[i].height) {
       imagenes[i].resize(150 + ceil(porcentajeX(100)), 0);
       // imagenes[i].resize(0, ceil(porcentajeY(100)));
     } else {
       imagenes[i].resize(0, 150 + ceil(porcentajeY(100)));
       // imagenes[i].resize(ceil(porcentajeX(100)), 0);
     }
+    }
+    
   }
 }
 
 void mostrarImagen(int numeroImagen) {
 
-  image(
-    imagenes[numeroImagen],
-    porcentajeX(50),
-    porcentajeY(50)
-    );
+  if (borde) {
+    image(
+      imagenes[numeroImagen],
+      porcentajeX(50),
+      porcentajeY(50)
+      );
+  }
+  else {
+    image(
+      imagenes[numeroImagen],
+      porcentajeX(50),
+      porcentajeY(50)
+      );
+  }
+
+
 }
